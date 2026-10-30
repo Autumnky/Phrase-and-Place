@@ -1,0 +1,2786 @@
+[
+  {
+    "id": "m001",
+    "mood": "tired",
+    "theme": "Keep going gently",
+    "sentence": "Just keep swimming.",
+    "translation": "ว่ายต่อไปเรื่อย ๆ นะ",
+    "source": "Finding Nemo",
+    "sourceType": "movie",
+    "year": 2003,
+    "synopsis": "มาร์ลิน ปลาการ์ตูนขี้กลัว ออกเดินทางข้ามมหาสมุทรเพื่อตามหานีโมลูกชายที่ถูกนักดำน้ำจับไป โดยมีดอรี่ ปลาขี้ลืมใจดี มาช่วยนำทาง ระหว่างทางทั้งคู่พบเจอสัตว์ทะเลหลากหลายและเรียนรู้ที่จะเชื่อใจกัน",
+    "image": "https://image.tmdb.org/t/p/w780/eCynaAOgYYiw5yN5lBwz3IxqvaW.jpg",
+    "vocabulary": [
+      {
+        "word": "keep",
+        "meaning": "ทำต่อไป (keep + V-ing)",
+        "example": "Keep trying, even when it gets hard.",
+        "exampleTh": "ลองต่อไปนะ แม้จะเริ่มยากขึ้น",
+        "pos": "verb"
+      },
+      {
+        "word": "just",
+        "meaning": "แค่, เพียง (ทำให้เรื่องฟังดูง่ายลง)",
+        "example": "Just take one small step today.",
+        "exampleTh": "วันนี้แค่ก้าวเล็ก ๆ หนึ่งก้าวก็พอ",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "ต้องก้าวต่อไป"
+  },
+  {
+    "id": "m002",
+    "mood": "lonely",
+    "theme": "Belonging",
+    "sentence": "Ohana means family. Family means nobody gets left behind or forgotten.",
+    "translation": "โอฮานะ แปลว่าครอบครัว และครอบครัวคือไม่มีใครถูกทิ้งหรือถูกลืม",
+    "source": "Lilo & Stitch",
+    "sourceType": "movie",
+    "year": 2002,
+    "synopsis": "ลิโล่ เด็กหญิงชาวฮาวายผู้โดดเดี่ยว รับสัตว์ประหลาดต่างดาวที่หนีมาจากอวกาศไปเลี้ยงเป็นสุนัข แล้วตั้งชื่อว่าสติทช์ ทั้งสองค่อย ๆ เรียนรู้ความหมายของครอบครัวและ “โอฮานะ” ท่ามกลางความวุ่นวายที่ตามมา",
+    "image": "https://image.tmdb.org/t/p/w780/AcxbOWUbwtIEDisfuhNGHQNfnMK.jpg",
+    "vocabulary": [
+      {
+        "word": "left behind",
+        "meaning": "ถูกทิ้งไว้ข้างหลัง",
+        "example": "Don't worry, nobody will be left behind.",
+        "exampleTh": "ไม่ต้องห่วง จะไม่มีใครถูกทิ้งไว้ข้างหลัง",
+        "pos": "phrasal verb"
+      },
+      {
+        "word": "forgotten",
+        "meaning": "ถูกลืม (past participle ของ forget)",
+        "example": "I felt forgotten until she called me.",
+        "exampleTh": "ฉันรู้สึกว่าถูกลืม จนกระทั่งเธอโทรมา",
+        "pos": "past participle"
+      }
+    ],
+    "themeTh": "มองหาที่ที่เราเป็นส่วนหนึ่ง"
+  },
+  {
+    "id": "m003",
+    "mood": "overwhelmed",
+    "theme": "Just today",
+    "sentence": "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present.",
+    "translation": "เมื่อวานคือประวัติศาสตร์ พรุ่งนี้คือปริศนา แต่วันนี้คือของขวัญ เพราะอย่างนี้จึงเรียกว่า “the present”",
+    "source": "Kung Fu Panda",
+    "sourceType": "movie",
+    "year": 2008,
+    "synopsis": "โป แพนด้าอ้วนขี้ฝันที่ทำงานในร้านก๋วยเตี๋ยว ถูกเลือกให้เป็นนักรบมังกรอย่างไม่มีใครคาดคิด เขาต้องฝึกกังฟูกับเหล่านักสู้ชั้นยอดเพื่อรับมือกับผู้ร้ายที่หนีออกจากคุกมาแก้แค้น",
+    "image": "https://image.tmdb.org/t/p/w780/qdthf9WrRDSaIkGVQGhhJ9pz1hn.jpg",
+    "vocabulary": [
+      {
+        "word": "present",
+        "meaning": "ปัจจุบัน และ ของขวัญ (เล่นคำสองความหมาย)",
+        "example": "Try to stay in the present.",
+        "exampleTh": "ลองอยู่กับปัจจุบันนะ",
+        "pos": "noun"
+      },
+      {
+        "word": "mystery",
+        "meaning": "ปริศนา, สิ่งที่ยังไม่รู้",
+        "example": "Tomorrow is still a mystery, so don't worry yet.",
+        "exampleTh": "พรุ่งนี้ยังเป็นปริศนา ยังไม่ต้องกังวลตอนนี้",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "รับมือไปทีละวัน"
+  },
+  {
+    "id": "m004",
+    "mood": "lost",
+    "theme": "Finding your way back",
+    "sentence": "There's no place like home.",
+    "translation": "ไม่มีที่ไหนเหมือนบ้านเรา",
+    "source": "The Wizard of Oz",
+    "sourceType": "movie",
+    "year": 1939,
+    "synopsis": "ดอโรธี เด็กสาวชาวไร่ ถูกพายุทอร์นาโดพัดบ้านไปยังดินแดนออซ เธอออกเดินทางตามถนนอิฐสีเหลืองเพื่อไปพบพ่อมดและหาทางกลับบ้าน พร้อมเพื่อนใหม่ ได้แก่ หุ่นไล่กา มนุษย์ดีบุก และสิงโตขี้ขลาด",
+    "image": "https://image.tmdb.org/t/p/w780/g1OvTd1eF346vmx8qsJnjaiooZ6.jpg",
+    "vocabulary": [
+      {
+        "word": "place",
+        "meaning": "สถานที่, ที่ ๆ หนึ่ง",
+        "example": "This café is my favorite place to rest.",
+        "exampleTh": "คาเฟ่นี้เป็นที่พักใจที่ฉันชอบที่สุด",
+        "pos": "noun"
+      },
+      {
+        "word": "like",
+        "meaning": "เหมือน (ในที่นี้เป็นบุพบท)",
+        "example": "There's nothing like a quiet morning.",
+        "exampleTh": "ไม่มีอะไรเหมือนเช้าที่เงียบสงบ",
+        "pos": "preposition"
+      }
+    ],
+    "themeTh": "ตามหาทางกลับบ้าน"
+  },
+  {
+    "id": "m005",
+    "mood": "hopeful",
+    "theme": "Hope",
+    "sentence": "Hope is a good thing, maybe the best of things, and no good thing ever dies.",
+    "translation": "ความหวังเป็นสิ่งดี อาจเป็นสิ่งที่ดีที่สุด และสิ่งดี ๆ ไม่เคยตาย",
+    "source": "The Shawshank Redemption",
+    "sourceType": "movie",
+    "year": 1994,
+    "synopsis": "แอนดี้ นายธนาคารที่ถูกตัดสินจำคุกตลอดชีวิตข้อหาฆ่าภรรยาและชู้รักทั้งที่เขาไม่ได้ทำ ในเรือนจำชอว์แชงค์ เขาผูกมิตรกับเรด นักโทษรุ่นเก๋า และไม่เคยทิ้งความหวังที่จะเป็นอิสระ",
+    "image": "https://image.tmdb.org/t/p/w780/pNjh59JSxChQktamG3LMp9ZoQzp.jpg",
+    "vocabulary": [
+      {
+        "word": "hope",
+        "meaning": "ความหวัง",
+        "example": "I still have hope for tomorrow.",
+        "exampleTh": "ฉันยังมีความหวังกับวันพรุ่งนี้",
+        "pos": "noun"
+      },
+      {
+        "word": "ever",
+        "meaning": "เคย (มักใช้เน้นในประโยคปฏิเสธ)",
+        "example": "Nothing ever stays the same.",
+        "exampleTh": "ไม่มีอะไรอยู่เหมือนเดิมตลอดไป",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "ยังไม่ทิ้งความหวัง"
+  },
+  {
+    "id": "m006",
+    "mood": "happy",
+    "theme": "Notice the moment",
+    "sentence": "Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.",
+    "translation": "ชีวิตผ่านไปเร็วมาก ถ้าไม่หยุดมองรอบ ๆ ตัวบ้างสักครั้ง คุณอาจพลาดมันไป",
+    "source": "Ferris Bueller's Day Off",
+    "sourceType": "movie",
+    "year": 1986,
+    "synopsis": "เฟอร์ริส นักเรียนมัธยมเจ้าเล่ห์ แกล้งป่วยเพื่อโดดเรียนหนึ่งวัน แล้วชวนเพื่อนสนิทและแฟนสาวไปเที่ยวชิคาโก ขณะที่ผู้อำนวยการโรงเรียนพยายามจับผิดให้ได้",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/8X1Z3OhGOXEWTjyLwPfPdCtW3AE.jpg",
+    "vocabulary": [
+      {
+        "word": "once in a while",
+        "meaning": "นาน ๆ ครั้ง",
+        "example": "I take a walk once in a while to clear my head.",
+        "exampleTh": "ฉันออกไปเดินเล่นนาน ๆ ครั้งเพื่อให้หัวโล่ง",
+        "pos": "adverb phrase"
+      },
+      {
+        "word": "miss",
+        "meaning": "พลาด, ไม่ทันได้เห็น/ได้ทำ",
+        "example": "Don't miss the sunset tonight.",
+        "exampleTh": "อย่าพลาดพระอาทิตย์ตกคืนนี้นะ",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "หยุดมองช่วงเวลารอบตัว"
+  },
+  {
+    "id": "m007",
+    "mood": "happy",
+    "theme": "Enjoy the everyday",
+    "sentence": "We're all traveling through time together, every day of our lives. All we can do is do our best to relish this remarkable ride.",
+    "translation": "เราทุกคนต่างเดินทางผ่านกาลเวลาไปด้วยกันในทุก ๆ วัน สิ่งที่ทำได้คือใช้ชีวิตและชื่นชมการเดินทางอันแสนพิเศษนี้ให้ดีที่สุด",
+    "source": "About Time",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "ทิมค้นพบว่าผู้ชายในครอบครัวสามารถเดินทางย้อนเวลาได้ เขาจึงลองใช้พลังนี้เพื่อเปลี่ยนชีวิตและความรัก ก่อนจะค่อย ๆ เรียนรู้คุณค่าของแต่ละวัน",
+    "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/cj2EUQytK2DCHwNrC6R8LqlBy2k.jpg",
+    "vocabulary": [
+      {
+        "word": "relish",
+        "meaning": "ชื่นชมและมีความสุขกับสิ่งที่กำลังเกิดขึ้น",
+        "example": "I want to relish every moment of this trip.",
+        "exampleTh": "ฉันอยากดื่มด่ำกับทุกช่วงเวลาของทริปนี้",
+        "pos": "verb"
+      },
+      {
+        "word": "remarkable",
+        "meaning": "พิเศษและน่าประทับใจ",
+        "example": "She had a remarkable day with her friends.",
+        "exampleTh": "เธอมีวันที่แสนพิเศษกับเพื่อน ๆ",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "มีความสุขกับวันธรรมดา"
+  },
+  {
+    "id": "m008",
+    "mood": "happy",
+    "theme": "Notice the beauty",
+    "sentence": "Beautiful things don't ask for attention.",
+    "translation": "สิ่งสวยงามไม่จำเป็นต้องเรียกร้องความสนใจ",
+    "source": "The Secret Life of Walter Mitty",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "วอลเตอร์ใช้ชีวิตอย่างเงียบ ๆ และมักหลบหนีไปในจินตนาการ จนการหายไปของภาพถ่ายสำคัญทำให้เขาออกเดินทางและได้เห็นโลกจริงด้วยตัวเอง",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/iWBAzkBylqWd9ldxhF85OYEYVa5.jpg",
+    "vocabulary": [
+      {
+        "word": "beautiful",
+        "meaning": "สวยงามหรือน่าประทับใจ",
+        "example": "We saw a beautiful sunset by the sea.",
+        "exampleTh": "เราเห็นพระอาทิตย์ตกที่สวยงามริมทะเล",
+        "pos": "adjective"
+      },
+      {
+        "word": "attention",
+        "meaning": "ความสนใจหรือการให้ความสนใจ",
+        "example": "This little garden doesn't need much attention.",
+        "exampleTh": "สวนเล็ก ๆ นี้ไม่ต้องการการดูแลหรือความสนใจมากนัก",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "มองเห็นความงามเล็ก ๆ"
+  },
+  {
+    "id": "m009",
+    "mood": "happy",
+    "theme": "Joy can come anywhere",
+    "sentence": "Not everyone can become a great artist; but a great artist can come from anywhere.",
+    "translation": "ไม่ใช่ทุกคนที่จะกลายเป็นศิลปินผู้ยิ่งใหญ่ได้ แต่ศิลปินผู้ยิ่งใหญ่อาจมาจากที่ไหนก็ได้",
+    "source": "Ratatouille",
+    "sourceType": "movie",
+    "year": 2007,
+    "synopsis": "เรมี หนูที่หลงใหลการทำอาหาร ฝันอยากเป็นเชฟในร้านอาหารชั้นนำของปารีส เขาจึงร่วมมือกับลิงกวินีเพื่อพิสูจน์ว่าความสามารถอาจเกิดขึ้นได้จากทุกที่",
+    "image": "https://image.tmdb.org/t/p/w780/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+    "vocabulary": [
+      {
+        "word": "great artist",
+        "meaning": "ศิลปินหรือผู้สร้างสรรค์ผลงานที่มีความสามารถโดดเด่น",
+        "example": "A great artist can inspire people with simple ideas.",
+        "exampleTh": "ศิลปินที่ยอดเยี่ยมสามารถสร้างแรงบันดาลใจจากแนวคิดเรียบง่ายได้",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "anywhere",
+        "meaning": "ที่ไหนก็ได้",
+        "example": "Good ideas can come from anywhere.",
+        "exampleTh": "ไอเดียดี ๆ สามารถเกิดขึ้นได้จากทุกที่",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "เจอความสุขในที่ไม่คาดคิด"
+  },
+  {
+    "id": "m010",
+    "mood": "happy",
+    "theme": "Choose your life",
+    "sentence": "You're supposed to be the leading lady of your own life, for God's sake!",
+    "translation": "คุณควรเป็นนางเอกในชีวิตของตัวเองสิ ให้ตายเถอะ!",
+    "source": "The Holiday",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "ไอริสและอแมนดาแลกบ้านกันในช่วงวันหยุดคริสต์มาสเพื่อหนีจากเรื่องรักที่ทำให้เจ็บปวด การเปลี่ยนแปลงครั้งนี้พาพวกเธอไปพบผู้คนและความสัมพันธ์ใหม่ ๆ",
+    "image": "https://image.tmdb.org/t/p/w780/h1ITOpvJN3Tw4Sy60w2QTfYMvdd.jpg",
+    "vocabulary": [
+      {
+        "word": "supposed to",
+        "meaning": "ควรจะ, ถูกคาดหมายให้ทำ",
+        "example": "You are supposed to enjoy your weekend.",
+        "exampleTh": "คุณควรจะมีความสุขกับวันหยุดสุดสัปดาห์",
+        "pos": "verb phrase"
+      },
+      {
+        "word": "leading lady",
+        "meaning": "นางเอกหรือตัวเอกหญิง",
+        "example": "She wants to be the leading lady in her own story.",
+        "exampleTh": "เธออยากเป็นนางเอกในเรื่องราวของตัวเอง",
+        "pos": "noun phrase"
+      }
+    ],
+    "themeTh": "เลือกชีวิตของตัวเอง"
+  },
+  {
+    "id": "m011",
+    "mood": "happy",
+    "theme": "Protect your dreams",
+    "sentence": "You got a dream... You gotta protect it.",
+    "translation": "ถ้าคุณมีความฝัน คุณก็ต้องปกป้องมัน",
+    "source": "The Pursuit of Happyness",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "คริส การ์ดเนอร์ พยายามสร้างชีวิตใหม่ให้ตัวเองและลูกชายท่ามกลางปัญหาทางการเงิน เขาไม่ยอมแพ้ต่อความฝันและพยายามคว้าโอกาสที่เข้ามา",
+    "image": "https://image.tmdb.org/t/p/w780/lBYOKAMcxIvuk9s9hMuecB9dPBV.jpg",
+    "vocabulary": [
+      {
+        "word": "dream",
+        "meaning": "ความฝันหรือสิ่งที่อยากทำให้สำเร็จ",
+        "example": "She is working hard to follow her dream.",
+        "exampleTh": "เธอกำลังพยายามอย่างหนักเพื่อทำตามความฝัน",
+        "pos": "noun"
+      },
+      {
+        "word": "protect",
+        "meaning": "ปกป้องหรือรักษาไว้",
+        "example": "Protect your time for the things you love.",
+        "exampleTh": "รักษาเวลาไว้ให้กับสิ่งที่คุณรัก",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "ปกป้องความฝันของตัวเอง"
+  },
+  {
+    "id": "m012",
+    "mood": "happy",
+    "theme": "Enjoy simple pleasures",
+    "sentence": "What is it that you really like to do? Eat!",
+    "translation": "จริง ๆ แล้วคุณชอบทำอะไรที่สุดเหรอ? กินไง!",
+    "source": "Julie & Julia",
+    "sourceType": "movie",
+    "year": 2009,
+    "synopsis": "จูลีเริ่มทำอาหารตามสูตรของจูเลีย ไชลด์ให้ครบทุกสูตรและเขียนบันทึกลงบล็อก ความหลงใหลเล็ก ๆ นี้ค่อย ๆ เปลี่ยนชีวิตประจำวันของเธอ",
+    "image": "https://image.tmdb.org/t/p/w780/r1bFBBj3VMek0oEtgm9N51OqVjF.jpg",
+    "vocabulary": [
+      {
+        "word": "really",
+        "meaning": "จริง ๆ หรืออย่างแท้จริง",
+        "example": "What do you really want today?",
+        "exampleTh": "วันนี้คุณต้องการอะไรจริง ๆ",
+        "pos": "adverb"
+      },
+      {
+        "word": "like to do",
+        "meaning": "ชอบทำ",
+        "example": "I like to do small things that make me happy.",
+        "exampleTh": "ฉันชอบทำสิ่งเล็ก ๆ ที่ทำให้ตัวเองมีความสุข",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "มีความสุขกับเรื่องเล็ก ๆ ง่าย ๆ"
+  },
+  {
+    "id": "m013",
+    "mood": "happy",
+    "theme": "We belong together",
+    "sentence": "Oh, nothing! It's just that we're all that we've got.",
+    "translation": "โอ้ ไม่มีอะไรหรอก! ก็แค่เรามีกันและกันเท่านั้นเอง",
+    "source": "The Family Stone",
+    "sourceType": "movie",
+    "year": 2005,
+    "synopsis": "ครอบครัวสโตนกลับมารวมตัวกันในช่วงคริสต์มาส พร้อมสมาชิกใหม่ที่ยังเข้ากับทุกคนได้ยาก ความวุ่นวายเผยให้เห็นทั้งความแตกต่างและสายสัมพันธ์ของครอบครัว",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/rAsRubFjEncgnGUvQjnX3yZmjGd.jpg",
+    "vocabulary": [
+      {
+        "word": "all that we've got",
+        "meaning": "สิ่งสำคัญทั้งหมดที่เรามีกันและกัน",
+        "example": "At the end of the day, friends are all we've got.",
+        "exampleTh": "ท้ายที่สุดแล้ว เพื่อนคือสิ่งสำคัญที่เรามี",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "nothing",
+        "meaning": "ไม่มีอะไร",
+        "example": "There is nothing wrong with taking a quiet day.",
+        "exampleTh": "การใช้วันเงียบ ๆ สักวันไม่ใช่เรื่องผิดอะไร",
+        "pos": "pronoun"
+      }
+    ],
+    "themeTh": "นึกถึงคนที่มีกันและกัน"
+  },
+  {
+    "id": "m014",
+    "mood": "happy",
+    "theme": "Choose happiness",
+    "sentence": "Exercise gives you endorphins. Endorphins make you happy. Happy people just don't shoot their husbands, they just don't!",
+    "translation": "การออกกำลังกายทำให้ร่างกายหลั่งเอ็นดอร์ฟิน เอ็นดอร์ฟินทำให้คุณมีความสุข คนมีความสุขไม่ยิงสามีตัวเองหรอก ไม่ยิงจริง ๆ!",
+    "source": "Legally Blonde",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "แอลล์ วูดส์เดินทางจากชีวิตนักศึกษาสายแฟชั่นเข้าสู่โรงเรียนกฎหมายฮาร์วาร์ด เธอค่อย ๆ พิสูจน์ตัวเองและเรียนรู้ว่าความมั่นใจไม่จำเป็นต้องเหมือนใคร",
+    "image": "https://image.tmdb.org/t/p/w780/9ohlMrJHQqKhfUKh7Zr3JQqHNLZ.jpg",
+    "vocabulary": [
+      {
+        "word": "endorphins",
+        "meaning": "สารเอ็นดอร์ฟินที่ร่างกายหลั่งและช่วยให้รู้สึกดี",
+        "example": "Exercise can help your body release endorphins.",
+        "exampleTh": "การออกกำลังกายช่วยให้ร่างกายหลั่งเอ็นดอร์ฟินได้",
+        "pos": "noun"
+      },
+      {
+        "word": "happy",
+        "meaning": "มีความสุขหรือรู้สึกดี",
+        "example": "A short walk can make me feel happy.",
+        "exampleTh": "การเดินเล่นสั้น ๆ ทำให้ฉันรู้สึกมีความสุขได้",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "เลือกความสุขให้ตัวเอง"
+  },
+  {
+    "id": "m015",
+    "mood": "happy",
+    "theme": "Celebrate together",
+    "sentence": "One great rock show can change the world.",
+    "translation": "การแสดงร็อกดี ๆ สักครั้งสามารถเปลี่ยนโลกได้",
+    "source": "School of Rock",
+    "sourceType": "movie",
+    "year": 2003,
+    "synopsis": "ดิวอี้แอบสวมรอยเป็นครูและเปลี่ยนห้องเรียนให้กลายเป็นวงร็อกของเด็ก ๆ พวกเขาฝึกซ้อมร่วมกันเพื่อเตรียมขึ้นเวทีและค้นพบความมั่นใจของตัวเอง",
+    "image": "https://image.tmdb.org/t/p/w780/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg",
+    "vocabulary": [
+      {
+        "word": "rock show",
+        "meaning": "การแสดงดนตรีร็อก",
+        "example": "We went to a small rock show last night.",
+        "exampleTh": "เมื่อคืนเราไปดูการแสดงร็อกเล็ก ๆ มา",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "change the world",
+        "meaning": "สร้างการเปลี่ยนแปลงครั้งใหญ่ให้กับโลก",
+        "example": "Small actions can change the world.",
+        "exampleTh": "การกระทำเล็ก ๆ ก็สามารถเปลี่ยนโลกได้",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "ฉลองกับคนที่รัก"
+  },
+  {
+    "id": "m016",
+    "mood": "happy",
+    "theme": "Find kindness",
+    "sentence": "You see, there are still faint glimmers of civilization left in this barbaric slaughterhouse that was once known as humanity.",
+    "translation": "เห็นไหมว่ายังมีแสงริบหรี่ของความเป็นอารยธรรมหลงเหลืออยู่ในโรงฆ่าสัตว์อันโหดร้ายที่ครั้งหนึ่งเราเรียกว่ามนุษยชาติ",
+    "source": "The Grand Budapest Hotel",
+    "sourceType": "movie",
+    "year": 2014,
+    "synopsis": "กุสตาฟเป็นหัวหน้าคอนเซียร์จผู้มีเสน่ห์ของโรงแรมชื่อดังในยุโรป เขาและเด็กฝึกงานต้องเข้าไปพัวพันกับคดีมรดก การขโมยภาพวาด และการไล่ล่าที่ไม่คาดคิด",
+    "image": "https://image.tmdb.org/t/p/original/yV3qWIHx4A2Gx1U5m8tgWCtyoTm.jpg",
+    "vocabulary": [
+      {
+        "word": "faint glimmers",
+        "meaning": "ประกายหรือแสงริบหรี่ที่ยังพอมองเห็นได้",
+        "example": "There are faint glimmers of hope after a hard day.",
+        "exampleTh": "หลังวันที่ยากลำบากยังมีประกายแห่งความหวังเล็ก ๆ อยู่",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "civilization",
+        "meaning": "อารยธรรมและความเป็นระเบียบของสังคม",
+        "example": "Kindness is an important part of civilization.",
+        "exampleTh": "ความเมตตาเป็นส่วนสำคัญของอารยธรรม",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "มองหาความเมตตาในโลก"
+  },
+  {
+    "id": "m017",
+    "mood": "happy",
+    "theme": "Say thank you",
+    "sentence": "I don't know how to thank you guys.",
+    "translation": "ฉันไม่รู้เลยว่าจะขอบคุณพวกนายยังไงดี",
+    "source": "The Muppet Movie",
+    "sourceType": "movie",
+    "year": 1979,
+    "synopsis": "เคอร์มิทออกเดินทางไปฮอลลีวูดเพื่อทำตามความฝันและได้พบกับเหล่าเพื่อนมิวเพ็ตมากมาย พวกเขาร่วมเดินทางไปด้วยกันท่ามกลางเหตุการณ์สุดวุ่นวาย",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/pd5Jc4XirpZTiZLLuVL90ffi7YV.jpg",
+    "vocabulary": [
+      {
+        "word": "thank",
+        "meaning": "ขอบคุณ",
+        "example": "I want to thank you for helping me.",
+        "exampleTh": "ฉันอยากขอบคุณที่คุณช่วยฉัน",
+        "pos": "verb"
+      },
+      {
+        "word": "guys",
+        "meaning": "พวกคุณหรือพวกนาย ใช้เรียกคนหลายคนแบบเป็นกันเอง",
+        "example": "Thanks, guys, for coming today.",
+        "exampleTh": "ขอบคุณทุกคนที่มาวันนี้นะ",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "อยากขอบคุณใครสักคน"
+  },
+  {
+    "id": "m018",
+    "mood": "happy",
+    "theme": "Love the little things",
+    "sentence": "I love that you get cold when it's 71 degrees out.",
+    "translation": "ฉันชอบที่เธอหนาวทั้งที่ข้างนอกอุณหภูมิ 71 องศา",
+    "source": "When Harry Met Sally...",
+    "sourceType": "movie",
+    "year": 1989,
+    "synopsis": "แฮร์รี่และแซลลี่พบกันระหว่างการเดินทางและกลายเป็นเพื่อนที่รู้จักกันมายาวนาน ความสัมพันธ์ของทั้งคู่ค่อย ๆ เปลี่ยนไปเมื่อเวลาผ่านไป",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/dbdegCWeD4iK5LXxSBjGdIRsVXS.jpg",
+    "vocabulary": [
+      {
+        "word": "get cold",
+        "meaning": "รู้สึกหนาว",
+        "example": "I get cold easily in air-conditioned rooms.",
+        "exampleTh": "ฉันรู้สึกหนาวง่ายในห้องแอร์",
+        "pos": "verb phrase"
+      },
+      {
+        "word": "degrees",
+        "meaning": "องศา ใช้บอกอุณหภูมิ",
+        "example": "It is twenty degrees outside today.",
+        "exampleTh": "วันนี้ข้างนอกอุณหภูมิยี่สิบองศา",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "รักสิ่งเล็ก ๆ รอบตัว"
+  },
+  {
+    "id": "m019",
+    "mood": "happy",
+    "theme": "Celebrate your style",
+    "sentence": "This isn't flying, this is falling with style!",
+    "translation": "นี่ไม่ใช่การบิน นี่คือการตกแบบมีสไตล์ต่างหาก!",
+    "source": "Toy Story",
+    "sourceType": "movie",
+    "year": 1995,
+    "synopsis": "วู้ดดี้ ตุ๊กตาคาวบอยตัวโปรดของแอนดี้ ต้องรับมือกับบัซ ไลท์เยียร์ของเล่นตัวใหม่ที่คิดว่าตัวเองเป็นนักบินอวกาศ ทั้งคู่ค่อย ๆ เรียนรู้การเป็นเพื่อนกัน",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/8hhkIgAA6JDAbqqucsnuR7JlccV.jpg",
+    "vocabulary": [
+      {
+        "word": "flying",
+        "meaning": "การบิน",
+        "example": "I have always dreamed of flying.",
+        "exampleTh": "ฉันฝันอยากบินมาตลอด",
+        "pos": "gerund"
+      },
+      {
+        "word": "with style",
+        "meaning": "อย่างมีสไตล์หรืออย่างดูดี",
+        "example": "She walked into the room with style.",
+        "exampleTh": "เธอเดินเข้าห้องมาอย่างมีสไตล์",
+        "pos": "prepositional phrase"
+      }
+    ],
+    "themeTh": "ภูมิใจในแบบของตัวเอง"
+  },
+  {
+    "id": "m020",
+    "mood": "happy",
+    "theme": "See each other",
+    "sentence": "Because you saw me when I was invisible.",
+    "translation": "เพราะเธอมองเห็นฉันในตอนที่ไม่มีใครมองเห็นฉัน",
+    "source": "The Princess Diaries",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "มีอา นักเรียนมัธยมธรรมดาคนหนึ่งค้นพบว่าตัวเองเป็นเจ้าหญิงแห่งเจโนเวีย เธอต้องเรียนรู้ทั้งมารยาท ความรับผิดชอบ และการยอมรับตัวเอง",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/gSgCNiVh5OVM51c0Lz7lL1zZYIq.jpg",
+    "vocabulary": [
+      {
+        "word": "saw",
+        "meaning": "มองเห็นหรือสังเกตเห็น ในรูปอดีตของ see",
+        "example": "I saw my friend waiting outside.",
+        "exampleTh": "ฉันเห็นเพื่อนกำลังรออยู่ข้างนอก",
+        "pos": "past tense"
+      },
+      {
+        "word": "invisible",
+        "meaning": "มองไม่เห็นหรือรู้สึกเหมือนไม่มีใครมองเห็นตัวตน",
+        "example": "Sometimes I feel invisible in a crowded room.",
+        "exampleTh": "บางครั้งฉันรู้สึกเหมือนไม่มีใครมองเห็นฉันท่ามกลางคนมากมาย",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "อยากถูกมองเห็นและเข้าใจ"
+  },
+  {
+    "id": "m021",
+    "mood": "happy",
+    "theme": "Appreciate the effort",
+    "sentence": "That'll do, pig. That'll do.",
+    "translation": "แค่นี้ก็ดีแล้ว เจ้าหมู แค่นี้ก็พอแล้ว",
+    "source": "Babe",
+    "sourceType": "movie",
+    "year": 1995,
+    "synopsis": "เบ๊บ ลูกหมูตัวเล็กที่เติบโตในฟาร์มฝันอยากเป็นสุนัขต้อนแกะ เขาพยายามเรียนรู้จากสัตว์ตัวอื่นและค่อย ๆ พิสูจน์ว่าตัวเองสามารถทำสิ่งที่ไม่มีใครคาดคิดได้",
+    "image": "https://image.tmdb.org/t/p/w780/zKuQMtnbVTz9DsOnOJmlW71v4qH.jpg",
+    "vocabulary": [
+      {
+        "word": "that'll do",
+        "meaning": "แค่นี้ก็ดีแล้ว, ทำได้ดีแล้ว",
+        "example": "That'll do for today. You can rest now.",
+        "exampleTh": "วันนี้แค่นี้ก็พอแล้ว คุณพักได้แล้ว",
+        "pos": "expression"
+      },
+      {
+        "word": "pig",
+        "meaning": "หมู",
+        "example": "The little pig loves playing outside.",
+        "exampleTh": "เจ้าหมูตัวน้อยชอบออกไปเล่นข้างนอก",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ชื่นชมความพยายามของตัวเอง"
+  },
+  {
+    "id": "m022",
+    "mood": "hopeful",
+    "theme": "Keep moving forward",
+    "sentence": "Keep moving forward!",
+    "translation": "เดินหน้าต่อไป!",
+    "source": "Meet the Robinsons",
+    "sourceType": "movie",
+    "year": 2007,
+    "synopsis": "ลูอิส เด็กกำพร้าและนักประดิษฐ์อัจฉริยะ ออกเดินทางสู่อนาคตและได้พบครอบครัวโรบินสัน การผจญภัยครั้งนี้ทำให้เขาเรียนรู้ที่จะไม่ติดอยู่กับความผิดพลาดในอดีต",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/2PDMTIlfFRp6Ff1fUHvIS3SDO0.jpg",
+    "vocabulary": [
+      {
+        "word": "keep",
+        "meaning": "ทำต่อไปหรือดำเนินต่อไป",
+        "example": "Keep trying even when things feel difficult.",
+        "exampleTh": "พยายามต่อไปแม้สิ่งต่าง ๆ จะรู้สึกยาก",
+        "pos": "verb"
+      },
+      {
+        "word": "move forward",
+        "meaning": "เดินหน้าต่อไป ไม่จมอยู่กับอดีต",
+        "example": "It is time to move forward.",
+        "exampleTh": "ถึงเวลาที่จะเดินหน้าต่อไปแล้ว",
+        "pos": "phrasal verb"
+      }
+    ],
+    "themeTh": "ต้องเดินหน้าไปต่อ"
+  },
+  {
+    "id": "m023",
+    "mood": "hopeful",
+    "theme": "Solve one thing",
+    "sentence": "You solve one problem, and you solve the next one, and then the next.",
+    "translation": "แก้ปัญหาหนึ่งเรื่อง แล้วแก้เรื่องถัดไป แล้วก็เรื่องต่อไป",
+    "source": "The Martian",
+    "sourceType": "movie",
+    "year": 2015,
+    "synopsis": "มาร์ก วัตนีย์ถูกทิ้งไว้บนดาวอังคารหลังเกิดอุบัติเหตุ เขาต้องใช้ความรู้และความคิดสร้างสรรค์เพื่อเอาชีวิตรอด พร้อมหาทางติดต่อโลกเพื่อกลับบ้าน",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/lzMS0CI3FLQYC5EgJoWeIaEt0lm.jpg",
+    "vocabulary": [
+      {
+        "word": "solve",
+        "meaning": "แก้ปัญหาหรือหาทางออก",
+        "example": "We can solve this problem together.",
+        "exampleTh": "เราสามารถแก้ปัญหานี้ไปด้วยกัน",
+        "pos": "verb"
+      },
+      {
+        "word": "next",
+        "meaning": "ถัดไปหรือเรื่องต่อไป",
+        "example": "Let's think about the next step.",
+        "exampleTh": "มาคิดถึงขั้นตอนต่อไปกัน",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "ต้องแก้ปัญหาไปทีละเรื่อง"
+  },
+  {
+    "id": "m024",
+    "mood": "hopeful",
+    "theme": "Believe in yourself",
+    "sentence": "But until you start believing in yourself, ya ain't gonna have a life.",
+    "translation": "แต่จนกว่าเธอจะเริ่มเชื่อในตัวเอง เธอก็จะไม่มีชีวิตที่เป็นของตัวเอง",
+    "source": "Rocky Balboa",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "ร็อกกี้ใช้ชีวิตหลังเกษียณอย่างเงียบ ๆ ก่อนตัดสินใจกลับมาขึ้นสังเวียนอีกครั้ง เขาต้องพิสูจน์ตัวเองและเผชิญหน้ากับความสงสัยจากคนรอบตัว",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/fsJn2mPXMhauXsEpNTtFqDdjSQt.jpg",
+    "vocabulary": [
+      {
+        "word": "believing in yourself",
+        "meaning": "การเชื่อมั่นในความสามารถและคุณค่าของตัวเอง",
+        "example": "Believing in yourself can help you try again.",
+        "exampleTh": "การเชื่อในตัวเองช่วยให้คุณกล้าลองอีกครั้ง",
+        "pos": "gerund phrase"
+      },
+      {
+        "word": "have a life",
+        "meaning": "มีชีวิตที่เป็นของตัวเองและใช้ชีวิตอย่างเต็มที่",
+        "example": "I want to have a life that feels meaningful.",
+        "exampleTh": "ฉันอยากมีชีวิตที่รู้สึกว่ามีความหมาย",
+        "pos": "idiom"
+      }
+    ],
+    "themeTh": "พยายามเชื่อมั่นในตัวเอง"
+  },
+  {
+    "id": "m025",
+    "mood": "hopeful",
+    "theme": "Protect your dreams",
+    "sentence": "You got a dream... You gotta protect it.",
+    "translation": "ถ้าคุณมีความฝัน คุณก็ต้องปกป้องมัน",
+    "source": "The Pursuit of Happyness",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "คริส การ์ดเนอร์พยายามสร้างชีวิตใหม่ให้ตัวเองและลูกชายท่ามกลางปัญหาทางการเงิน เขายังคงเดินหน้าตามความฝันแม้ต้องเผชิญอุปสรรคมากมาย",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/5jhG1lTgV0MS6tDkBMQSSitttTT.jpg",
+    "vocabulary": [
+      {
+        "word": "dream",
+        "meaning": "ความฝันหรือสิ่งที่อยากทำให้สำเร็จ",
+        "example": "She never gave up on her dream.",
+        "exampleTh": "เธอไม่เคยยอมแพ้ต่อความฝันของตัวเอง",
+        "pos": "noun"
+      },
+      {
+        "word": "protect",
+        "meaning": "ปกป้องหรือรักษาไว้",
+        "example": "Protect the things that matter to you.",
+        "exampleTh": "ปกป้องสิ่งที่สำคัญสำหรับคุณ",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "ปกป้องความฝันของตัวเอง"
+  },
+  {
+    "id": "m026",
+    "mood": "hopeful",
+    "theme": "Hope never dies",
+    "sentence": "Hope is a good thing, maybe the best of things, and no good thing ever dies.",
+    "translation": "ความหวังเป็นสิ่งที่ดี อาจเป็นสิ่งที่ดีที่สุด และสิ่งดี ๆ จะไม่มีวันตาย",
+    "source": "The Shawshank Redemption",
+    "sourceType": "movie",
+    "year": 1994,
+    "synopsis": "แอนดี้ นายธนาคารที่ถูกตัดสินจำคุกตลอดชีวิตข้อหาฆ่าภรรยาและชู้รักทั้งที่เขาไม่ได้ทำ ในเรือนจำชอว์แชงค์ เขาผูกมิตรกับเรด นักโทษรุ่นเก๋า และไม่เคยทิ้งความหวังที่จะเป็นอิสระ",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/pNjh59JSxChQktamG3LMp9ZoQzp.jpg",
+    "vocabulary": [
+      {
+        "word": "hope",
+        "meaning": "ความหวังหรือความเชื่อว่าสิ่งดีจะเกิดขึ้น",
+        "example": "I still have hope for tomorrow.",
+        "exampleTh": "ฉันยังมีความหวังสำหรับวันพรุ่งนี้",
+        "pos": "noun"
+      },
+      {
+        "word": "ever",
+        "meaning": "เคยหรือในทุกช่วงเวลา ใช้เพื่อเน้นความหมาย",
+        "example": "Nothing good ever goes to waste.",
+        "exampleTh": "ไม่มีสิ่งดี ๆ ที่สูญเปล่าไปตลอด",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "เชื่อว่าความหวังไม่มีวันตาย"
+  },
+  {
+    "id": "m027",
+    "mood": "hopeful",
+    "theme": "Remember yourself",
+    "sentence": "Remember who you are. You are my son and the one true king.",
+    "translation": "จงจำไว้ว่าตัวเองเป็นใคร ลูกคือบุตรของพ่อและเป็นกษัตริย์ที่แท้จริง",
+    "source": "The Lion King",
+    "sourceType": "movie",
+    "year": 1994,
+    "synopsis": "ซิมบ้าต้องเติบโตหลังจากสูญเสียพ่อและออกจากบ้านเกิด เขาได้พบเพื่อนใหม่และค่อย ๆ เรียนรู้ที่จะเผชิญหน้ากับอดีตของตัวเอง",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/bqFxtuGNsz30HTk5mzgGs8m9Po.jpg",
+    "vocabulary": [
+      {
+        "word": "remember",
+        "meaning": "จำไว้หรือระลึกถึง",
+        "example": "Remember that you are stronger than you think.",
+        "exampleTh": "จำไว้ว่าคุณเข้มแข็งกว่าที่คิด",
+        "pos": "verb"
+      },
+      {
+        "word": "true",
+        "meaning": "แท้จริงหรือเป็นของจริง",
+        "example": "Be true to yourself.",
+        "exampleTh": "จงซื่อสัตย์กับตัวเอง",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "ลืมไปว่าตัวเองเป็นใคร"
+  },
+  {
+    "id": "m028",
+    "mood": "hopeful",
+    "theme": "Live every minute",
+    "sentence": "I'm going to live every minute of it.",
+    "translation": "ฉันจะใช้ชีวิตในทุก ๆ นาทีของมัน",
+    "source": "Soul",
+    "sourceType": "movie",
+    "year": 2020,
+    "synopsis": "โจ นักเปียโนที่หมกมุ่นกับความฝันด้านดนตรี ได้พบกับวิญญาณหมายเลข 22 ในโลกก่อนเกิด การเดินทางของทั้งคู่ทำให้โจมองชีวิตประจำวันในมุมใหม่",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/4JNggqfyJWREqb0enzpUMbvIniV.jpg",
+    "vocabulary": [
+      {
+        "word": "live",
+        "meaning": "ใช้ชีวิตหรือดำเนินชีวิต",
+        "example": "I want to live each day with purpose.",
+        "exampleTh": "ฉันอยากใช้ชีวิตแต่ละวันอย่างมีความหมาย",
+        "pos": "verb"
+      },
+      {
+        "word": "every minute",
+        "meaning": "ทุกนาทีหรือทุกช่วงเวลาที่มี",
+        "example": "Enjoy every minute of your weekend.",
+        "exampleTh": "สนุกกับทุกช่วงเวลาของวันหยุดสุดสัปดาห์",
+        "pos": "noun phrase"
+      }
+    ],
+    "themeTh": "ใช้ชีวิตให้คุ้มทุกนาที"
+  },
+  {
+    "id": "m029",
+    "mood": "hopeful",
+    "theme": "You are not alone",
+    "sentence": "You feel like you're all alone here, but you're not!",
+    "translation": "เธออาจรู้สึกเหมือนอยู่คนเดียวที่นี่ แต่จริง ๆ แล้วเธอไม่ได้อยู่คนเดียวนะ!",
+    "source": "Wonder",
+    "sourceType": "movie",
+    "year": 2017,
+    "synopsis": "ออกกี้ เด็กชายที่มีความแตกต่างบนใบหน้าเริ่มเข้าเรียนในโรงเรียนใหม่ เขาต้องปรับตัวกับเพื่อนและสิ่งแวดล้อม พร้อมเรียนรู้ว่าความเมตตาสามารถเปลี่ยนความสัมพันธ์ได้",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/b7xQ5fuyVO4c24igizCfPgF6n7q.jpg",
+    "vocabulary": [
+      {
+        "word": "all alone",
+        "meaning": "อยู่คนเดียวโดยไม่มีใครอยู่ข้าง ๆ",
+        "example": "You don't have to face everything all alone.",
+        "exampleTh": "คุณไม่จำเป็นต้องเผชิญทุกอย่างเพียงลำพัง",
+        "pos": "adjective phrase"
+      },
+      {
+        "word": "feel like",
+        "meaning": "รู้สึกเหมือนหรือรู้สึกว่า",
+        "example": "Sometimes I feel like I need a quiet day.",
+        "exampleTh": "บางครั้งฉันรู้สึกว่าตัวเองต้องการวันเงียบ ๆ",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "รู้สึกว่าอยู่คนเดียว"
+  },
+  {
+    "id": "m030",
+    "mood": "hopeful",
+    "theme": "Choose kindness",
+    "sentence": "When given the choice between being right or being kind, choose kind.",
+    "translation": "เมื่อมีทางเลือกระหว่างการเป็นฝ่ายถูกกับการเป็นคนใจดี จงเลือกความใจดี",
+    "source": "Wonder",
+    "sourceType": "movie",
+    "year": 2017,
+    "synopsis": "เรื่องราวของออกกี้ เด็กชายที่เริ่มต้นชีวิตในโรงเรียนปกติเป็นครั้งแรก เขาและคนรอบตัวต้องเรียนรู้เรื่องความแตกต่าง การยอมรับ และความเมตตา",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/b7xQ5fuyVO4c24igizCfPgF6n7q.jpg",
+    "vocabulary": [
+      {
+        "word": "choice",
+        "meaning": "ทางเลือกหรือการตัดสินใจ",
+        "example": "Kindness is always a good choice.",
+        "exampleTh": "ความใจดีเป็นทางเลือกที่ดีเสมอ",
+        "pos": "noun"
+      },
+      {
+        "word": "kind",
+        "meaning": "ใจดี มีเมตตา",
+        "example": "Try to be kind to yourself today.",
+        "exampleTh": "วันนี้ลองใจดีกับตัวเองดูนะ",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "เลือกที่จะใจดี"
+  },
+  {
+    "id": "m031",
+    "mood": "hopeful",
+    "theme": "Be your own person",
+    "sentence": "You can't blend in when you were born to stand out.",
+    "translation": "คุณไม่จำเป็นต้องกลมกลืนไปกับคนอื่น เมื่อคุณเกิดมาเพื่อโดดเด่นในแบบของตัวเอง",
+    "source": "Wonder",
+    "sourceType": "movie",
+    "year": 2017,
+    "synopsis": "ออกกี้ต้องเผชิญกับสายตาและคำพูดของคนรอบข้างเมื่อเข้าโรงเรียนใหม่ ครอบครัวและเพื่อนร่วมชั้นต่างเรียนรู้ไปพร้อมกันถึงความหมายของการยอมรับ",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/b7xQ5fuyVO4c24igizCfPgF6n7q.jpg",
+    "vocabulary": [
+      {
+        "word": "blend in",
+        "meaning": "กลมกลืนหรือพยายามไม่ให้แตกต่างจากคนอื่น",
+        "example": "You don't need to blend in with everyone.",
+        "exampleTh": "คุณไม่จำเป็นต้องกลมกลืนไปกับทุกคน",
+        "pos": "phrasal verb"
+      },
+      {
+        "word": "stand out",
+        "meaning": "โดดเด่นหรือแตกต่างจนสังเกตเห็นได้",
+        "example": "Her ideas always stand out.",
+        "exampleTh": "ไอเดียของเธอโดดเด่นเสมอ",
+        "pos": "phrasal verb"
+      }
+    ],
+    "themeTh": "พยายามเป็นตัวของตัวเอง"
+  },
+  {
+    "id": "m032",
+    "mood": "hopeful",
+    "theme": "Find your talent",
+    "sentence": "I've got this fire in my body. I'm just there. Flyin' like a bird. Like electricity.",
+    "translation": "ฉันรู้สึกเหมือนมีไฟอยู่ในร่างกาย ฉันอยู่ตรงนั้น เหมือนกำลังบินเหมือนนก เหมือนกระแสไฟฟ้า",
+    "source": "Billy Elliot",
+    "sourceType": "movie",
+    "year": 2000,
+    "synopsis": "บิลลี่ เด็กชายจากเมืองเหมืองแร่ค้นพบว่าตัวเองรักการเต้นบัลเลต์ แม้ครอบครัวจะไม่เข้าใจ เขายังคงฝึกฝนและพยายามตามหาหนทางของตัวเอง",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/urzflyf41uySpgciGHdQzpcaMOY.jpg",
+    "vocabulary": [
+      {
+        "word": "fire",
+        "meaning": "พลังหรือความหลงใหลอย่างแรงกล้า",
+        "example": "She has a fire for learning new things.",
+        "exampleTh": "เธอมีความหลงใหลในการเรียนรู้สิ่งใหม่ ๆ",
+        "pos": "noun"
+      },
+      {
+        "word": "electricity",
+        "meaning": "กระแสไฟฟ้า ใช้เปรียบเทียบความรู้สึกที่มีพลัง",
+        "example": "The room felt full of energy and electricity.",
+        "exampleTh": "ห้องนั้นเต็มไปด้วยพลังและความตื่นเต้น",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ตามหาสิ่งที่ตัวเองรัก"
+  },
+  {
+    "id": "m033",
+    "mood": "hopeful",
+    "theme": "Make life extraordinary",
+    "sentence": "Carpe diem. Seize the day, boys. Make your lives extraordinary.",
+    "translation": "จงคว้าวันนี้ไว้ ใช้วันนี้ให้คุ้มค่า และทำให้ชีวิตของพวกเธอพิเศษ",
+    "source": "Dead Poets Society",
+    "sourceType": "movie",
+    "year": 1989,
+    "synopsis": "ครูจอห์น คีตติงเข้ามาสอนนักเรียนชายในโรงเรียนประจำที่เคร่งครัด เขากระตุ้นให้เด็ก ๆ กล้าคิดด้วยตัวเองและมองชีวิตในแบบที่ต่างออกไป",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/8Lt9ljQ5IruNXtci03Hm7VcDZKe.jpg",
+    "vocabulary": [
+      {
+        "word": "seize",
+        "meaning": "คว้าโอกาสหรือใช้บางสิ่งอย่างเต็มที่",
+        "example": "Seize the chance to try something new.",
+        "exampleTh": "คว้าโอกาสที่จะลองสิ่งใหม่ ๆ",
+        "pos": "verb"
+      },
+      {
+        "word": "extraordinary",
+        "meaning": "พิเศษมากหรือไม่ธรรมดา",
+        "example": "She wants to live an extraordinary life.",
+        "exampleTh": "เธออยากใช้ชีวิตที่ไม่ธรรมดา",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "อยากให้ชีวิตพิเศษขึ้น"
+  },
+  {
+    "id": "m034",
+    "mood": "hopeful",
+    "theme": "Love your life",
+    "sentence": "But I love my wife. I love my life. And I wish you my kind of success.",
+    "translation": "แต่ฉันรักภรรยาของฉัน ฉันรักชีวิตของฉัน และฉันขอให้คุณพบความสำเร็จในแบบเดียวกับฉัน",
+    "source": "Jerry Maguire",
+    "sourceType": "movie",
+    "year": 1996,
+    "synopsis": "เจอร์รี เอเยนต์กีฬาที่สูญเสียงานและลูกค้าส่วนใหญ่ พยายามเริ่มต้นธุรกิจใหม่พร้อมรักษาความสัมพันธ์กับคนสำคัญในชีวิต",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/lkku0jWtkXRRhjFAWWvomWMTvgl.jpg",
+    "vocabulary": [
+      {
+        "word": "wish",
+        "meaning": "อวยพรหรือหวังให้บางสิ่งเกิดขึ้น",
+        "example": "I wish you a happy new beginning.",
+        "exampleTh": "ฉันขอให้คุณมีการเริ่มต้นใหม่ที่มีความสุข",
+        "pos": "verb"
+      },
+      {
+        "word": "success",
+        "meaning": "ความสำเร็จ",
+        "example": "Success can mean different things to different people.",
+        "exampleTh": "ความสำเร็จอาจมีความหมายแตกต่างกันสำหรับแต่ละคน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "รักชีวิตของตัวเอง"
+  },
+  {
+    "id": "m035",
+    "mood": "hopeful",
+    "theme": "Find your spark",
+    "sentence": "I get to touch people's lives with what I do. And it keeps me going, and I love it.",
+    "translation": "สิ่งที่ฉันทำทำให้ฉันได้สร้างความหมายให้กับชีวิตของผู้คน และมันทำให้ฉันเดินหน้าต่อไป และฉันก็รักมัน",
+    "source": "Chef",
+    "sourceType": "movie",
+    "year": 2014,
+    "synopsis": "คาร์ล เชฟฝีมือดีที่หมดไฟจากงานร้านอาหาร ตัดสินใจเริ่มต้นใหม่ด้วยรถขายอาหาร เขาได้ใช้เวลากับลูกชายและค้นพบความสุขจากการทำอาหารอีกครั้ง",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/igVNCpS132rOqrnDsrVYW5HCIsM.jpg",
+    "vocabulary": [
+      {
+        "word": "touch people's lives",
+        "meaning": "สร้างผลกระทบหรือความหมายให้กับชีวิตของผู้อื่น",
+        "example": "Teachers can touch people's lives every day.",
+        "exampleTh": "ครูสามารถสร้างความหมายให้กับชีวิตของผู้คนได้ทุกวัน",
+        "pos": "collocation"
+      },
+      {
+        "word": "keep me going",
+        "meaning": "เป็นสิ่งที่ทำให้ยังมีกำลังใจเดินหน้าต่อ",
+        "example": "My friends keep me going when I feel tired.",
+        "exampleTh": "เพื่อน ๆ ทำให้ฉันมีกำลังใจเดินหน้าต่อเมื่อรู้สึกเหนื่อย",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "ตามหาประกายในตัวเอง"
+  },
+  {
+    "id": "m036",
+    "mood": "hopeful",
+    "theme": "Love makes us brave",
+    "sentence": "You don't know about real loss, 'cause that only occurs when you've loved something more than you love yourself.",
+    "translation": "คุณไม่รู้จักการสูญเสียที่แท้จริง เพราะมันเกิดขึ้นเมื่อคุณรักบางสิ่งมากกว่าที่คุณรักตัวเอง",
+    "source": "Good Will Hunting",
+    "sourceType": "movie",
+    "year": 1997,
+    "synopsis": "วิลล์ ชายหนุ่มอัจฉริยะที่มีอดีตซับซ้อนต้องเข้ารับการบำบัดหลังมีปัญหากับกฎหมาย ความสัมพันธ์กับนักบำบัดค่อย ๆ เปิดโอกาสให้เขาเผชิญหน้ากับตัวเอง",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/uzM4Rdr7aMQNdT8MqKY5Mic733N.jpg",
+    "vocabulary": [
+      {
+        "word": "real loss",
+        "meaning": "การสูญเสียอย่างแท้จริงที่เกิดจากการผูกพันและรักใครบางคนอย่างลึกซึ้ง",
+        "example": "Real loss can change the way we see life.",
+        "exampleTh": "การสูญเสียที่แท้จริงอาจเปลี่ยนมุมมองที่เรามีต่อชีวิต",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "occur",
+        "meaning": "เกิดขึ้น",
+        "example": "Problems can occur when we are under stress.",
+        "exampleTh": "ปัญหาอาจเกิดขึ้นเมื่อเราอยู่ภายใต้ความเครียด",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "กล้าเพราะมีความรัก"
+  },
+  {
+    "id": "m037",
+    "mood": "lost",
+    "theme": "Find your way",
+    "sentence": "Sometimes the smallest step in the right direction ends up being the biggest step of your life.",
+    "translation": "บางครั้งก้าวที่เล็กที่สุดในทิศทางที่ถูกต้อง กลับกลายเป็นก้าวที่ยิ่งใหญ่ที่สุดในชีวิต",
+    "source": "The Curious Case of Benjamin Button",
+    "sourceType": "movie",
+    "year": 2008,
+    "synopsis": "เบนจามินเกิดมาพร้อมสภาพร่างกายที่แก่ชราและมีชีวิตย้อนวัย เขาเดินทางผ่านผู้คนและสถานที่มากมาย พร้อมพยายามค้นหาความหมายของชีวิตและความสัมพันธ์",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/2fswjyrY3GEzeoVn6mF8pNeNcgf.jpg",
+    "vocabulary": [
+      {
+        "word": "smallest step",
+        "meaning": "ก้าวเล็กที่สุดหรือการเริ่มต้นเพียงเล็กน้อย",
+        "example": "Taking the smallest step is still progress.",
+        "exampleTh": "การเริ่มจากก้าวเล็ก ๆ ก็ยังถือว่าเป็นความก้าวหน้า",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "direction",
+        "meaning": "ทิศทางหรือแนวทางที่กำลังมุ่งไป",
+        "example": "I don't know which direction to take.",
+        "exampleTh": "ฉันไม่รู้ว่าควรเลือกเดินไปทางไหน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ตามหาเส้นทางของตัวเอง"
+  },
+  {
+    "id": "m038",
+    "mood": "lost",
+    "theme": "Find yourself",
+    "sentence": "I don't want to survive. I want to live.",
+    "translation": "ฉันไม่อยากแค่เอาชีวิตรอด ฉันอยากใช้ชีวิต",
+    "source": "12 Years a Slave",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "โซโลมอน นอร์ธอัป ชายผิวดำอิสระถูกลักพาตัวและขายเป็นทาส เขาต้องต่อสู้เพื่อรักษาศักดิ์ศรีและความหวังที่จะได้กลับไปหาครอบครัว",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/Aac5CWpjVM373ojo9k7etfdKn92.jpg",
+    "vocabulary": [
+      {
+        "word": "survive",
+        "meaning": "เอาชีวิตรอดหรือผ่านช่วงเวลาที่ยากลำบากไปได้",
+        "example": "I just want to survive this difficult week.",
+        "exampleTh": "ฉันแค่อยากผ่านสัปดาห์ที่ยากลำบากนี้ไปให้ได้",
+        "pos": "verb"
+      },
+      {
+        "word": "live",
+        "meaning": "ใช้ชีวิต ไม่ใช่เพียงแค่ดำรงชีวิตอยู่",
+        "example": "I want to live a life that feels meaningful.",
+        "exampleTh": "ฉันอยากใช้ชีวิตที่รู้สึกว่ามีความหมาย",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "ตามหาตัวตนของตัวเอง"
+  },
+  {
+    "id": "m039",
+    "mood": "lost",
+    "theme": "Start again",
+    "sentence": "Every new beginning comes from some other beginning's end.",
+    "translation": "การเริ่มต้นใหม่ทุกครั้ง ล้วนเกิดขึ้นจากการสิ้นสุดของการเริ่มต้นบางอย่าง",
+    "source": "The Perks of Being a Wallflower",
+    "sourceType": "movie",
+    "year": 2012,
+    "synopsis": "ชาร์ลี เด็กหนุ่มขี้อายเริ่มต้นชีวิตมัธยมปลายพร้อมบาดแผลในอดีต เขาได้พบเพื่อนใหม่ที่ช่วยให้เขาเปิดใจและค่อย ๆ เข้าใจตัวเองมากขึ้น",
+    "image": "https://image.tmdb.org/t/p/w1066_and_h600_face/aM6E4DBP6588q3tEr9hz41ls80q.jpg",
+    "vocabulary": [
+      {
+        "word": "new beginning",
+        "meaning": "การเริ่มต้นใหม่",
+        "example": "Moving to a new city was a new beginning for me.",
+        "exampleTh": "การย้ายไปเมืองใหม่คือการเริ่มต้นใหม่สำหรับฉัน",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "end",
+        "meaning": "จุดจบหรือการสิ้นสุด",
+        "example": "Sometimes an end can lead to something better.",
+        "exampleTh": "บางครั้งจุดจบก็อาจนำไปสู่สิ่งที่ดีกว่า",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "เริ่มต้นใหม่อีกครั้ง"
+  },
+  {
+    "id": "m040",
+    "mood": "lost",
+    "theme": "You belong somewhere",
+    "sentence": "You are not a bad person. You're a terrific person who has bad things happen to you.",
+    "translation": "คุณไม่ใช่คนไม่ดี คุณเป็นคนที่ยอดเยี่ยม เพียงแต่มีเรื่องแย่ ๆ เกิดขึ้นกับคุณ",
+    "source": "The Good Will Hunting",
+    "sourceType": "movie",
+    "year": 1997,
+    "synopsis": "วิลล์ ชายหนุ่มอัจฉริยะที่มีอดีตซับซ้อนต้องเข้ารับการบำบัดหลังมีปัญหากับกฎหมาย ความสัมพันธ์กับนักบำบัดช่วยให้เขาค่อย ๆ เผชิญหน้ากับบาดแผลในใจ",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/xj1Sv1xm4Y0ydBueGuf10Y9qM0O.jpg",
+    "vocabulary": [
+      {
+        "word": "terrific",
+        "meaning": "ยอดเยี่ยมหรือดีมาก",
+        "example": "You did a terrific job today.",
+        "exampleTh": "วันนี้คุณทำได้ยอดเยี่ยมมาก",
+        "pos": "adjective"
+      },
+      {
+        "word": "happen to",
+        "meaning": "เกิดขึ้นกับใครบางคน",
+        "example": "Bad things can happen to good people.",
+        "exampleTh": "เรื่องแย่ ๆ ก็สามารถเกิดขึ้นกับคนดีได้",
+        "pos": "prepositional verb"
+      }
+    ],
+    "themeTh": "สงสัยว่าเรามีที่ของเราไหม"
+  },
+  {
+    "id": "m041",
+    "mood": "lost",
+    "theme": "Find your home",
+    "sentence": "Home is wherever you are.",
+    "translation": "บ้านคือที่ไหนก็ตามที่มีคุณอยู่",
+    "source": "The Longest Ride",
+    "sourceType": "movie",
+    "year": 2015,
+    "synopsis": "เรื่องราวของคู่รักสองคู่จากคนละช่วงเวลา ซึ่งความสัมพันธ์ของพวกเขาค่อย ๆ เชื่อมโยงกันผ่านความทรงจำ ความรัก และการตัดสินใจครั้งสำคัญ",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/fLgQ6bf9RKywpZckiEtAPnY3DLr.jpg",
+    "vocabulary": [
+      {
+        "word": "wherever",
+        "meaning": "ที่ไหนก็ตาม",
+        "example": "You can make a home wherever you go.",
+        "exampleTh": "คุณสามารถสร้างความรู้สึกเหมือนบ้านได้ไม่ว่าจะไปที่ไหน",
+        "pos": "conjunction"
+      },
+      {
+        "word": "home",
+        "meaning": "บ้านหรือสถานที่ที่ให้ความรู้สึกปลอดภัยและเป็นของเรา",
+        "example": "I miss the feeling of being home.",
+        "exampleTh": "ฉันคิดถึงความรู้สึกที่ได้อยู่บ้าน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ตามหาที่ที่เรียกว่าบ้าน"
+  },
+  {
+    "id": "m042",
+    "mood": "lost",
+    "theme": "Let yourself wander",
+    "sentence": "Not all those who wander are lost.",
+    "translation": "ไม่ใช่ทุกคนที่ออกเดินทางอย่างไร้จุดหมายจะหลงทาง",
+    "source": "The Lord of the Rings: The Fellowship of the Ring",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "โฟรโดได้รับภารกิจนำแหวนอันตรายออกจากไชร์ เขาและเพื่อนร่วมทางต้องออกเดินทางผ่านดินแดนอันตรายเพื่อปกป้องแหวนจากศัตรู",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/oiwc338EoBgS4sEI2ixAny4KQKg.jpg",
+    "vocabulary": [
+      {
+        "word": "wander",
+        "meaning": "เดินทางไปเรื่อย ๆ โดยไม่มีจุดหมายชัดเจน",
+        "example": "Sometimes I like to wander around a new city.",
+        "exampleTh": "บางครั้งฉันชอบเดินเล่นไปเรื่อย ๆ ในเมืองใหม่",
+        "pos": "verb"
+      },
+      {
+        "word": "lost",
+        "meaning": "หลงทางหรือไม่รู้ว่าควรไปทางไหน",
+        "example": "I felt lost after leaving my old job.",
+        "exampleTh": "ฉันรู้สึกหลงทางหลังจากลาออกจากงานเก่า",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "ปล่อยให้ตัวเองเดินไปเรื่อย ๆ"
+  },
+  {
+    "id": "m043",
+    "mood": "lost",
+    "theme": "Listen to yourself",
+    "sentence": "Sometimes you have to get to know someone really well to realize you're really strangers.",
+    "translation": "บางครั้งเราต้องรู้จักใครสักคนให้ดีจริง ๆ ถึงจะรู้ว่าแท้จริงแล้วเราเป็นคนแปลกหน้าต่อกัน",
+    "source": "The Devil Wears Prada",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "แอนดี้ได้งานเป็นผู้ช่วยของมิแรนดา บรรณาธิการแฟชั่นผู้ทรงอิทธิพล เธอต้องปรับตัวกับโลกการทำงานที่กดดันและเริ่มตั้งคำถามกับสิ่งที่ตัวเองต้องการ",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+    "vocabulary": [
+      {
+        "word": "get to know",
+        "meaning": "ทำความรู้จักใครบางคนให้มากขึ้น",
+        "example": "I want to get to know myself better.",
+        "exampleTh": "ฉันอยากทำความรู้จักตัวเองให้มากขึ้น",
+        "pos": "verb phrase"
+      },
+      {
+        "word": "strangers",
+        "meaning": "คนแปลกหน้าหรือคนที่ไม่รู้จักกัน",
+        "example": "We were strangers when we first met.",
+        "exampleTh": "ตอนที่พบกันครั้งแรกเราเป็นคนแปลกหน้าต่อกัน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ฟังเสียงในใจตัวเอง"
+  },
+  {
+    "id": "m044",
+    "mood": "lost",
+    "theme": "Take your time",
+    "sentence": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+    "translation": "วิธีเดียวที่จะเข้าใจการเปลี่ยนแปลง คือกระโจนเข้าไปในมัน เดินไปพร้อมกับมัน และเข้าร่วมการเต้นรำ",
+    "source": "The Shawshank Redemption",
+    "sourceType": "movie",
+    "year": 1994,
+    "synopsis": "เรื่องราวของแอนดี้ นักโทษที่ถูกจำคุกตลอดชีวิตและเรด เพื่อนในเรือนจำ ทั้งคู่ต้องเรียนรู้ที่จะใช้ชีวิตท่ามกลางการเปลี่ยนแปลงและความไม่แน่นอน",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+    "vocabulary": [
+      {
+        "word": "make sense",
+        "meaning": "เข้าใจหรือมองเห็นเหตุผลของบางสิ่ง",
+        "example": "I need some time to make sense of everything.",
+        "exampleTh": "ฉันต้องใช้เวลาสักหน่อยเพื่อทำความเข้าใจกับทุกอย่าง",
+        "pos": "collocation"
+      },
+      {
+        "word": "plunge into",
+        "meaning": "กระโจนเข้าไปหรือเริ่มทำบางสิ่งอย่างเต็มตัว",
+        "example": "She decided to plunge into a new adventure.",
+        "exampleTh": "เธอตัดสินใจกระโจนเข้าสู่การผจญภัยครั้งใหม่",
+        "pos": "prepositional verb"
+      }
+    ],
+    "themeTh": "ค่อย ๆ ทำความเข้าใจทุกอย่าง"
+  },
+  {
+    "id": "m045",
+    "mood": "lost",
+    "theme": "Trust the journey",
+    "sentence": "You must be willing to do something you've never done before.",
+    "translation": "คุณต้องเต็มใจที่จะทำบางสิ่งที่คุณไม่เคยทำมาก่อน",
+    "source": "The Secret Life of Walter Mitty",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "วอลเตอร์ใช้ชีวิตอย่างเงียบ ๆ และมักจินตนาการถึงการผจญภัย จนภารกิจตามหาภาพถ่ายที่หายไปพาเขาออกจากโลกเดิมและเข้าสู่การเดินทางจริง",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/8hSjOHRY4OUEpqxszYbMdem8z9C.jpg",
+    "vocabulary": [
+      {
+        "word": "willing",
+        "meaning": "เต็มใจหรือพร้อมที่จะทำบางสิ่ง",
+        "example": "I am willing to try something new.",
+        "exampleTh": "ฉันเต็มใจที่จะลองสิ่งใหม่ ๆ",
+        "pos": "adjective"
+      },
+      {
+        "word": "before",
+        "meaning": "ก่อนหน้านี้หรือก่อนที่จะเกิดสิ่งหนึ่ง",
+        "example": "I have never seen this place before.",
+        "exampleTh": "ฉันไม่เคยเห็นสถานที่นี้มาก่อน",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "เดินทางโดยไม่รู้ปลายทาง"
+  },
+  {
+    "id": "m046",
+    "mood": "lost",
+    "theme": "Accept the unknown",
+    "sentence": "The future is not set. There is no fate but what we make for ourselves.",
+    "translation": "อนาคตยังไม่ถูกกำหนด ไม่มีโชคชะตาใดนอกจากสิ่งที่เราสร้างขึ้นด้วยตัวเอง",
+    "source": "Terminator 2: Judgment Day",
+    "sourceType": "movie",
+    "year": 1991,
+    "synopsis": "ซาราห์และจอห์น คอนเนอร์ต้องหลบหนีจากเครื่องจักรสังหารที่ถูกส่งมายังอดีต ภารกิจของพวกเขาเกี่ยวข้องกับการเปลี่ยนอนาคตที่ดูเหมือนถูกกำหนดไว้แล้ว",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg",
+    "vocabulary": [
+      {
+        "word": "future",
+        "meaning": "อนาคตหรือสิ่งที่จะเกิดขึ้นต่อไป",
+        "example": "No one knows exactly what the future will bring.",
+        "exampleTh": "ไม่มีใครรู้แน่ชัดว่าอนาคตจะนำอะไรมาให้",
+        "pos": "noun"
+      },
+      {
+        "word": "fate",
+        "meaning": "โชคชะตาหรือสิ่งที่เชื่อว่าถูกกำหนดไว้แล้ว",
+        "example": "I don't believe that fate controls everything.",
+        "exampleTh": "ฉันไม่เชื่อว่าโชคชะตาควบคุมทุกอย่าง",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "เผชิญสิ่งที่ยังไม่รู้"
+  },
+  {
+    "id": "m047",
+    "mood": "lost",
+    "theme": "Keep searching",
+    "sentence": "Sometimes you have to get lost before you can find yourself.",
+    "translation": "บางครั้งคุณต้องหลงทางเสียก่อน จึงจะค้นพบตัวเอง",
+    "source": "Eat Pray Love",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "ลิซตัดสินใจออกเดินทางรอบโลกหลังชีวิตแต่งงานและการงานไม่เป็นอย่างที่หวัง เธอใช้เวลาในอิตาลี อินเดีย และบาหลีเพื่อค้นหาความหมายใหม่ของชีวิต",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/elzrIY3nfzWz4AXh0lxxBsXLCGI.jpg",
+    "vocabulary": [
+      {
+        "word": "get lost",
+        "meaning": "หลงทางหรือหลุดออกจากเส้นทางเดิม",
+        "example": "It is okay to get lost sometimes.",
+        "exampleTh": "บางครั้งการหลงทางก็ไม่เป็นไร",
+        "pos": "idiom"
+      },
+      {
+        "word": "find yourself",
+        "meaning": "ค้นพบตัวตน ความต้องการ หรือสิ่งที่สำคัญกับตัวเอง",
+        "example": "Travel helped her find herself.",
+        "exampleTh": "การเดินทางช่วยให้เธอค้นพบตัวเอง",
+        "pos": "idiom"
+      }
+    ],
+    "themeTh": "ตามหาคำตอบ"
+  },
+  {
+    "id": "m048",
+    "mood": "lost",
+    "theme": "Accept your path",
+    "sentence": "Sometimes you make choices in life and sometimes choices make you.",
+    "translation": "บางครั้งคุณเป็นคนเลือกเส้นทางชีวิต และบางครั้งทางเลือกเหล่านั้นก็เป็นสิ่งที่หล่อหลอมตัวคุณ",
+    "source": "The Adjustment Bureau",
+    "sourceType": "movie",
+    "year": 2011,
+    "synopsis": "เดวิดพบหญิงสาวที่ทำให้เขาตั้งคำถามกับเส้นทางชีวิตของตัวเอง เมื่อเขาค้นพบว่ามีกลุ่มคนลึกลับคอยควบคุมเหตุการณ์ เขาจึงต้องตัดสินใจว่าจะยอมรับหรือขัดขืน",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/2xYCusoDXEyYKVW8DTPRuh7amjR.jpg",
+    "vocabulary": [
+      {
+        "word": "choices",
+        "meaning": "ทางเลือกหรือการตัดสินใจที่เราทำ",
+        "example": "Our choices can change our lives.",
+        "exampleTh": "ทางเลือกของเราสามารถเปลี่ยนชีวิตได้",
+        "pos": "noun"
+      },
+      {
+        "word": "make you",
+        "meaning": "หล่อหลอมหรือทำให้กลายเป็นคนแบบหนึ่ง",
+        "example": "Your experiences can make you stronger.",
+        "exampleTh": "ประสบการณ์ของคุณสามารถทำให้คุณแข็งแกร่งขึ้น",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "ทำความเข้าใจเส้นทางของตัวเอง"
+  },
+  {
+    "id": "m049",
+    "mood": "lost",
+    "theme": "Face your fear",
+    "sentence": "Fear is a natural reaction to moving closer to the truth.",
+    "translation": "ความกลัวเป็นปฏิกิริยาตามธรรมชาติเมื่อเราเข้าใกล้ความจริงมากขึ้น",
+    "source": "The Shawshank Redemption",
+    "sourceType": "movie",
+    "year": 1994,
+    "synopsis": "แอนดี้และเรดใช้ชีวิตอยู่ในเรือนจำชอว์แชงค์ท่ามกลางความไม่แน่นอนและกฎเกณฑ์ที่เข้มงวด ความสัมพันธ์ของทั้งคู่ทำให้เกิดบทสนทนาเกี่ยวกับความกลัว ความหวัง และอิสรภาพ",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+    "vocabulary": [
+      {
+        "word": "natural reaction",
+        "meaning": "ปฏิกิริยาตามธรรมชาติที่เกิดขึ้นโดยไม่ต้องตั้งใจ",
+        "example": "Feeling nervous is a natural reaction.",
+        "exampleTh": "การรู้สึกประหม่าเป็นปฏิกิริยาตามธรรมชาติ",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "closer to",
+        "meaning": "เข้าใกล้สิ่งใดสิ่งหนึ่งมากขึ้น",
+        "example": "Every question brings us closer to the answer.",
+        "exampleTh": "ทุกคำถามทำให้เราเข้าใกล้คำตอบมากขึ้น",
+        "pos": "adverb phrase"
+      }
+    ],
+    "themeTh": "เผชิญหน้ากับความกลัว"
+  },
+  {
+    "id": "m050",
+    "mood": "lost",
+    "theme": "Choose your direction",
+    "sentence": "The road ahead is not always clear, but that's what makes the journey worthwhile.",
+    "translation": "เส้นทางข้างหน้าไม่ได้ชัดเจนเสมอไป แต่นั่นแหละที่ทำให้การเดินทางมีความหมาย",
+    "source": "The Way",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "ชายคนหนึ่งออกเดินทางไปตามเส้นทางแสวงบุญหลังได้รับข่าวการสูญเสียลูกชาย ระหว่างทางเขาได้พบเพื่อนร่วมทางหลายคนและค่อย ๆ ทบทวนชีวิตของตัวเอง",
+    "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/hH0rCJ3D4UEi0gmbw1LQAvPI3LU.jpg",
+    "vocabulary": [
+      {
+        "word": "ahead",
+        "meaning": "ข้างหน้า หรือสิ่งที่จะเกิดขึ้นต่อไป",
+        "example": "I don't know what lies ahead.",
+        "exampleTh": "ฉันไม่รู้ว่าข้างหน้าจะมีอะไร",
+        "pos": "adverb"
+      },
+      {
+        "word": "worthwhile",
+        "meaning": "คุ้มค่าหรือมีคุณค่าพอที่จะทำ",
+        "example": "The difficult journey was worthwhile.",
+        "exampleTh": "การเดินทางที่ยากลำบากนั้นคุ้มค่า",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "เลือกทิศทางชีวิต"
+  },
+  {
+    "id": "m051",
+    "mood": "lost",
+    "theme": "Begin where you are",
+    "sentence": "There is no shame in beginning again, for you get a chance to build bigger and better.",
+    "translation": "การเริ่มต้นใหม่ไม่ใช่เรื่องน่าอาย เพราะมันทำให้คุณมีโอกาสสร้างสิ่งที่ยิ่งใหญ่และดีกว่าเดิม",
+    "source": "The Great Gatsby",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "นิคย้ายมาอยู่ลองไอส์แลนด์และได้รู้จักเจย์ แกตสบี้ มหาเศรษฐีผู้ลึกลับที่จัดงานเลี้ยงหรูหรา เขาค่อย ๆ เข้าไปพัวพันกับความรัก ความฝัน และอดีตของแกตสบี้",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/lhiXQDJK7o05iO7Rhc7jF37CY5t.jpg",
+    "vocabulary": [
+      {
+        "word": "shame",
+        "meaning": "ความอับอายหรือความรู้สึกว่าตัวเองไม่ควรทำบางสิ่ง",
+        "example": "There is no shame in asking for help.",
+        "exampleTh": "การขอความช่วยเหลือไม่ใช่เรื่องน่าอาย",
+        "pos": "noun"
+      },
+      {
+        "word": "beginning again",
+        "meaning": "การเริ่มต้นใหม่หลังจากสิ่งเดิมจบลงหรือไม่เป็นไปตามหวัง",
+        "example": "Beginning again can be difficult but meaningful.",
+        "exampleTh": "การเริ่มต้นใหม่อาจยากแต่ก็มีความหมาย",
+        "pos": "gerund phrase"
+      }
+    ],
+    "themeTh": "เริ่มใหม่จากจุดที่ยืนอยู่"
+  },
+  {
+    "id": "m052",
+    "mood": "overwhelmed",
+    "theme": "Need a break",
+    "sentence": "I just know before this is over, I'm gonna need a whole lot of serious therapy.",
+    "translation": "ฉันรู้เลยว่ากว่าทุกอย่างจะจบ ฉันคงต้องเข้ารับการบำบัดอย่างจริงจังแน่ๆ",
+    "source": "Shrek",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "เชร็คยักษ์เขียวที่อยากอยู่ตามลำพังกลับต้องออกเดินทางเพื่อจัดการกับเหล่าตัวละครในนิทานที่บุกเข้ามาในบ้านของเขา.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/mqXnXb9JPDUdNNblEjdgwKSxuM4.jpg",
+    "vocabulary": [
+      {
+        "word": "serious",
+        "meaning": "จริงจัง",
+        "example": "This is a serious problem.",
+        "exampleTh": "นี่เป็นปัญหาที่จริงจัง",
+        "pos": "adjective"
+      },
+      {
+        "word": "therapy",
+        "meaning": "การบำบัด",
+        "example": "She started therapy last month.",
+        "exampleTh": "เธอเริ่มเข้ารับการบำบัดเมื่อเดือนที่แล้ว",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "อยากหยุดพักจากทุกอย่าง"
+  },
+  {
+    "id": "m053",
+    "mood": "overwhelmed",
+    "theme": "Under pressure",
+    "sentence": "I can't handle the pressure! Go on without me!",
+    "translation": "ฉันรับแรงกดดันไม่ไหวแล้ว! ไปต่อโดยไม่มีฉันเถอะ!",
+    "source": "Chicken Little",
+    "sourceType": "movie",
+    "year": 2005,
+    "synopsis": "เมื่อเมืองเล็กๆ ต้องเผชิญเหตุการณ์วุ่นวาย Chicken Little และเพื่อนๆ ต้องช่วยกันรับมือกับสถานการณ์ที่เกินความคาดหมาย.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/neaUbI8fDtfnitw81ovBN0av8xE.jpg",
+    "vocabulary": [
+      {
+        "word": "handle",
+        "meaning": "รับมือกับ",
+        "example": "I can handle this problem.",
+        "exampleTh": "ฉันรับมือกับปัญหานี้ได้",
+        "pos": "verb"
+      },
+      {
+        "word": "pressure",
+        "meaning": "แรงกดดัน",
+        "example": "She feels pressure at work.",
+        "exampleTh": "เธอรู้สึกกดดันจากการทำงาน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "แบกรับแรงกดดันอยู่"
+  },
+  {
+    "id": "m054",
+    "mood": "overwhelmed",
+    "theme": "Life feels heavy",
+    "sentence": "Crying helps me slow down and obsess over the weight of life's problems.",
+    "translation": "การร้องไห้ช่วยให้ฉันช้าลงและจมอยู่กับน้ำหนักของปัญหาในชีวิต",
+    "source": "Inside Out",
+    "sourceType": "movie",
+    "year": 2015,
+    "synopsis": "เมื่อ Riley ต้องย้ายเมือง อารมณ์ต่างๆ ภายในใจของเธอต้องช่วยกันรับมือกับการเปลี่ยนแปลงและความรู้สึกที่ถาโถมเข้ามา.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/j29ekbcLpBvxnGk6LjdTc2EI5SA.jpg",
+    "vocabulary": [
+      {
+        "word": "obsess",
+        "meaning": "หมกมุ่น",
+        "example": "Don't obsess over small mistakes.",
+        "exampleTh": "อย่าหมกมุ่นกับความผิดพลาดเล็กๆ",
+        "pos": "verb"
+      },
+      {
+        "word": "weight",
+        "meaning": "ภาระหรือความหนักอึ้ง",
+        "example": "He feels the weight of responsibility.",
+        "exampleTh": "เขารู้สึกถึงภาระของความรับผิดชอบ",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "รู้สึกว่าชีวิตหนักอึ้ง"
+  },
+  {
+    "id": "m055",
+    "mood": "overwhelmed",
+    "theme": "Heavy responsibility",
+    "sentence": "This responsibility is like a big rock that weighs a ton.",
+    "translation": "ความรับผิดชอบนี้เหมือนก้อนหินใหญ่ที่หนักเป็นตัน",
+    "source": "The Magnificent Seven",
+    "sourceType": "movie",
+    "year": 1960,
+    "synopsis": "นักแม่นปืนกลุ่มหนึ่งถูกว่าจ้างให้ช่วยปกป้องหมู่บ้านเล็กๆ จากภัยคุกคาม พร้อมเรียนรู้ว่าความกล้าหาญมีหลายรูปแบบ.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/lM0NPhzA6B8BiaSDkeB2n7ijJps.jpg",
+    "vocabulary": [
+      {
+        "word": "responsibility",
+        "meaning": "ความรับผิดชอบ",
+        "example": "Taking care of a child is a big responsibility.",
+        "exampleTh": "การดูแลเด็กเป็นความรับผิดชอบที่ยิ่งใหญ่",
+        "pos": "noun"
+      },
+      {
+        "word": "weighs",
+        "meaning": "มีน้ำหนักหรือถ่วงหนัก",
+        "example": "This decision weighs heavily on me.",
+        "exampleTh": "การตัดสินใจนี้หนักอึ้งสำหรับฉัน",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "แบกความรับผิดชอบหนัก ๆ"
+  },
+  {
+    "id": "m056",
+    "mood": "overwhelmed",
+    "theme": "Too much too soon",
+    "sentence": "No, no, no. I can't do it. Honestly. I'm not ready. It's too much, too soon!",
+    "translation": "ไม่ ไม่ ไม่ ฉันทำไม่ได้จริงๆ ฉันยังไม่พร้อม มันมากเกินไปและเร็วเกินไป!",
+    "source": "How the Grinch Stole Christmas",
+    "sourceType": "movie",
+    "year": 2000,
+    "synopsis": "กรินช์ผู้ไม่ชอบเทศกาลคริสต์มาสต้องเผชิญกับเหตุการณ์ที่ค่อยๆ เปลี่ยนมุมมองของเขาต่อความสุขและผู้คนรอบตัว.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/b2DEtr9EcNPGNs5BcceCls8DYXj.jpg",
+    "vocabulary": [
+      {
+        "word": "honestly",
+        "meaning": "พูดตามตรง",
+        "example": "Honestly, I need some rest.",
+        "exampleTh": "พูดตามตรง ฉันต้องการพักสักหน่อย",
+        "pos": "adverb"
+      },
+      {
+        "word": "ready",
+        "meaning": "พร้อม",
+        "example": "I'm not ready to decide yet.",
+        "exampleTh": "ฉันยังไม่พร้อมที่จะตัดสินใจ",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "รู้สึกว่าทุกอย่างมาเร็วเกินไป"
+  },
+  {
+    "id": "m057",
+    "mood": "overwhelmed",
+    "theme": "Things piling up",
+    "sentence": "It's just too much. It's piling up. Just one thing on top of the other.",
+    "translation": "มันมากเกินไปแล้ว ทุกอย่างกำลังถาโถมเข้ามา เรื่องหนึ่งซ้อนทับอีกเรื่องหนึ่ง",
+    "source": "Shark Tale",
+    "sourceType": "movie",
+    "year": 2004,
+    "synopsis": "Oscar ปลาตัวเล็กที่อยากประสบความสำเร็จต้องรับมือกับคำโกหกที่ทำให้ชีวิตของเขาวุ่นวายเกินควบคุม.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/o4ZLFKoFcI0KQOYkrCbZywnuHqU.jpg",
+    "vocabulary": [
+      {
+        "word": "piling up",
+        "meaning": "สะสมหรือเพิ่มขึ้นเรื่อยๆ",
+        "example": "My homework is piling up.",
+        "exampleTh": "การบ้านของฉันกำลังสะสมเพิ่มขึ้นเรื่อยๆ",
+        "pos": "phrasal verb"
+      },
+      {
+        "word": "on top of",
+        "meaning": "ซ้อนเพิ่มจากสิ่งที่มีอยู่",
+        "example": "Another problem came on top of everything else.",
+        "exampleTh": "มีปัญหาอีกเรื่องเข้ามาซ้อนจากทุกอย่างที่มีอยู่",
+        "pos": "prepositional phrase"
+      }
+    ],
+    "themeTh": "เจอเรื่องเต็มไปหมด"
+  },
+  {
+    "id": "m058",
+    "mood": "overwhelmed",
+    "theme": "Fed up",
+    "sentence": "I tell ya, I'm fed up with everything. I wanna go to sleep and wake up four months from now when it's all over.",
+    "translation": "บอกเลยนะ ฉันเบื่อทุกอย่างเต็มที อยากหลับไปแล้วตื่นขึ้นมาอีกทีตอนทุกอย่างจบไปแล้ว",
+    "source": "Easy Money",
+    "sourceType": "movie",
+    "year": 1983,
+    "synopsis": "ชายคนหนึ่งพยายามจัดการกับชีวิตที่วุ่นวายทั้งเรื่องเงิน ครอบครัว และความคาดหวัง จนเริ่มรู้สึกอยากหนีจากทุกอย่าง.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/napW9zTZbQqtVBKQKHtfsZIxatz.jpg",
+    "vocabulary": [
+      {
+        "word": "fed up",
+        "meaning": "เบื่อหรือเอือมจนทนไม่ไหว",
+        "example": "I'm fed up with being late.",
+        "exampleTh": "ฉันเบื่อกับการมาสายเต็มทีแล้ว",
+        "pos": "adjective phrase"
+      },
+      {
+        "word": "wake up",
+        "meaning": "ตื่นนอน",
+        "example": "I usually wake up at seven.",
+        "exampleTh": "ปกติฉันตื่นตอนเจ็ดโมง",
+        "pos": "phrasal verb"
+      }
+    ],
+    "themeTh": "เบื่อจนไม่ไหวแล้ว"
+  },
+  {
+    "id": "m059",
+    "mood": "overwhelmed",
+    "theme": "World feels chaotic",
+    "sentence": "It's like everything everywhere is going crazy, so we don't go out anymore.",
+    "translation": "มันเหมือนทุกอย่างรอบตัวกำลังบ้าคลั่งไปหมด จนเราไม่ออกไปไหนอีกแล้ว",
+    "source": "Network",
+    "sourceType": "movie",
+    "year": 1976,
+    "synopsis": "ผู้ประกาศข่าวที่กำลังเผชิญความเปลี่ยนแปลงของวงการโทรทัศน์กลายเป็นกระบอกเสียงให้กับความไม่พอใจของผู้คนในสังคม.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/m4Iyzh9YVOh0ra7UwdMoJcrjxkx.jpg",
+    "vocabulary": [
+      {
+        "word": "chaotic",
+        "meaning": "วุ่นวายไร้ระเบียบ",
+        "example": "The office was chaotic today.",
+        "exampleTh": "วันนี้ออฟฟิศวุ่นวายมาก",
+        "pos": "adjective"
+      },
+      {
+        "word": "anymore",
+        "meaning": "อีกต่อไป",
+        "example": "I don't use that app anymore.",
+        "exampleTh": "ฉันไม่ใช้แอปนั้นอีกแล้ว",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "รู้สึกว่าโลกวุ่นวายไปหมด"
+  },
+  {
+    "id": "m060",
+    "mood": "overwhelmed",
+    "theme": "Too many things",
+    "sentence": "There's too many things. Too many things. Too many things. Too many things.",
+    "translation": "มีหลายเรื่องมากเกินไป มีมากเกินไปจริงๆ",
+    "source": "Boogie Nights",
+    "sourceType": "movie",
+    "year": 1997,
+    "synopsis": "ชายหนุ่มคนหนึ่งเข้าสู่วงการบันเทิงและได้พบทั้งโอกาส ความสัมพันธ์ และแรงกดดันที่เปลี่ยนชีวิตของเขา.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/1yuqMeR4z45bmksOl7ttyNezdUj.jpg",
+    "vocabulary": [
+      {
+        "word": "too many",
+        "meaning": "มากเกินไป",
+        "example": "I have too many things to finish.",
+        "exampleTh": "ฉันมีหลายอย่างเกินไปที่ต้องทำให้เสร็จ",
+        "pos": "determiner phrase"
+      },
+      {
+        "word": "things",
+        "meaning": "เรื่องต่างๆ หรือสิ่งต่างๆ",
+        "example": "I have many things on my mind.",
+        "exampleTh": "ฉันมีหลายเรื่องอยู่ในหัว",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "มีเรื่องให้คิดเยอะเกินไป"
+  },
+  {
+    "id": "m061",
+    "mood": "overwhelmed",
+    "theme": "Too little time",
+    "sentence": "So much to do and so little time.",
+    "translation": "มีหลายอย่างที่ต้องทำ แต่มีเวลาน้อยเหลือเกิน",
+    "source": "Batman",
+    "sourceType": "movie",
+    "year": 1989,
+    "synopsis": "Bruce Wayne ต้องรับมือกับภัยคุกคามครั้งใหญ่ใน Gotham ขณะเดียวกันก็ต้องเผชิญกับอดีตและตัวตนอีกด้านของเมือง.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/rhc7OF7tC9HPu0X8DBKQJzaGRbu.jpg",
+    "vocabulary": [
+      {
+        "word": "so much",
+        "meaning": "มากมายเหลือเกิน",
+        "example": "There is so much work today.",
+        "exampleTh": "วันนี้มีงานเยอะมาก",
+        "pos": "determiner phrase"
+      },
+      {
+        "word": "so little",
+        "meaning": "น้อยเหลือเกิน",
+        "example": "We have so little time left.",
+        "exampleTh": "เราเหลือเวลาอยู่น้อยมาก",
+        "pos": "determiner phrase"
+      }
+    ],
+    "themeTh": "รู้สึกว่าเวลามีไม่พอ"
+  },
+  {
+    "id": "m062",
+    "mood": "overwhelmed",
+    "theme": "Burned out",
+    "sentence": "Dad, I remember you coming home some night so overworked, your hands were still stirring.",
+    "translation": "พ่อ ฉันจำได้ว่าบางคืนพ่อกลับบ้านเหนื่อยจากงานมากจนมือยังคงขยับเหมือนกำลังทำงานอยู่",
+    "source": "Bee Movie",
+    "sourceType": "movie",
+    "year": 2007,
+    "synopsis": "Barry ผึ้งหนุ่มที่ไม่อยากเดินตามเส้นทางเดิมๆ ออกจากรังและได้ค้นพบโลกที่กว้างกว่าที่เขาเคยรู้จัก.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/lVfqLDmfrxIXFU2TcWTsG3ePdER.jpg",
+    "vocabulary": [
+      {
+        "word": "overworked",
+        "meaning": "ทำงานหนักเกินไป",
+        "example": "She looks overworked lately.",
+        "exampleTh": "ช่วงนี้เธอดูทำงานหนักเกินไป",
+        "pos": "adjective"
+      },
+      {
+        "word": "stirring",
+        "meaning": "กำลังกวนหรือขยับไปมา",
+        "example": "He is stirring the soup.",
+        "exampleTh": "เขากำลังกวนซุป",
+        "pos": "present participle"
+      }
+    ],
+    "themeTh": "หมดไฟกับทุกอย่าง"
+  },
+  {
+    "id": "m063",
+    "mood": "overwhelmed",
+    "theme": "Stress overload",
+    "sentence": "My body, literally, cannot handle the stress.",
+    "translation": "ร่างกายของฉันรับมือกับความเครียดไม่ไหวจริงๆ",
+    "source": "Iron Man 2",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "Tony Stark ต้องรับมือกับแรงกดดันจากศัตรู เทคโนโลยี และความรับผิดชอบที่เพิ่มขึ้น ขณะที่ชีวิตส่วนตัวของเขาก็เริ่มสั่นคลอน.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/hCVQPB77eXBGh9abVdrWtKpKgkN.jpg",
+    "vocabulary": [
+      {
+        "word": "literally",
+        "meaning": "อย่างแท้จริง",
+        "example": "I was literally exhausted.",
+        "exampleTh": "ฉันเหนื่อยจนแทบหมดแรงจริงๆ",
+        "pos": "adverb"
+      },
+      {
+        "word": "stress",
+        "meaning": "ความเครียด",
+        "example": "Too much stress can affect your sleep.",
+        "exampleTh": "ความเครียดมากเกินไปอาจส่งผลต่อการนอน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "เครียดจนแทบรับไม่ไหว"
+  },
+  {
+    "id": "m064",
+    "mood": "overwhelmed",
+    "theme": "At the limit",
+    "sentence": "I'm at the end of my rope.",
+    "translation": "ฉันมาถึงขีดจำกัดแล้ว",
+    "source": "It's a Wonderful Life",
+    "sourceType": "movie",
+    "year": 1946,
+    "synopsis": "ชายคนหนึ่งที่กำลังรู้สึกสิ้นหวังได้ทบทวนชีวิตของตัวเองและความหมายของผู้คนที่อยู่รอบตัวเขา.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/3q35nBLCIdEbxYfsr7D5ocYQXKz.jpg",
+    "vocabulary": [
+      {
+        "word": "end",
+        "meaning": "จุดสิ้นสุดหรือขีดจำกัด",
+        "example": "I feel like I'm at the end of my energy.",
+        "exampleTh": "ฉันรู้สึกเหมือนพลังงานของฉันใกล้หมดแล้ว",
+        "pos": "noun"
+      },
+      {
+        "word": "rope",
+        "meaning": "เชือก; ใช้ในสำนวนหมายถึงขีดจำกัด",
+        "example": "He was at the end of his rope.",
+        "exampleTh": "เขามาถึงขีดจำกัดของตัวเองแล้ว",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ใกล้ถึงขีดจำกัดของตัวเอง"
+  },
+  {
+    "id": "m065",
+    "mood": "overwhelmed",
+    "theme": "Falling apart",
+    "sentence": "I tried to hold myself together, but I could feel my nerves pulling me to pieces.",
+    "translation": "ฉันพยายามประคองตัวเองเอาไว้ แต่รู้สึกได้ว่าความเครียดกำลังทำให้ฉันแตกสลาย",
+    "source": "Double Indemnity",
+    "sourceType": "movie",
+    "year": 1944,
+    "synopsis": "พนักงานขายประกันเข้าไปพัวพันกับแผนการอันซับซ้อนที่เต็มไปด้วยความลับ ความกดดัน และการตัดสินใจที่ยากขึ้นเรื่อยๆ.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/byQdu1nzQLI9t1VeoP1xuQfru3L.jpg",
+    "vocabulary": [
+      {
+        "word": "hold together",
+        "meaning": "ประคองตัวเองไม่ให้พัง",
+        "example": "She tried to hold herself together.",
+        "exampleTh": "เธอพยายามประคองตัวเองเอาไว้",
+        "pos": "phrasal verb"
+      },
+      {
+        "word": "nerves",
+        "meaning": "ความเครียดหรือความกังวล",
+        "example": "My nerves are getting worse.",
+        "exampleTh": "ความกังวลของฉันกำลังแย่ลง",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ประคองตัวเองไม่ให้แตกสลาย"
+  },
+  {
+    "id": "m066",
+    "mood": "overwhelmed",
+    "theme": "Feeling weighed down",
+    "sentence": "My, my. It looks like the problems of all time are weighin' you down.",
+    "translation": "ดูเหมือนว่าปัญหาต่างๆ กำลังถ่วงเธอเอาไว้จนหนักอึ้งเลยนะ",
+    "source": "The A-Team",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "อดีตทหารกลุ่มหนึ่งต้องร่วมมือกันอีกครั้งเพื่อพิสูจน์ความบริสุทธิ์และจัดการกับสถานการณ์ที่ซับซ้อนเกินคาด.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/oNWNG7OEKsyZdCE5K57rbbjzvKe.jpg",
+    "vocabulary": [
+      {
+        "word": "problems",
+        "meaning": "ปัญหา",
+        "example": "We all have problems sometimes.",
+        "exampleTh": "บางครั้งเราทุกคนก็มีปัญหา",
+        "pos": "noun"
+      },
+      {
+        "word": "weighing down",
+        "meaning": "ถ่วงหรือทำให้รู้สึกหนักอึ้ง",
+        "example": "Too many worries are weighing me down.",
+        "exampleTh": "ความกังวลมากมายกำลังถ่วงฉันเอาไว้",
+        "pos": "phrasal verb"
+      }
+    ],
+    "themeTh": "รู้สึกถูกปัญหาถ่วงอยู่"
+  },
+  {
+    "id": "m067",
+    "mood": "lonely",
+    "theme": "Feeling invisible",
+    "sentence": "The worst part of having a mental illness is people expect you to behave as if you don't.",
+    "translation": "ส่วนที่แย่ที่สุดของการมีปัญหาทางจิตใจคือผู้คนคาดหวังให้คุณทำเหมือนกับว่าคุณไม่มีมัน",
+    "source": "Joker",
+    "sourceType": "movie",
+    "year": 2019,
+    "synopsis": "Arthur Fleck ชายผู้ต้องการเป็นนักแสดงตลกพยายามใช้ชีวิตในเมือง Gotham ท่ามกลางความโดดเดี่ยวและการถูกมองข้ามจากสังคม.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/rlay2M5QYvi6igbGcFjq8jxeusY.jpg",
+    "vocabulary": [
+      {
+        "word": "mental illness",
+        "meaning": "ปัญหาหรือความเจ็บป่วยทางจิตใจ",
+        "example": "Mental illness should be treated with care.",
+        "exampleTh": "ปัญหาทางจิตใจควรได้รับการดูแลอย่างเหมาะสม",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "expect",
+        "meaning": "คาดหวัง",
+        "example": "People expect too much from her.",
+        "exampleTh": "ผู้คนคาดหวังจากเธอมากเกินไป",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "รู้สึกเหมือนไม่มีใครเห็น"
+  },
+  {
+    "id": "m068",
+    "mood": "lonely",
+    "theme": "Missing someone",
+    "sentence": "I wish I knew how to quit you.",
+    "translation": "ฉันอยากรู้เหลือเกินว่าจะเลิกผูกพันกับคุณได้อย่างไร",
+    "source": "Brokeback Mountain",
+    "sourceType": "movie",
+    "year": 2005,
+    "synopsis": "ชายสองคนที่พบกันระหว่างทำงานบนภูเขาพัฒนาความสัมพันธ์ที่ลึกซึ้ง แต่ต้องเผชิญข้อจำกัดและระยะห่างในชีวิต.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/vArZOJCRavxiKqdXPn74VdQwn7d.jpg",
+    "vocabulary": [
+      {
+        "word": "quit",
+        "meaning": "เลิกหรือหยุด",
+        "example": "He decided to quit his job.",
+        "exampleTh": "เขาตัดสินใจลาออกจากงาน",
+        "pos": "verb"
+      },
+      {
+        "word": "wish",
+        "meaning": "ปรารถนาหรืออยากให้เป็นอย่างนั้น",
+        "example": "I wish you were here.",
+        "exampleTh": "ฉันอยากให้คุณอยู่ตรงนี้",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "คิดถึงใครบางคน"
+  },
+  {
+    "id": "m069",
+    "mood": "lonely",
+    "theme": "Wanting connection",
+    "sentence": "I just want to feel something.",
+    "translation": "ฉันแค่อยากรู้สึกถึงอะไรบางอย่าง",
+    "source": "Lost in Translation",
+    "sourceType": "movie",
+    "year": 2003,
+    "synopsis": "ชายหญิงสองคนที่รู้สึกแปลกแยกในโตเกียวได้พบกันโดยบังเอิญ และค่อยๆ กลายเป็นเพื่อนที่เข้าใจกัน.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/oApVPfvxrgpAJmpzK0SbZN1nFg1.jpg",
+    "vocabulary": [
+      {
+        "word": "feel",
+        "meaning": "รู้สึก",
+        "example": "I want to feel happy again.",
+        "exampleTh": "ฉันอยากรู้สึกมีความสุขอีกครั้ง",
+        "pos": "verb"
+      },
+      {
+        "word": "something",
+        "meaning": "บางสิ่งบางอย่าง",
+        "example": "Sometimes I just need something simple.",
+        "exampleTh": "บางครั้งฉันก็ต้องการเพียงอะไรเรียบง่าย",
+        "pos": "pronoun"
+      }
+    ],
+    "themeTh": "โหยหาความผูกพัน"
+  },
+  {
+    "id": "m070",
+    "mood": "lonely",
+    "theme": "No one understands",
+    "sentence": "I am not a perfect person. I never meant to do those things to you.",
+    "translation": "ฉันไม่ใช่คนที่สมบูรณ์แบบ ฉันไม่เคยตั้งใจจะทำเรื่องเหล่านั้นกับคุณ",
+    "source": "The Holiday",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "ผู้หญิงสองคนที่ผิดหวังเรื่องความรักสลับบ้านกันในช่วงวันหยุด และได้พบความสัมพันธ์ใหม่ที่ช่วยเปลี่ยนมุมมองของพวกเธอ.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/nhiuJ3jalLJ2n4rEKpGCXLrXCx1.jpg",
+    "vocabulary": [
+      {
+        "word": "perfect",
+        "meaning": "สมบูรณ์แบบ",
+        "example": "Nobody is perfect.",
+        "exampleTh": "ไม่มีใครสมบูรณ์แบบ",
+        "pos": "adjective"
+      },
+      {
+        "word": "meant to",
+        "meaning": "ตั้งใจที่จะ",
+        "example": "I never meant to hurt you.",
+        "exampleTh": "ฉันไม่เคยตั้งใจจะทำร้ายคุณ",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "รู้สึกว่าไม่มีใครเข้าใจ"
+  },
+  {
+    "id": "m071",
+    "mood": "lonely",
+    "theme": "Daring to ask for love",
+    "sentence": "I'm just a girl, standing in front of a boy, asking him to love her.",
+    "translation": "ฉันเป็นเพียงผู้หญิงคนหนึ่งที่ยืนอยู่ตรงหน้าผู้ชายคนหนึ่ง และขอให้เขารักเธอ",
+    "source": "Notting Hill",
+    "sourceType": "movie",
+    "year": 1999,
+    "synopsis": "เจ้าของร้านหนังสือธรรมดาคนหนึ่งได้พบกับนักแสดงชื่อดัง และความสัมพันธ์ของทั้งคู่ต้องเผชิญกับความแตกต่างของโลกที่พวกเขาอยู่.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/xfXx4c0i0w413qbiQDyrLyPPdVk.jpg",
+    "vocabulary": [
+      {
+        "word": "standing",
+        "meaning": "กำลังยืน",
+        "example": "She was standing by the door.",
+        "exampleTh": "เธอกำลังยืนอยู่ข้างประตู",
+        "pos": "present participle"
+      },
+      {
+        "word": "asking",
+        "meaning": "กำลังขอหรือร้องขอ",
+        "example": "He is asking for help.",
+        "exampleTh": "เขากำลังขอความช่วยเหลือ",
+        "pos": "present participle"
+      }
+    ],
+    "themeTh": "กล้าเอ่ยปากขอความรัก"
+  },
+  {
+    "id": "m072",
+    "mood": "lonely",
+    "theme": "Alone together",
+    "sentence": "I don't want to be alone. I want to be left alone.",
+    "translation": "ฉันไม่อยากอยู่คนเดียว แต่ฉันก็อยากถูกปล่อยให้อยู่คนเดียว",
+    "source": "The Social Network",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "เรื่องราวการก่อตั้งเครือข่ายสังคมออนไลน์ที่เปลี่ยนวิธีเชื่อมต่อของผู้คน พร้อมกับความสัมพันธ์ที่ซับซ้อนระหว่างผู้ก่อตั้ง.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/2BNKxbq4muNcwTjSDNCYnvr1dM8.jpg",
+    "vocabulary": [
+      {
+        "word": "alone",
+        "meaning": "อยู่คนเดียว",
+        "example": "I don't like eating alone.",
+        "exampleTh": "ฉันไม่ชอบกินข้าวคนเดียว",
+        "pos": "adjective"
+      },
+      {
+        "word": "left alone",
+        "meaning": "ถูกปล่อยให้อยู่ตามลำพัง",
+        "example": "Sometimes I need to be left alone.",
+        "exampleTh": "บางครั้งฉันก็อยากอยู่คนเดียว",
+        "pos": "verb phrase"
+      }
+    ],
+    "themeTh": "เหงาท่ามกลางผู้คน"
+  },
+  {
+    "id": "m073",
+    "mood": "lonely",
+    "theme": "Seeking comfort",
+    "sentence": "You are not alone. I am here with you.",
+    "translation": "คุณไม่ได้อยู่คนเดียว ฉันอยู่ตรงนี้กับคุณ",
+    "source": "The Pursuit of Happyness",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "ชายคนหนึ่งพยายามสร้างชีวิตใหม่ให้ตัวเองและลูกชาย แม้ต้องเผชิญปัญหาทางการเงินและช่วงเวลาที่ไม่แน่นอน.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/5jhG1lTgV0MS6tDkBMQSSitttTT.jpg",
+    "vocabulary": [
+      {
+        "word": "alone",
+        "meaning": "อยู่คนเดียว",
+        "example": "You don't have to face this alone.",
+        "exampleTh": "คุณไม่จำเป็นต้องเผชิญเรื่องนี้เพียงลำพัง",
+        "pos": "adjective"
+      },
+      {
+        "word": "here",
+        "meaning": "อยู่ตรงนี้",
+        "example": "I'm here if you need me.",
+        "exampleTh": "ฉันอยู่ตรงนี้ถ้าคุณต้องการฉัน",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "มองหาความอบอุ่นใจ"
+  },
+  {
+    "id": "m074",
+    "mood": "lonely",
+    "theme": "Feeling disconnected",
+    "sentence": "Sometimes I feel like I'm the only person in the world.",
+    "translation": "บางครั้งฉันรู้สึกเหมือนตัวเองเป็นคนเพียงคนเดียวบนโลก",
+    "source": "Her",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "ชายผู้โดดเดี่ยวได้พัฒนาความสัมพันธ์กับระบบปฏิบัติการอัจฉริยะ และเริ่มตั้งคำถามเกี่ยวกับความรักและความสัมพันธ์.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/1YnZchmaGc8dchgRPDpR1KGrixA.jpgs",
+    "vocabulary": [
+      {
+        "word": "sometimes",
+        "meaning": "บางครั้ง",
+        "example": "Sometimes I need time alone.",
+        "exampleTh": "บางครั้งฉันต้องการเวลาอยู่คนเดียว",
+        "pos": "adverb"
+      },
+      {
+        "word": "only",
+        "meaning": "เพียงคนเดียวหรือสิ่งเดียว",
+        "example": "She was the only person I trusted.",
+        "exampleTh": "เธอเป็นคนเดียวที่ฉันไว้ใจ",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "รู้สึกห่างจากโลกรอบตัว"
+  },
+  {
+    "id": "m075",
+    "mood": "lonely",
+    "theme": "Missing belonging",
+    "sentence": "I don't know where I belong.",
+    "translation": "ฉันไม่รู้ว่าตัวเองควรอยู่ที่ไหน",
+    "source": "The Perks of Being a Wallflower",
+    "sourceType": "movie",
+    "year": 2012,
+    "synopsis": "เด็กหนุ่มที่รู้สึกแปลกแยกในโรงเรียนได้พบเพื่อนกลุ่มหนึ่งที่ทำให้เขาค่อยๆ เปิดใจและค้นพบตัวเอง.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/59ur074TVZ13QuQvRcubrEB3Izf.jpg",
+    "vocabulary": [
+      {
+        "word": "belong",
+        "meaning": "รู้สึกว่าเป็นส่วนหนึ่งของที่ใดที่หนึ่ง",
+        "example": "I finally feel like I belong here.",
+        "exampleTh": "ในที่สุดฉันก็รู้สึกว่าตัวเองเป็นส่วนหนึ่งของที่นี่",
+        "pos": "verb"
+      },
+      {
+        "word": "where",
+        "meaning": "ที่ไหน",
+        "example": "I don't know where to go.",
+        "exampleTh": "ฉันไม่รู้ว่าจะไปที่ไหน",
+        "pos": "adverb"
+      }
+    ],
+    "themeTh": "อยากมีที่ที่เป็นของเรา"
+  },
+  {
+    "id": "m076",
+    "mood": "lonely",
+    "theme": "Wanting to matter",
+    "sentence": "I just want someone to love me.",
+    "translation": "ฉันแค่อยากมีใครสักคนรักฉัน",
+    "source": "The Elephant Man",
+    "sourceType": "movie",
+    "year": 1980,
+    "synopsis": "ชายผู้มีความผิดปกติทางร่างกายต้องใช้ชีวิตท่ามกลางสายตาของผู้คน ก่อนจะได้พบคนที่มองเห็นคุณค่าความเป็นมนุษย์ของเขา.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/6huSptAsqYg3wbsi1jbMognSgmp.jpg",
+    "vocabulary": [
+      {
+        "word": "someone",
+        "meaning": "ใครสักคน",
+        "example": "I need someone to talk to.",
+        "exampleTh": "ฉันต้องการใครสักคนคุยด้วย",
+        "pos": "pronoun"
+      },
+      {
+        "word": "love",
+        "meaning": "รัก",
+        "example": "Everyone deserves to feel loved.",
+        "exampleTh": "ทุกคนสมควรได้รับความรู้สึกว่าตัวเองเป็นที่รัก",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "อยากมีความหมายกับใครสักคน"
+  },
+  {
+    "id": "m077",
+    "mood": "lonely",
+    "theme": "Quiet loneliness",
+    "sentence": "I think perhaps it's time for me to go home.",
+    "translation": "ฉันคิดว่าบางทีถึงเวลาที่ฉันควรกลับบ้านแล้ว",
+    "source": "The Wizard of Oz",
+    "sourceType": "movie",
+    "year": 1939,
+    "synopsis": "Dorothy ถูกพายุพัดไปยังดินแดนมหัศจรรย์และออกเดินทางเพื่อหาทางกลับบ้าน พร้อมพบเพื่อนร่วมทางที่ต้องการสิ่งต่างๆ เช่นเดียวกับเธอ.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/g1OvTd1eF346vmx8qsJnjaiooZ6.jpg",
+    "vocabulary": [
+      {
+        "word": "perhaps",
+        "meaning": "บางที",
+        "example": "Perhaps we should wait.",
+        "exampleTh": "บางทีเราควรรอก่อน",
+        "pos": "adverb"
+      },
+      {
+        "word": "home",
+        "meaning": "บ้านหรือสถานที่ที่รู้สึกว่าเป็นที่ของเรา",
+        "example": "I just want to go home.",
+        "exampleTh": "ฉันแค่อยากกลับบ้าน",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "เหงาอยู่เงียบ ๆ"
+  },
+  {
+    "id": "m078",
+    "mood": "lonely",
+    "theme": "Needing someone",
+    "sentence": "I don't want to be alone anymore.",
+    "translation": "ฉันไม่อยากอยู่คนเดียวอีกต่อไปแล้ว",
+    "source": "The Green Mile",
+    "sourceType": "movie",
+    "year": 1999,
+    "synopsis": "เจ้าหน้าที่เรือนจำแดนประหารได้พบผู้ต้องขังคนหนึ่งที่มีความสามารถเหนือธรรมชาติ ซึ่งทำให้เขาต้องมองชีวิตและความตายต่างไปจากเดิม.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
+    "vocabulary": [
+      {
+        "word": "anymore",
+        "meaning": "อีกต่อไป",
+        "example": "I don't feel lonely anymore.",
+        "exampleTh": "ฉันไม่รู้สึกโดดเดี่ยวอีกต่อไป",
+        "pos": "adverb"
+      },
+      {
+        "word": "alone",
+        "meaning": "อยู่คนเดียว",
+        "example": "She doesn't want to be alone tonight.",
+        "exampleTh": "คืนนี้เธอไม่อยากอยู่คนเดียว",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "ต้องการใครสักคนอยู่ข้าง ๆ"
+  },
+  {
+    "id": "m079",
+    "mood": "lonely",
+    "theme": "Finding your people",
+    "sentence": "I am a part of all that I have met.",
+    "translation": "ฉันเป็นส่วนหนึ่งของทุกสิ่งและทุกคนที่ฉันเคยพบ",
+    "source": "The Lord of the Rings: The Fellowship of the Ring",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "Frodo ออกเดินทางจากบ้านเกิดเพื่อทำภารกิจสำคัญ และได้พบผู้คนหลากหลายที่กลายเป็นส่วนหนึ่งของเส้นทางของเขา.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/oiwc338EoBgS4sEI2ixAny4KQKg.jpg",
+    "vocabulary": [
+      {
+        "word": "part",
+        "meaning": "ส่วนหนึ่ง",
+        "example": "You are an important part of my life.",
+        "exampleTh": "คุณเป็นส่วนสำคัญในชีวิตของฉัน",
+        "pos": "noun"
+      },
+      {
+        "word": "met",
+        "meaning": "ได้พบ",
+        "example": "I met many kind people there.",
+        "exampleTh": "ฉันได้พบคนใจดีมากมายที่นั่น",
+        "pos": "past participle"
+      }
+    ],
+    "themeTh": "ตามหาคนที่ใช่สำหรับเรา"
+  },
+  {
+    "id": "m080",
+    "mood": "lonely",
+    "theme": "A quiet wish",
+    "sentence": "I wish I had a friend.",
+    "translation": "ฉันอยากมีเพื่อนสักคน",
+    "source": "The Iron Giant",
+    "sourceType": "movie",
+    "year": 1999,
+    "synopsis": "เด็กชายคนหนึ่งได้พบหุ่นยนต์ยักษ์จากนอกโลกและสร้างมิตรภาพกับเขา ก่อนจะต้องปกป้องเพื่อนคนใหม่จากผู้ที่หวาดกลัว.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/gZ78dyRH9hXeH94ASjuvD9Vw4b5.jpg",
+    "vocabulary": [
+      {
+        "word": "wish",
+        "meaning": "ปรารถนาหรืออยากให้เกิดขึ้น",
+        "example": "I wish I had more time.",
+        "exampleTh": "ฉันอยากมีเวลามากกว่านี้",
+        "pos": "verb"
+      },
+      {
+        "word": "friend",
+        "meaning": "เพื่อน",
+        "example": "A good friend listens to you.",
+        "exampleTh": "เพื่อนที่ดีจะรับฟังคุณ",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ภาวนาให้มีเพื่อนสักคน"
+  },
+  {
+    "id": "m081",
+    "mood": "lonely",
+    "theme": "Being understood",
+    "sentence": "You make me feel like I can do anything.",
+    "translation": "คุณทำให้ฉันรู้สึกว่าฉันสามารถทำอะไรก็ได้",
+    "source": "The Intouchables",
+    "sourceType": "movie",
+    "year": 2011,
+    "synopsis": "ชายผู้มีฐานะร่ำรวยแต่พิการได้จ้างผู้ดูแลที่มีบุคลิกแตกต่างจากเขาอย่างสิ้นเชิง และมิตรภาพของทั้งคู่ค่อยๆ เปลี่ยนชีวิตของกันและกัน.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/d9sMIwulLtwRHowmDk2INm0ugmP.jpg",
+    "vocabulary": [
+      {
+        "word": "make me feel",
+        "meaning": "ทำให้ฉันรู้สึก",
+        "example": "You make me feel safe.",
+        "exampleTh": "คุณทำให้ฉันรู้สึกปลอดภัย",
+        "pos": "verb phrase"
+      },
+      {
+        "word": "anything",
+        "meaning": "อะไรก็ตาม",
+        "example": "You can ask me anything.",
+        "exampleTh": "คุณถามฉันเรื่องอะไรก็ได้",
+        "pos": "pronoun"
+      }
+    ],
+    "themeTh": "อยากมีคนเข้าใจ"
+  },
+  {
+    "id": "m082",
+    "mood": "tired",
+    "theme": "Running on empty",
+    "sentence": "I'm tired, boss. Tired of being on the road, lonely as a sparrow in the rain.",
+    "translation": "ฉันเหนื่อยครับหัวหน้า เหนื่อยกับการเดินทางและความโดดเดี่ยวราวกับนกกระจอกกลางสายฝน",
+    "source": "The Green Mile",
+    "sourceType": "movie",
+    "year": 1999,
+    "synopsis": "เจ้าหน้าที่เรือนจำในแดนประหารต้องพบกับนักโทษที่มีพลังพิเศษ ซึ่งทำให้เขาตั้งคำถามกับชีวิต ความตาย และความเมตตา.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
+    "vocabulary": [
+      {
+        "word": "on the road",
+        "meaning": "อยู่ระหว่างการเดินทาง",
+        "example": "I've been on the road all week.",
+        "exampleTh": "ฉันเดินทางมาตลอดทั้งสัปดาห์",
+        "pos": "prepositional phrase"
+      },
+      {
+        "word": "lonely",
+        "meaning": "โดดเดี่ยว",
+        "example": "She felt lonely after moving away.",
+        "exampleTh": "เธอรู้สึกโดดเดี่ยวหลังจากย้ายออกไป",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "เหนื่อยจนพลังเกือบหมด"
+  },
+  {
+    "id": "m083",
+    "mood": "tired",
+    "theme": "Need some rest",
+    "sentence": "I am tired of fighting. I want to go home.",
+    "translation": "ฉันเหนื่อยกับการต่อสู้แล้ว ฉันอยากกลับบ้าน",
+    "source": "The Lord of the Rings: The Return of the King",
+    "sourceType": "movie",
+    "year": 2003,
+    "synopsis": "การเดินทางครั้งสุดท้ายของเหล่าพันธมิตรนำไปสู่สงครามครั้งใหญ่ ขณะที่เหล่าฮีโร่ต้องเผชิญกับความสูญเสียและความเหน็ดเหนื่อย.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/bpeiV13Lix5oGzUmGKFdKf9h0RP.jpg",
+    "vocabulary": [
+      {
+        "word": "tired of",
+        "meaning": "เหนื่อยหรือเบื่อกับบางสิ่ง",
+        "example": "I'm tired of arguing.",
+        "exampleTh": "ฉันเหนื่อยกับการเถียงกันแล้ว",
+        "pos": "adjective phrase"
+      },
+      {
+        "word": "fighting",
+        "meaning": "การต่อสู้",
+        "example": "They are tired of fighting.",
+        "exampleTh": "พวกเขาเหนื่อยกับการต่อสู้แล้ว",
+        "pos": "gerund"
+      }
+    ],
+    "themeTh": "ต้องการพักผ่อนจริง ๆ"
+  },
+  {
+    "id": "m084",
+    "mood": "tired",
+    "theme": "Exhausted inside",
+    "sentence": "I'm so tired. I haven't slept in days.",
+    "translation": "ฉันเหนื่อยมาก ฉันไม่ได้นอนมาหลายวันแล้ว",
+    "source": "Fight Club",
+    "sourceType": "movie",
+    "year": 1999,
+    "synopsis": "ชายหนุ่มที่ใช้ชีวิตอย่างว่างเปล่าและนอนไม่หลับได้พบ Tyler Durden ซึ่งนำเขาเข้าสู่โลกที่ท้าทายชีวิตแบบเดิมของเขา.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/c6OLXfKAk5BKeR6broC8pYiCquX.jpg",
+    "vocabulary": [
+      {
+        "word": "exhausted",
+        "meaning": "เหนื่อยล้ามาก",
+        "example": "I was exhausted after work.",
+        "exampleTh": "ฉันเหนื่อยล้ามากหลังเลิกงาน",
+        "pos": "adjective"
+      },
+      {
+        "word": "slept",
+        "meaning": "ได้นอน",
+        "example": "I barely slept last night.",
+        "exampleTh": "เมื่อคืนฉันแทบไม่ได้นอน",
+        "pos": "past participle"
+      }
+    ],
+    "themeTh": "เหนื่อยล้าจากข้างใน"
+  },
+  {
+    "id": "m085",
+    "mood": "tired",
+    "theme": "Long day",
+    "sentence": "It's been a long day without you, my friend.",
+    "translation": "วันนี้ช่างยาวนานเหลือเกินเมื่อไม่มีเธอ เพื่อนของฉัน",
+    "source": "The Fast and the Furious",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "กลุ่มนักแข่งรถใต้ดินต้องรับมือกับความสัมพันธ์ ความภักดี และอันตราย ขณะที่มิตรภาพระหว่างพวกเขากำลังเปลี่ยนไป.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/8TFN4lYaLv3ZODmeznH9sldHYrq.jpg",
+    "vocabulary": [
+      {
+        "word": "long day",
+        "meaning": "วันที่ยาวนานและเหนื่อย",
+        "example": "It was a long day at work.",
+        "exampleTh": "วันนี้เป็นวันที่เหนื่อยมากที่ทำงาน",
+        "pos": "noun phrase"
+      },
+      {
+        "word": "friend",
+        "meaning": "เพื่อน",
+        "example": "A true friend stays with you.",
+        "exampleTh": "เพื่อนแท้จะอยู่เคียงข้างคุณ",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "ผ่านช่วงเวลาอันยาวนาน"
+  },
+  {
+    "id": "m086",
+    "mood": "tired",
+    "theme": "Mental exhaustion",
+    "sentence": "I'm just tired. I'm tired of being alone.",
+    "translation": "ฉันแค่เหนื่อย ฉันเหนื่อยกับการอยู่คนเดียว",
+    "source": "The Pursuit of Happyness",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "พ่อคนหนึ่งพยายามสร้างอนาคตที่ดีขึ้นให้กับลูกชาย แม้ต้องเผชิญความยากลำบากและความไม่แน่นอนในชีวิต.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/5jhG1lTgV0MS6tDkBMQSSitttTT.jpg",
+    "vocabulary": [
+      {
+        "word": "alone",
+        "meaning": "อยู่คนเดียว",
+        "example": "I don't want to be alone tonight.",
+        "exampleTh": "คืนนี้ฉันไม่อยากอยู่คนเดียว",
+        "pos": "adjective"
+      },
+      {
+        "word": "tired of",
+        "meaning": "เหนื่อยหรือเบื่อกับ",
+        "example": "She's tired of waiting.",
+        "exampleTh": "เธอเหนื่อยกับการรอแล้ว",
+        "pos": "adjective phrase"
+      }
+    ],
+    "themeTh": "เหนื่อยล้าทางใจ"
+  },
+  {
+    "id": "m087",
+    "mood": "tired",
+    "theme": "Need to pause",
+    "sentence": "Sometimes you have to take a break and let yourself breathe.",
+    "translation": "บางครั้งเราก็ต้องหยุดพักและปล่อยให้ตัวเองได้หายใจ",
+    "source": "The Secret Life of Walter Mitty",
+    "sourceType": "movie",
+    "year": 2013,
+    "synopsis": "ชายผู้ใช้ชีวิตอย่างเงียบๆ ออกเดินทางครั้งใหญ่หลังงานของเขาเปลี่ยนไป และได้ค้นพบโลกจริงนอกจินตนาการ.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/yvunjjIArbzlgjmIQaouuGAP6jB.jpg",
+    "vocabulary": [
+      {
+        "word": "take a break",
+        "meaning": "หยุดพัก",
+        "example": "Let's take a break for ten minutes.",
+        "exampleTh": "พักสักสิบนาทีกันเถอะ",
+        "pos": "collocation"
+      },
+      {
+        "word": "breathe",
+        "meaning": "หายใจ",
+        "example": "Take a moment to breathe.",
+        "exampleTh": "ใช้เวลาสักครู่เพื่อหายใจ",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "ต้องหยุดพักหายใจ"
+  },
+  {
+    "id": "m088",
+    "mood": "tired",
+    "theme": "Too much work",
+    "sentence": "I can't do this anymore. I'm exhausted.",
+    "translation": "ฉันทำแบบนี้ต่อไปไม่ไหวแล้ว ฉันเหนื่อยล้ามาก",
+    "source": "The Devil Wears Prada",
+    "sourceType": "movie",
+    "year": 2006,
+    "synopsis": "หญิงสาวเริ่มงานในนิตยสารแฟชั่นชื่อดังและต้องรับมือกับความคาดหวังสูง งานหนัก และหัวหน้าที่เข้มงวด.",
+    "image": "https://image.tmdb.org/t/p/original/fR5iqQDUVlGVMST26Jkf2m1Ngbu.jpg",
+    "vocabulary": [
+      {
+        "word": "anymore",
+        "meaning": "อีกต่อไป",
+        "example": "I can't stay here anymore.",
+        "exampleTh": "ฉันอยู่ที่นี่ต่อไปไม่ไหวแล้ว",
+        "pos": "adverb"
+      },
+      {
+        "word": "exhausted",
+        "meaning": "เหนื่อยล้ามาก",
+        "example": "He was exhausted after the meeting.",
+        "exampleTh": "เขาเหนื่อยล้ามากหลังการประชุม",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "ทำงานหนักเกินไป"
+  },
+  {
+    "id": "m089",
+    "mood": "tired",
+    "theme": "Worn out",
+    "sentence": "I'm tired, I'm hungry, and I'm cold.",
+    "translation": "ฉันเหนื่อย ฉันหิว และฉันก็หนาว",
+    "source": "The Revenant",
+    "sourceType": "movie",
+    "year": 2015,
+    "synopsis": "นักสำรวจผู้รอดชีวิตจากเหตุการณ์รุนแรงต้องเดินทางผ่านธรรมชาติอันโหดร้ายท่ามกลางความหนาวและความเจ็บปวด.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/mNQtUJv1F3u0uSKILFrGjIHqkxx.jpg",
+    "vocabulary": [
+      {
+        "word": "hungry",
+        "meaning": "หิว",
+        "example": "I'm hungry after the long walk.",
+        "exampleTh": "ฉันหิวหลังจากเดินมานาน",
+        "pos": "adjective"
+      },
+      {
+        "word": "cold",
+        "meaning": "หนาว",
+        "example": "It is too cold outside.",
+        "exampleTh": "ข้างนอกหนาวเกินไป",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "อ่อนล้าเต็มที"
+  },
+  {
+    "id": "m090",
+    "mood": "tired",
+    "theme": "Need sleep",
+    "sentence": "I need to sleep. I haven't slept in a very long time.",
+    "translation": "ฉันต้องนอน ฉันไม่ได้หลับมานานมากแล้ว",
+    "source": "The Machinist",
+    "sourceType": "movie",
+    "year": 2004,
+    "synopsis": "ชายคนหนึ่งที่ไม่ได้นอนมาเป็นเวลานานเริ่มสูญเสียการรับรู้และสงสัยว่าเกิดอะไรขึ้นกับชีวิตของตัวเอง.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/hi3lxLd93iKwCmVAfhMV9m1k2jr.jpg",
+    "vocabulary": [
+      {
+        "word": "need to",
+        "meaning": "จำเป็นต้อง",
+        "example": "I need to sleep early tonight.",
+        "exampleTh": "คืนนี้ฉันจำเป็นต้องนอนเร็ว",
+        "pos": "verb phrase"
+      },
+      {
+        "word": "a long time",
+        "meaning": "เป็นเวลานาน",
+        "example": "I haven't seen her for a long time.",
+        "exampleTh": "ฉันไม่ได้เจอเธอมานานแล้ว",
+        "pos": "noun phrase"
+      }
+    ],
+    "themeTh": "อยากนอนหลับให้เต็มอิ่ม"
+  },
+  {
+    "id": "m091",
+    "mood": "tired",
+    "theme": "Running out",
+    "sentence": "I'm running out of energy.",
+    "translation": "ฉันกำลังหมดพลังแล้ว",
+    "source": "The Incredibles",
+    "sourceType": "movie",
+    "year": 2004,
+    "synopsis": "ครอบครัวซูเปอร์ฮีโร่ต้องกลับมาร่วมมือกันอีกครั้งเมื่อเกิดภัยคุกคามครั้งใหม่ ขณะที่แต่ละคนต้องรับมือกับความคาดหวังของตัวเอง.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/h138DP62gGqPV7sxCnIPbTMh3a6.jpg",
+    "vocabulary": [
+      {
+        "word": "run out of",
+        "meaning": "หมดหรือกำลังจะหมด",
+        "example": "We're running out of time.",
+        "exampleTh": "เรากำลังจะหมดเวลา",
+        "pos": "phrasal verb"
+      },
+      {
+        "word": "energy",
+        "meaning": "พลังงานหรือพลัง",
+        "example": "I don't have much energy today.",
+        "exampleTh": "วันนี้ฉันไม่ค่อยมีพลังเลย",
+        "pos": "noun"
+      }
+    ],
+    "themeTh": "พลังงานเหลือน้อยลง"
+  },
+  {
+    "id": "m092",
+    "mood": "tired",
+    "theme": "Need a moment",
+    "sentence": "Just give me a minute. I need to catch my breath.",
+    "translation": "ขอเวลาฉันสักครู่ ฉันต้องตั้งหลักและหายใจให้หายเหนื่อย",
+    "source": "The Hunger Games",
+    "sourceType": "movie",
+    "year": 2012,
+    "synopsis": "เด็กสาวถูกส่งเข้าสู่การแข่งขันที่อันตรายและต้องใช้ทั้งความกล้าและไหวพริบเพื่อเอาชีวิตรอด.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/r3WNe7Q5UIr2jVIKlbmb7SbhpaY.jpg",
+    "vocabulary": [
+      {
+        "word": "give me a minute",
+        "meaning": "ขอเวลาสักครู่",
+        "example": "Give me a minute to think.",
+        "exampleTh": "ขอเวลาฉันคิดสักครู่",
+        "pos": "expression"
+      },
+      {
+        "word": "catch my breath",
+        "meaning": "พักหายใจให้หายเหนื่อย",
+        "example": "I stopped to catch my breath.",
+        "exampleTh": "ฉันหยุดพักเพื่อหายใจให้หายเหนื่อย",
+        "pos": "idiom"
+      }
+    ],
+    "themeTh": "ขอเวลาตั้งหลัก"
+  },
+  {
+    "id": "m093",
+    "mood": "tired",
+    "theme": "Feeling drained",
+    "sentence": "I'm tired of pretending everything is okay.",
+    "translation": "ฉันเหนื่อยกับการแกล้งทำเป็นว่าทุกอย่างโอเค",
+    "source": "Black Swan",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "นักบัลเลต์สาวได้รับบทสำคัญที่กดดันให้เธอต้องผลักตัวเองไปถึงขีดจำกัดทั้งทางร่างกายและจิตใจ.",
+    "image": "https://media.themoviedb.org/t/p/w1066_and_h600_face/qxTw8OKJLRX1Xb5nR5CcIDnLKoq.jpg",
+    "vocabulary": [
+      {
+        "word": "pretending",
+        "meaning": "แกล้งทำเป็น",
+        "example": "I'm tired of pretending I'm fine.",
+        "exampleTh": "ฉันเหนื่อยกับการแกล้งทำเป็นว่าฉันไม่เป็นไร",
+        "pos": "gerund"
+      },
+      {
+        "word": "okay",
+        "meaning": "โอเคหรือไม่เป็นไร",
+        "example": "Everything will be okay.",
+        "exampleTh": "ทุกอย่างจะโอเค",
+        "pos": "adjective"
+      }
+    ],
+    "themeTh": "รู้สึกหมดแรง"
+  },
+  {
+    "id": "m094",
+    "mood": "tired",
+    "theme": "Restless mind",
+    "sentence": "I can't sleep. My mind won't stop.",
+    "translation": "ฉันนอนไม่หลับ ความคิดในหัวหยุดไม่ได้เลย",
+    "source": "A Beautiful Mind",
+    "sourceType": "movie",
+    "year": 2001,
+    "synopsis": "นักคณิตศาสตร์อัจฉริยะต้องเผชิญความท้าทายทั้งในงานวิชาการและชีวิตส่วนตัว ขณะที่พยายามแยกแยะความจริงจากสิ่งที่เกิดขึ้นในใจ.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/ezUKFRhS43KjerUClveDB5rlNEh.jpg",
+    "vocabulary": [
+      {
+        "word": "restless",
+        "meaning": "กระสับกระส่าย",
+        "example": "I had a restless night.",
+        "exampleTh": "เมื่อคืนฉันนอนหลับไม่สนิท",
+        "pos": "adjective"
+      },
+      {
+        "word": "stop",
+        "meaning": "หยุด",
+        "example": "My thoughts won't stop.",
+        "exampleTh": "ความคิดของฉันหยุดไม่ได้",
+        "pos": "verb"
+      }
+    ],
+    "themeTh": "หยุดคิดไม่ได้"
+  },
+  {
+    "id": "m095",
+    "mood": "tired",
+    "theme": "Take it slow",
+    "sentence": "Sometimes the smallest things take up the most room in your heart.",
+    "translation": "บางครั้งสิ่งเล็กๆ กลับกินพื้นที่ในหัวใจของเรามากที่สุด",
+    "source": "Winnie the Pooh",
+    "sourceType": "movie",
+    "year": 2011,
+    "synopsis": "Winnie the Pooh และเพื่อนๆ ออกผจญภัยเล็กๆ ในป่า Hundred Acre Wood พร้อมเรียนรู้คุณค่าของมิตรภาพและช่วงเวลาธรรมดาๆ.",
+    "image": "https://image.tmdb.org/t/p/original/v5QO5ow2E8UJun9EyoURm4nhVu5.jpg",
+    "vocabulary": [
+      {
+        "word": "smallest",
+        "meaning": "สิ่งที่เล็กที่สุด",
+        "example": "Even the smallest step matters.",
+        "exampleTh": "แม้แต่ก้าวที่เล็กที่สุดก็มีความหมาย",
+        "pos": "adjective"
+      },
+      {
+        "word": "take up",
+        "meaning": "ใช้พื้นที่หรือกินพื้นที่",
+        "example": "This box takes up too much space.",
+        "exampleTh": "กล่องนี้ใช้พื้นที่มากเกินไป",
+        "pos": "phrasal verb"
+      }
+    ],
+    "themeTh": "ค่อย ๆ ใช้ชีวิตให้ช้าลง"
+  },
+  {
+    "id": "m096",
+    "mood": "tired",
+    "theme": "Slow down",
+    "sentence": "I think I need to take a little time for myself.",
+    "translation": "ฉันคิดว่าฉันต้องใช้เวลาให้ตัวเองสักหน่อย",
+    "source": "Eat Pray Love",
+    "sourceType": "movie",
+    "year": 2010,
+    "synopsis": "หญิงสาวที่รู้สึกหลงทางในชีวิตออกเดินทางไปหลายประเทศเพื่อค้นหาความสมดุล ความสุข และความเข้าใจตัวเอง.",
+    "image": "https://media.themoviedb.org/t/p/w1000_and_h563_face/cVbwx3vqejWECBwRj7WAYMGMDpk.jpg",
+    "vocabulary": [
+      {
+        "word": "take time",
+        "meaning": "ใช้เวลา",
+        "example": "Take time to rest.",
+        "exampleTh": "ใช้เวลาพักผ่อนบ้าง",
+        "pos": "collocation"
+      },
+      {
+        "word": "for myself",
+        "meaning": "เพื่อตัวเอง",
+        "example": "I need some time for myself.",
+        "exampleTh": "ฉันต้องการเวลาให้ตัวเองบ้าง",
+        "pos": "prepositional phrase"
+      }
+    ],
+    "themeTh": "พยายามใช้ชีวิตให้ช้าลง"
+  }
+]

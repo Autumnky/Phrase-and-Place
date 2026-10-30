@@ -1,0 +1,2224 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Anuphan:wght@300;400;600&display=swap");
+
+:root {
+  --bg: #f7f0e4;
+  --card: #fdf8f1;
+  --ink: #2f2a27;
+  --muted: #2f2a27;
+  --red: #b0443d;
+  --green: #2f4f46;
+  --line: #d9ccbd;
+  --soft: #5b514a;
+  --shadow: #a67b6a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Anuphan", sans-serif;
+  background:
+    radial-gradient(#d8cdbd 1px, transparent 1px) 0 0/22px 22px,
+    var(--bg);
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+/* ---------- Layout ---------- */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  text-align: center;
+}
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: clamp(40px, 7vw, 84px);
+  line-height: 1.05;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+.accent {
+  color: var(--red);
+}
+.muted {
+  color: var(--muted);
+  margin: 0 0 40px;
+}
+
+/* ---------- Mood Check-in ---------- */
+.moods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 1000px;
+}
+.mood {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  cursor: pointer;
+}
+.mood.on {
+  border: 3px solid var(--green);
+}
+.mood b {
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+}
+.mood small {
+  color: var(--muted);
+}
+.dot {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tick {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+
+/* ---------- Mood Check-in : motion ---------- */
+.mood {
+  --c: #ccc;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform .4s cubic-bezier(.34, 1.56, .64, 1),
+    box-shadow .35s ease,
+    opacity .35s ease,
+    filter .35s ease;
+  animation: moodIn .7s cubic-bezier(.22, 1, .36, 1) backwards;
+}
+.mood:nth-child(1) { animation-delay: .00s; }
+.mood:nth-child(2) { animation-delay: .08s; }
+.mood:nth-child(3) { animation-delay: .16s; }
+.mood:nth-child(4) { animation-delay: .24s; }
+.mood:nth-child(5) { animation-delay: .32s; }
+.mood:nth-child(6) { animation-delay: .40s; }
+
+/* hover: ยกตัว + เอียง + เงาเรืองสีอารมณ์ */
+.mood:hover {
+  transform: translateY(-8px) rotate(-1.2deg);
+  box-shadow: 0 22px 36px -14px color-mix(in srgb, var(--c) 80%, transparent);
+}
+.mood:nth-child(even):hover { transform: translateY(-8px) rotate(1.2deg); }
+
+/* กดค้าง: ยุบลง */
+.mood:active { transform: scale(.95); transition-duration: .12s; }
+
+.mood:focus-visible { outline: 3px solid var(--c); outline-offset: 4px; }
+
+/* วงหน้า: ลอยเบาๆ ตอนอยู่นิ่ง */
+.dot {
+  transition: scale .4s cubic-bezier(.34, 1.56, .64, 1), box-shadow .3s ease;
+  animation: float 4s ease-in-out infinite;
+}
+.mood:nth-child(2) .dot { animation-delay: -.7s; }
+.mood:nth-child(3) .dot { animation-delay: -1.4s; }
+.mood:nth-child(4) .dot { animation-delay: -2.1s; }
+.mood:nth-child(5) .dot { animation-delay: -2.8s; }
+.mood:nth-child(6) .dot { animation-delay: -3.5s; }
+
+/* hover: วงหน้าขยาย + ส่ายแล้วกลับไปลอยต่อ */
+.mood:hover .dot {
+  scale: 1.14;
+  box-shadow: 0 0 0 8px color-mix(in srgb, var(--c) 28%, transparent);
+  animation: wobble .6s ease, float 4s ease-in-out .6s infinite;
+}
+
+/* เลือกแล้ว: เด้ง + วงคลื่น + dim ตัวอื่น */
+.mood.on {
+  transform: scale(1.04);
+  animation: pop .5s cubic-bezier(.34, 1.56, .64, 1);
+}
+.mood.on::after {
+  content: '';
+  position: absolute;
+  top: 28px; left: 50%;
+  width: 80px; height: 80px;
+  margin-left: -40px;
+  border-radius: 50%;
+  border: 3px solid var(--c);
+  pointer-events: none;
+  animation: ripple .9s ease-out forwards;
+}
+.mood.on .dot { animation: wobble .6s ease; }
+.mood.on .tick { animation: tickIn .5s cubic-bezier(.34, 1.56, .64, 1); }
+
+.moods:has(.mood.on) .mood:not(.on) {
+  opacity: .4;
+  transform: scale(.95);
+  filter: saturate(.5);
+  pointer-events: none;
+}
+
+/* keyframes */
+@keyframes moodIn {
+  from { opacity: 0; transform: translateY(28px) scale(.92); }
+}
+@keyframes float {
+  50% { translate: 0 -5px; }
+}
+@keyframes wobble {
+  0%, 100% { rotate: 0deg; }
+  25% { rotate: -10deg; }
+  50% { rotate: 8deg; }
+  75% { rotate: -4deg; }
+}
+@keyframes pop {
+  0%   { transform: scale(.94); }
+  60%  { transform: scale(1.07); }
+  100% { transform: scale(1.04); }
+}
+@keyframes ripple {
+  from { transform: scale(1);   opacity: .9; }
+  to   { transform: scale(2.4); opacity: 0; }
+}
+@keyframes tickIn {
+  from { transform: scale(0) rotate(-120deg); }
+}
+
+/* คนที่ปิด animation ในระบบ */
+@media (prefers-reduced-motion: reduce) {
+  .mood, .dot, .mood::after, .tick { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Animated backdrop ---------- */
+.page { position: relative; z-index: 1; }
+
+.backdrop {
+  --c1: #cf6a5f;   /* แดงเดิม */
+  --c2: #e8a08a;   /* ส้มอมชมพู */
+  --c3: #f0b4c0;   /* ชมพู */
+  --c4: #e8d083;   /* เหลือง */
+  --c5: #cf6a5f;   /* สีที่ 5 (ใช้กับก้อนแสงก้อนที่ 4) */
+
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #f7f0e3;
+}
+
+/* ก้อนแสง: ลอยข้ามจอ */
+.bd-glow {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+}
+.bd-glow.a {
+  width: 55vmax; height: 55vmax; left: -12vmax; bottom: -20vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--c1) 50%, transparent), transparent 65%);
+  animation: glowA 16s ease-in-out infinite alternate;
+}
+.bd-glow.b {
+  width: 46vmax; height: 46vmax; right: -10vmax; top: -14vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--c3) 55%, transparent), transparent 65%);
+  animation: glowB 20s ease-in-out infinite alternate;
+}
+.bd-glow.c {
+  width: 38vmax; height: 38vmax; right: 12vmax; bottom: -14vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--c2) 50%, transparent), transparent 65%);
+  animation: glowC 24s ease-in-out infinite alternate;
+}
+.bd-glow.d {
+  width: 34vmax; height: 34vmax; left: 30vmax; top: -12vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--c4) 45%, transparent), transparent 65%);
+  animation: glowB 18s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glowA {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(30vmax, -22vmax) scale(1.15); }
+  100% { transform: translate(55vmax, -6vmax) scale(.95); }
+}
+@keyframes glowB {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-30vmax, 24vmax) scale(1.1); }
+  100% { transform: translate(-52vmax, 8vmax) scale(1.2); }
+}
+@keyframes glowC {
+  0%   { transform: translate(0, 0) scale(1.1); }
+  50%  { transform: translate(-26vmax, -26vmax) scale(.9); }
+  100% { transform: translate(-48vmax, -10vmax) scale(1.15); }
+}
+
+.bd-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: .5;
+  background: linear-gradient(115deg, var(--c1), var(--c2), var(--c3), var(--c4), var(--c1));
+  background-size: 300% 300%;
+  animation: colorFlow 18s ease-in-out infinite alternate;
+
+  /* ชั้นที่ 1 = ดาวซ้ำๆ, ชั้นที่ 2 = fade เข้มล่าง จางบน (ตัดกันแบบ intersect) */
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M7 2.5 8.2 5.8 11.5 7 8.2 8.2 7 11.5 5.8 8.2 2.5 7 5.8 5.8Z' fill='black'/%3E%3C/svg%3E"),
+    linear-gradient(to top, #000 0%, rgba(0,0,0,.55) 40%, transparent 85%);
+          mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M7 2.5 8.2 5.8 11.5 7 8.2 8.2 7 11.5 5.8 8.2 2.5 7 5.8 5.8Z' fill='black'/%3E%3C/svg%3E"),
+    linear-gradient(to top, #000 0%, rgba(0,0,0,.55) 40%, transparent 85%);
+  -webkit-mask-size: 14px 14px, 100% 100%;
+          mask-size: 14px 14px, 100% 100%;
+  -webkit-mask-repeat: repeat, no-repeat;
+          mask-repeat: repeat, no-repeat;
+  -webkit-mask-composite: source-in;
+          mask-composite: intersect;
+}
+@keyframes colorFlow {
+  from { background-position: 0% 30%; }
+  to   { background-position: 100% 70%; }
+}
+
+/* เกรนบางๆ */
+.bd-grain {
+  position: absolute;
+  inset: 0;
+  opacity: .14;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+}
+
+/* ดอกไม้ + ดาว ลอยอยู่ด้านหลัง */
+.bd-item {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--s);
+  height: var(--s);
+  opacity: .9;
+  animation: drift var(--d) ease-in-out var(--delay) infinite alternate;
+}
+.bd-item svg { display: block; width: 100%; height: 100%; }
+.bd-star svg { animation: twinkle 3.4s ease-in-out infinite; }
+
+@keyframes drift {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to   { transform: translate(var(--dx), var(--dy)) rotate(var(--r)); }
+}
+@keyframes twinkle {
+  50% { scale: .55; opacity: .6; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop *, .backdrop *::before { animation: none !important; }
+}
+
+/* ===== Mood hover ===== */
+
+/* ลำดับการ์ดกับ MOODS: 1 tired, 2 lonely, 3 overwhelmed, 4 lost, 5 hopeful, 6 happy */
+.mood:nth-child(1) { --g: 'z'; }
+.mood:nth-child(2) { --g: '◌︎'; }
+.mood:nth-child(3) { --g: '○'; }
+.mood:nth-child(4) { --g: '꩜'; }
+.mood:nth-child(5) { --g: '✿'; }
+.mood:nth-child(6) { --g: '♪'; }
+
+.dot { position: relative; isolation: isolate; }
+
+.mood:hover .dot {
+  animation:
+    jelly .7s cubic-bezier(.34, 1.56, .64, 1),
+    wobble .6s ease,
+    float 4s ease-in-out .6s infinite;
+}
+
+@keyframes jelly {
+  0%   { scale: 1 1; }
+  30%  { scale: 1.28 .86; }
+  50%  { scale: .92 1.16; }
+  70%  { scale: 1.18 .95; }
+  100% { scale: 1.14 1.14; }
+}
+
+.dot::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 11px;
+  top: 47px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgba(255, 95, 135, .5);
+  box-shadow: 45px 0 0 rgba(255, 95, 135, .5); /* แก้มข้างขวา */
+  transform-origin: 29px -7px;                 /* จุดกลางวงกลม */
+  opacity: 0;
+  scale: .3;
+  transition: opacity .25s ease, scale .45s cubic-bezier(.34, 1.56, .64, 1);
+}
+.mood:hover .dot::before { opacity: 1; scale: 1; }
+
+.mark { display: inline-block; }
+.mood:hover .mark { animation: peek 2.2s ease-in-out infinite; }
+@keyframes peek {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  25%      { transform: translate(-4px, 1px) rotate(-5deg); }
+  55%      { transform: translate(4px, 1px) rotate(5deg); }
+  80%      { transform: translate(0, -2px) rotate(0); }
+}
+
+.dot::after,
+.mood::before {
+  content: var(--g);
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  font: 700 20px "Fraunces", serif;
+  color: color-mix(in srgb, var(--c) 60%, #2f2a27);
+}
+
+.dot::after { 
+  right: -8px; 
+  top: -4px; 
+}
+
+.mood::before { left: calc(50% - 60px); top: 30px; font-size: 15px; --dx: -8px; }
+.mood:hover .dot::after { animation: rise 1.7s ease-out infinite; }
+.mood:hover::before { animation: rise 1.7s ease-out .85s infinite; }
+@keyframes rise {
+  0%   { opacity: 0; transform: translate(0, 10px) scale(.5) rotate(-10deg); }
+  25%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--dx, 8px), -30px) scale(1.15) rotate(12deg); }
+}
+
+
+
+/* 6) การ์ดข้างเคียงสะดุ้งเล็กน้อยเป็นคลื่น (เฉพาะตอนยังไม่ได้เลือก) */
+.moods:not(:has(.mood.on)) .mood:hover + .mood,
+.moods:not(:has(.mood.on)) .mood:has(+ .mood:hover) { transform: translateY(-3px); }
+
+/* ตอนเลือกแล้ว: หยุดสัญลักษณ์/หน้ามอง แต่ให้แก้มค้างไว้ และคืนแอนิเมชันของวงหน้าเป็นแบบตอนเลือก */
+.mood.on .dot { animation: wobble .6s ease; }
+.mood.on .dot::after,
+.mood.on::before { animation: none; opacity: 0; }
+.mood.on .mark { animation: none; }
+.mood.on .dot::before { opacity: 1; scale: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mark, .dot::after, .mood::before { animation: none !important; }
+  .dot::before { transition: none; }
+}
+
+/* ===== ตอนเลือกอารมณ์: ไม่ใช้กรอบและติ๊กถูก → การ์ดเปลี่ยนเป็นสีอ่อนของอารมณ์ + ดอกไม้ไฟพุ่งจากวงหน้า ===== */
+
+/* ให้พื้นหลังและเส้นขอบเปลี่ยนสีแบบนุ่ม ๆ */
+.mood {
+  transition:
+    transform .4s cubic-bezier(.34, 1.56, .64, 1),
+    box-shadow .35s ease,
+    opacity .35s ease,
+    filter .35s ease,
+    background-color .45s ease,
+    border-color .45s ease;
+}
+
+/* เลือกแล้ว: การ์ดกลายเป็นสีอ่อนของอารมณ์ เส้นขอบกลืนไปกับพื้น (ความหนาคงเดิม 1px จึงไม่ขยับเลย์เอาต์) */
+.mood.on {
+  background: color-mix(in srgb, var(--c) 26%, var(--card));
+  border: 1px solid color-mix(in srgb, var(--c) 26%, var(--card));
+  box-shadow: 0 18px 34px -16px color-mix(in srgb, var(--c) 85%, transparent);
+}
+
+/* ดอกไม้ไฟ: 8 ชิ้น พุ่งออกจากวงหน้า (วงหน้ากว้าง 80px เริ่มที่ padding-top 28px จึงกึ่งกลางอยู่ที่ top:68px) */
+.burst {
+  position: absolute;
+  left: 50%;
+  top: 68px;
+  width: 0;
+  height: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.burst i {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--c) 70%, #2f2a27);
+  opacity: 0;
+  animation: burst .85s cubic-bezier(.2, .8, .3, 1) forwards;
+}
+.burst i:nth-child(even) {
+  width: 14px;
+  height: 6px;
+  left: -7px;
+  top: -3px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--c) 45%, #fff);
+  animation-delay: .06s;
+}
+@keyframes burst {
+  0%   { opacity: 1; transform: rotate(var(--a)) translateX(42px) scale(.4); }
+  70%  { opacity: 1; }
+  100% { opacity: 0; transform: rotate(var(--a)) translateX(84px) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .burst { display: none; }
+}
+
+/* ===== ปฏิกิริยาเฉพาะของแต่ละอารมณ์ (hover = เล่นวนนุ่ม ๆ / ตอนกด = เล่นรอบเดียว + ของพุ่งออกมา) ===== */
+
+/* ---- ของที่พุ่งออกมา: ตัวฐาน (ทุกชิ้นใช้ร่วมกัน) ---- */
+.burst i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  display: block;
+  font-style: normal;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fly var(--dur, .9s) var(--ease, cubic-bezier(.2, .8, .3, 1)) var(--dl, 0s) both;
+}
+@keyframes fly {
+  0%   { opacity: 0; transform: translate(calc(var(--sx, 0px) - 50%), calc(var(--sy, 0px) - 50%)) scale(.3) rotate(0deg); }
+  15%  { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(calc(var(--sx, 0px) + var(--vx) - 50%), calc(var(--sy, 0px) + var(--vy) - 50%)) scale(var(--sz, 1)) rotate(var(--r, 0deg)); }
+}
+
+/* ---- หน้าตาของชิ้นที่พุ่งออกมาตามอารมณ์ ---- */
+.mood[data-mood="tired"] .burst i {
+  --dur: 1.4s; --ease: ease-out;
+  font: italic 700 22px "Fraunces", serif;
+  color: color-mix(in srgb, var(--c) 45%, #2f2a27);
+}
+.mood[data-mood="lonely"] .burst i {
+  --dur: 1.1s; --ease: ease-in; /* ร่วงเร็วขึ้นเรื่อย ๆ เหมือนแรงโน้มถ่วง */
+  width: 7px; height: 11px;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  background: color-mix(in srgb, var(--c) 85%, #fff);
+  border: 1.5px solid color-mix(in srgb, var(--c) 55%, #2f2a27);
+}
+.mood[data-mood="overwhelmed"] .burst i {
+  --dur: .65s; --ease: cubic-bezier(.1, .9, .2, 1); /* พุ่งเร็วแล้วหยุดกะทันหัน */
+  width: 9px; height: 9px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--c) 80%, #2f2a27);
+}
+.mood[data-mood="lost"] .burst i {
+  --dur: 1.4s; --ease: ease-in-out;
+  font: 700 20px "Fraunces", serif;
+  color: color-mix(in srgb, var(--c) 35%, #2f2a27);
+}
+.mood[data-mood="hopeful"] .burst i {
+  --dur: 1.5s; --ease: ease-out;
+  font-size: 20px;
+  color: color-mix(in srgb, var(--c) 55%, #bfb029);
+}
+.mood[data-mood="happy"] .burst i {
+  --dur: 1s;
+  width: 8px; height: 13px;
+  border-radius: 2px;
+  background: #ff6b6b;
+}
+.mood[data-mood="happy"] .burst i:nth-child(5n+2) { background: #4d96ff; }
+.mood[data-mood="happy"] .burst i:nth-child(5n+3) { background: #6bcb77; }
+.mood[data-mood="happy"] .burst i:nth-child(5n+4) { background: #ff9f1c; }
+.mood[data-mood="happy"] .burst i:nth-child(5n)   { background: #b27cff; }
+
+/* ---- วงคลื่นรอบการ์ด: ช้า/เร็วตามอารมณ์ ---- */
+.mood[data-mood="tired"]       { --rd: 1.8s; }
+.mood[data-mood="lonely"]      { --rd: 1.6s; }
+.mood[data-mood="overwhelmed"] { --rd: .55s; }
+.mood[data-mood="lost"]        { --rd: 1.2s; }
+.mood[data-mood="hopeful"]     { --rd: 1.2s; }
+.mood[data-mood="happy"]       { --rd: .7s; }
+.mood.on::after { animation-duration: var(--rd, .9s); }
+
+/* ---- ท่าของวงหน้า ---- */
+.mood:hover .dot,
+.mood.on .dot { scale: 1.12; }
+
+/* hover: เล่นวนเป็นจังหวะ */
+.mood[data-mood="tired"]:hover .dot       { animation: dotSigh 2.6s ease-in-out infinite; }
+.mood[data-mood="lonely"]:hover .dot      { animation: dotSway 2.8s ease-in-out infinite; }
+.mood[data-mood="overwhelmed"]:hover .dot { animation: dotQuake 1.8s ease-in-out infinite; }
+.mood[data-mood="lost"]:hover .dot        { animation: dotSpin 3s cubic-bezier(.45, 0, .2, 1) infinite; }
+.mood[data-mood="hopeful"]:hover .dot     { animation: dotBloom 2.2s ease-in-out infinite; }
+.mood[data-mood="happy"]:hover .dot       { animation: dotHop 1.2s ease-in-out infinite; }
+
+/* ตอนกดเลือก: เล่นรอบเดียว (ต้องอยู่หลังกฎ hover ด้านบน) */
+.mood[data-mood="tired"].on .dot       { animation: dotSigh 1.8s ease-in-out; }
+.mood[data-mood="lonely"].on .dot      { animation: dotSway 1.8s ease-in-out; }
+.mood[data-mood="overwhelmed"].on .dot { animation: dotQuake 1.1s ease-in-out; }
+.mood[data-mood="lost"].on .dot        { animation: dotSpin 1.3s cubic-bezier(.45, 0, .2, 1); }
+.mood[data-mood="hopeful"].on .dot     { animation: dotBloom 1.2s ease-in-out; }
+.mood[data-mood="happy"].on .dot       { animation: dotHop 1.1s ease-in-out; }
+
+/* tired + lonely: การ์ดเด้งช้าลงให้ดูนุ่ม */
+.mood[data-mood="tired"].on,
+.mood[data-mood="lonely"].on { animation-duration: 1s; animation-timing-function: ease-out; }
+
+@keyframes dotSigh  { 0%, 100% { scale: 1.12; translate: 0 0; } 30% { scale: 1.2; translate: 0 -4px; } 70% { scale: .98; translate: 0 6px; } }
+@keyframes dotSway  { 0%, 100% { rotate: 0deg; translate: 0 0; } 30% { rotate: -8deg; translate: -3px 3px; } 65% { rotate: 6deg; translate: 2px 4px; } }
+@keyframes dotQuake {
+  0%   { translate: 0 0; scale: 1.12; }
+  8%   { translate: -3px 1px; }  16% { translate: 3px -1px; }
+  24%  { translate: -3px -1px; } 32% { translate: 3px 1px; }
+  40%  { translate: -2px 0; }    48% { translate: 2px 0; }
+  56%  { translate: 0 0; scale: 1; }
+  76%  { scale: 1.28; }
+  100% { translate: 0 0; scale: 1.12; }
+}
+@keyframes dotSpin  { 0% { rotate: 0deg; } 55% { rotate: 385deg; } 75% { rotate: 352deg; } 100% { rotate: 360deg; } }
+@keyframes dotBloom { 0%, 100% { scale: 1.12; translate: 0 0; } 45% { scale: 1.3; translate: 0 -10px; } 70% { scale: 1.08; translate: 0 2px; } }
+@keyframes dotHop {
+  0%, 100% { scale: 1.12 1.12; translate: 0 0; }
+  12% { scale: 1.3 .92; }
+  32% { scale: 1 1.22; translate: 0 -20px; }
+  52% { scale: 1.28 .94; translate: 0 0; }
+  66% { scale: 1.06 1.16; translate: 0 -9px; }
+  82% { scale: 1.18 1.06; translate: 0 0; }
+}
+/* ===== สีตามอารมณ์: hover, เศษที่พุ่งออกมา, แก้ม ===== */
+
+/* แก้ม = สีอารมณ์ที่สว่างขึ้น (ปรับเลข 50% ได้ ยิ่งน้อยยิ่งสว่าง/ซีด) */
+.mood { --cheek: color-mix(in srgb, var(--c) 50%, #fff); }
+.dot::before {
+  background: var(--cheek);
+  box-shadow: 45px 0 0 var(--cheek);
+}
+
+/* สัญลักษณ์ที่ลอยจากหัวตอน hover ใช้สีอารมณ์ตรง ๆ */
+.dot::after,
+.mood::before { color: var(--c); }
+
+/* เศษที่พุ่งออกมาตอนกด: ใช้สีอารมณ์ตรง ๆ (ไม่ผสมสีดำแล้ว) */
+.mood[data-mood="tired"] .burst i   { color: var(--c); }
+.mood[data-mood="lost"] .burst i    { color: var(--c); }
+.mood[data-mood="hopeful"] .burst i { color: var(--c); }
+
+.mood[data-mood="lonely"] .burst i {
+  background: var(--c);
+  border: 0;
+}
+.mood[data-mood="overwhelmed"] .burst i { background: var(--c); }
+.mood[data-mood="overwhelmed"] .burst i:nth-child(even) { background: color-mix(in srgb, var(--c) 60%, #fff); }
+
+/* Happy: confetti เป็นสามระดับของสีเหลือง (ปกติ / อ่อน / เข้ม) แทนหลากสี */
+.mood[data-mood="happy"] .burst i:nth-child(n)    { background: var(--c); }
+.mood[data-mood="happy"] .burst i:nth-child(3n+2) { background: color-mix(in srgb, var(--c) 55%, #fff); }
+.mood[data-mood="happy"] .burst i:nth-child(3n)   { background: color-mix(in srgb, var(--c) 78%, #8a6400); }
+
+/* ===== Tired + Lonely: ตอนกดเลือกใช้ท่าเดียวกับตอน hover (สัญลักษณ์ลอยขึ้นพร้อมหมุนและจางหาย) ===== */
+.mood[data-mood="tired"] .burst i,
+.mood[data-mood="lonely"] .burst i {
+  --dur: 1.2s;
+  --ease: ease-out;
+  animation-name: riseUp;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font: 700 20px "Fraunces", serif;
+  line-height: 1;
+  color: var(--c);
+}
+/* ชิ้นที่ 2 และ 4 (ฝั่งซ้าย) ตัวเล็กกว่า เหมือนตอน hover */
+.mood[data-mood="tired"] .burst i:nth-child(even),
+.mood[data-mood="lonely"] .burst i:nth-child(even) { font-size: 15px; }
+
+/* ท่าเดียวกับ @keyframes rise ที่ใช้ตอน hover */
+@keyframes riseUp {
+  0%   { opacity: 0; transform: translate(calc(var(--sx, 0px) - 50%), calc(var(--sy, 0px) + 10px - 50%)) scale(.5) rotate(-10deg); }
+  25%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(calc(var(--sx, 0px) + var(--vx) - 50%), calc(var(--sy, 0px) + var(--vy) - 50%)) scale(1.15) rotate(12deg); }
+}
+
+/* ===== Lonely ตอน hover: ◌ กระจายอยู่ข้างนอกวงหน้า =====
+   ใช้ text-shadow ทำสำเนา ◌ เพิ่มจากชิ้นเดียว: .dot::after = กลุ่มขวา (ตัวใหญ่), .mood::before = กลุ่มซ้าย (ตัวเล็ก)
+   (วงหน้ากว้าง 80px การ์ดมี padding บน 28px จุดกึ่งกลางวงจึงอยู่ที่ top:68px) */
+.mood[data-mood="lonely"] .dot::after {
+  left: calc(50% + 58px);
+  top: calc(50% - 22px);
+  right: auto;
+  line-height: 1;
+  translate: -50% -50%;
+  text-shadow: 8px 36px 0 var(--c), -18px -30px 0 var(--c);
+}
+.mood[data-mood="lonely"]::before {
+  left: calc(50% - 58px);
+  top: calc(68px - 14px);
+  line-height: 1;
+  translate: -50% -50%;
+  text-shadow: -8px 36px 0 var(--c), 14px -36px 0 var(--c);
+}
+
+/* ---------- Phrase Card ---------- */
+/* ---------- Phrase Card ---------- */
+.card {
+  --soft: #5b514a; /* สีข้อความรอง (ตัวเข้มพอให้อ่านชัด) */
+  width: min(460px, 100%);
+  padding: 16px;
+  background: var(--card);
+  text-align: left;
+  box-shadow: 10px 10px 0 #a67b6a;
+}
+
+/* รูป: ขนาดคงที่เสมอ เรื่องย่อเป็นแผ่นลอยทับด้านล่าง ไม่ดันอะไร */
+.photo {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.caption {
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  transition: opacity .25s ease;
+}
+.photo:has(.sheet.open) .caption { opacity: 0; }
+
+.sheet {
+  position: absolute;
+  inset: auto 0 0 0;
+  max-height: 88%;
+  overflow: auto;
+  padding: 60px 22px 22px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(30, 24, 22, .95) 60%, rgba(30, 24, 22, 0));
+  transform: translateY(105%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .5s cubic-bezier(.22, 1, .36, 1), opacity .3s ease;
+}
+.sheet.open {
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+.sheet-x {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .18);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+.sheet-title {
+  margin: 0 0 8px;
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sheet-title span { font-weight: 400; opacity: .8; }
+.sheet-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* ฝั่งข้อความ: 3 กลุ่ม เว้นระยะเท่ากัน */
+.card .body {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 6px 8px;
+}
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  color: var(--soft);
+}
+.eyebrow b { 
+  color: var(--red); 
+  font-weight: 600; 
+}
+
+.quote {
+  margin: 0 0 12px;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.2;
+}
+.card .th {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--soft);
+}
+.listen {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: 16px;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--red) 10%, transparent);
+  color: var(--red);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease;
+  min-height: 42px; 
+}
+.listen:hover { background: color-mix(in srgb, var(--red) 18%, transparent); }
+
+/* กลุ่มที่มา (กดเพื่อเปิด/ปิดเรื่องย่อ) */
+.source {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  margin: 24px 0;
+  padding: 13px 2px;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  cursor: pointer;
+}
+.src-label { font-size: 13px; color: var(--soft); }
+.source b { font-family: "Fraunces", serif; font-size: 17px; }
+.src-year { color: var(--soft); }
+.src-toggle {
+  margin-left: auto;
+  font-size: 14px;
+  color: var(--red);
+  white-space: nowrap;
+}
+.src-toggle::after {
+  content: "▾";
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform .3s ease;
+}
+.source[aria-expanded="true"] .src-toggle::after { transform: rotate(180deg); }
+
+/* กลุ่มคำศัพท์: คำละ 1 กล่อง */
+.vocab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.word-card {
+  padding: 14px 16px;
+  border-radius: 0px;
+  background: color-mix(in srgb, var(--red) 12%, var(--card));
+}
+.wordhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: last baseline;
+  gap: 2px 12px;
+}
+.wbtn {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--red);
+  min-height: 30px;
+}
+.wordhead .th { font-size: 15px; }
+.eg {
+  margin-top: 10px;
+  padding-left: 12px;
+  border-left: 2px solid color-mix(in srgb,var(--red) 55%, transparent);
+}
+.ex {
+  display: block;
+  padding: 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+  font-style: italic;
+  min-height: 22px;
+}
+.eg .th { margin-top: 3px; font-size: 14px; }
+.wbtn:hover,
+.ex:hover { color: var(--red); }
+
+.dev {
+  margin-top: 24px;
+  background: none;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 6px 12px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* ป้ายชนิดคำ (verb, phrasal verb, preposition ฯลฯ) */
+.pos {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--soft, #5b514a);
+  white-space: nowrap;
+}
+
+/* การ์ดแนวนอนบนจอกว้าง: รูปซ้าย ข้อความขวา (มือถือเป็นแนวตั้งตามค่าเริ่มต้น) */
+@media (min-width: 820px) {
+  .card {
+    width: min(1080px, 100%);                        /* เดิม 1040px */
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); /* เดิม รูป 1 : ข้อความ 1.15 → ตอนนี้รูปกว้างกว่า */
+    gap: 28px;
+    display: grid;
+    padding: 24px;
+  }
+  .photo {
+    aspect-ratio: auto;
+    min-height: 500px;
+  }
+  .photo img { 
+    object-position: center 35%; 
+  } 
+
+  .card .body {
+    justify-content: center;
+    padding: 8px 8px 8px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet, .caption { transition: none; }
+}
+
+/* ===== ไอคอนเล่นเสียง: ▷ → แท่งคลื่นเสียงตอนกำลังอ่าน ===== */
+.listen,
+.wbtn,
+.ex {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.ex { display: flex; } /* ประโยคตัวอย่างยังเต็มบรรทัดชิดซ้ายเหมือนเดิม */
+
+.play,
+.eq {
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+.play {
+  display: inline-block;
+  line-height: 14px;
+  text-align: center;
+  font-size: .8em;
+  font-style: normal;
+}
+.eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+.eq i {
+  flex: 1;
+  height: 100%;
+  border-radius: 2px;
+  background: currentColor;
+  transform-origin: bottom;
+  animation: eq .9s ease-in-out infinite;
+}
+.eq i:nth-child(2) { animation-delay: -.3s; }
+.eq i:nth-child(3) { animation-delay: -.6s; }
+@keyframes eq {
+  0%, 100% { transform: scaleY(.3); }
+  50%      { transform: scaleY(1); }
+}
+
+/* ปุ่มที่กำลังเล่น: เน้นด้วยสีอารมณ์ */
+.listen.playing { background: color-mix(in srgb, var(--mc, var(--red)) 24%, transparent); }
+
+
+@media (prefers-reduced-motion: reduce) {
+  .eq i { animation: none; transform: scaleY(.7); }
+}
+
+/* ประโยคใต้บรรทัด "For your ... day" */
+.moment {
+  margin: -4px 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--soft, #5b514a);
+}
+
+
+
+
+
+/* ---------- หน้าคั่น ---------- */
+.finding p {
+  margin: 0;
+  font-size: 20px;
+  color: var(--muted);
+  max-width: 22em;
+  line-height: 1.5;
+}
+.pulse {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}
+
+/* ---------- ปุ่มไปหน้า Vision Board ---------- */
+.cta {
+  margin-top: 24px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- Vision Board ---------- */
+.vb {
+  position: relative;   /* ← เพิ่ม */
+  z-index: 1; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.vb-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 20px;
+  background: linear-gradient(180deg, rgba(252, 239, 232, 0.823) 0%, rgba(248, 226, 220, 0.457) 100%);
+
+  border-bottom: 1px solid var(--line);
+}
+.vb-title {
+  text-align: center;
+  color: #b0443d;
+
+}
+.vb-title h2 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+}
+.vb-title small {
+  color: var(--muted);
+  font-size: 12px;
+}
+.vb-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 0;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: var(--card);
+  border-right: 1px solid var(--line);
+}
+.tools h3 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+}
+.tabs button {
+  padding: 8px 10px;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.tabs button.on {
+  color: var(--red);
+  border-color: var(--red);
+  font-weight: 600;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.btn.ghost {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.cap {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.hint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.hint.center {
+  margin-top: 12px;
+  text-align: center;
+}
+.clip {
+  padding: 14px;
+  background: #eadfd0;
+  box-shadow: 3px 3px 0 #c9b79c;
+}
+.clip-q {
+  margin: 0 0 6px;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.chip {
+  aspect-ratio: 1;
+  font-size: 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.chip.stamp {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--red);
+  background: #e8d083;
+  border-radius: 50%;
+}
+.swatches {
+  display: flex;
+  gap: 8px;
+}
+.sw {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--line);
+  cursor: pointer;
+}
+.sw.on {
+  box-shadow: 0 0 0 2px var(--green);
+}
+.tools textarea {
+  padding: 10px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  resize: vertical;
+}
+
+.stage-wrap {
+  min-width: 0;
+  padding: 20px;
+  overflow: auto;
+  background: #ffeeda;
+
+}
+.zoombar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.zoomctl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.zoomctl button {
+  background: none;
+  border: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+.scaler {
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.zoom {
+  transform-origin: top left;
+}
+.board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.13) 2px, transparent 2px);
+  background-size: 24px 24px;
+}
+
+.item {
+  position: absolute;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.item.sel {
+  outline: 2px dashed var(--green);
+  outline-offset: 6px;
+}
+.item .body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.b-text {
+  display: grid;
+  place-items: center;
+  padding: 0.5em;
+  text-align: center;
+  line-height: 1.25;
+  font-family: "Fraunces", "Anuphan", serif;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+.v-quote {
+  border: 5px solid #e8b4bf;
+}
+.b-sticker {
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  text-align: center;
+}
+.v-stamp {
+  padding: 10%;
+  background: #e8d083;
+  border: 4px solid #fff7e0;
+  border-radius: 50%;
+  color: var(--red);
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.b-photo {
+  padding: 14px 14px 44px;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+.b-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.handle {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background: #fff;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  touch-action: none;
+  z-index: 2;
+  transform: scale(var(--hs, 1));
+}
+.h-size {
+  right: -14px;
+  bottom: -14px;
+  cursor: nwse-resize;
+}
+.h-rot {
+  left: 50%;
+  top: -48px;
+  margin-left: -11px;
+  cursor: grab;
+}
+.h-rot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 20px;
+  background: var(--green);
+  transform: translateX(-50%);
+}
+.h-del {
+  right: -14px;
+  top: -14px;
+  display: grid;
+  place-items: center;
+  color: var(--red);
+  border-color: var(--red);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ===== Vision Board: ลากมาวาง + แถบเปลี่ยนสีการ์ด ===== */
+
+/* ของในแถบด้านข้างที่ลากได้ */
+.drag { cursor: grab; }
+.drag:active { cursor: grabbing; }
+.clip.drag { position: relative; }
+.clip.drag::before {
+  content: "⠿";                 /* สัญลักษณ์ "จับลากได้" มุมขวาบนของการ์ด */
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #8a7b6c;
+  font-size: 16px;
+  line-height: 1;
+}
+.clip .th { margin: 0; font-size: 15px; line-height: 1.5; }
+
+/* บอร์ดตอนมีของถูกลากมาอยู่เหนือ */
+.board.over { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, .75); }
+
+/* การ์ดข้อความ: ขอบบาง ๆ ตามสีตัวอักษร (แทนขอบสีชมพูเดิม) */
+.v-quote { border: 2px solid color-mix(in srgb, currentColor 22%, transparent); }
+
+
+.sw.sm { width: 22px; height: 22px; }
+
+
+/* ===== การ์ดที่มีทั้งประโยคอังกฤษและคำแปลไทย ===== */
+.t-pair { display: grid; gap: .5em; }
+.t-main,
+.t-sub { margin: 0; }
+.t-main { line-height: 1.25; }
+.t-sub {
+  padding-top: .55em;
+  border-top: 1px solid color-mix(in srgb, currentColor 22%, transparent); /* เส้นคั่นบาง ๆ ระหว่างประโยคกับคำแปล */
+  font-family: "Anuphan", sans-serif;
+  font-size: .72em;                                                          /* คำแปลเล็กกว่าประโยคหลัก */
+  line-height: 1.5;
+  opacity: .88;
+}
+.v-pair { border: 2px solid color-mix(in srgb, currentColor 22%, transparent); }
+
+.clip.drag {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ===== Stickers: หมวดหมู่ ตัวสร้างสติกเกอร์ ชุดควบคุม และตัวสติกเกอร์บนบอร์ด ===== */
+
+/* แถบด้านข้างกว้างขึ้นให้พอดี 5 แท็บ (เฉพาะจอกว้าง) */
+@media (min-width: 820px) {
+  .vb-main { grid-template-columns: 340px 1fr; }
+}
+.tabs { overflow-x: auto; }
+.tabs button { padding: 8px 9px; white-space: nowrap; }
+
+/* หมวดย่อยของ Stickers */
+.subtabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.subtabs button {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.subtabs button.on { background: var(--red); border-color: var(--red); color: #fff; }
+
+/* ตัวอย่างสติกเกอร์ตัวอักษร + ปุ่มข้อความลัด */
+.stk-preview {
+  display: grid;
+  place-items: center;
+  min-height: 170px;
+  padding: 12px;
+  background: #ede4d6;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.quick { display: flex; flex-wrap: wrap; gap: 6px; }
+.qchip {
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.egroup { display: grid; gap: 6px; }
+
+/* ช่องตัวอย่าง doodle / collage */
+.cells { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.cell {
+  display: grid;
+  place-items: center;
+  height: 96px;
+  padding: 6px;
+  background: #ede4d6;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: grab;
+}
+.cell:active { cursor: grabbing; }
+.cell-doodle { width: 66px; height: 66px; }
+
+/* ชุดควบคุมสติกเกอร์ (ใช้ทั้งตัวสร้างและแท็บ Edit) */
+.sc { display: flex; flex-direction: column; gap: 10px; }
+.sc-row { display: grid; gap: 4px; }
+.sc-input {
+  padding: 8px 10px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.shape-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+.shp {
+  display: grid;
+  place-items: center;
+  height: 38px;
+  padding: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: #8a7b6c;
+  cursor: pointer;
+}
+.shp.on { color: var(--red); border-color: var(--red); background: #fbeeea; }
+.pat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.pat {
+  display: grid;
+  place-items: center;
+  height: 34px;
+  padding: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pat.on { border-color: var(--red); box-shadow: 0 0 0 1px var(--red); }
+.cr { display: grid; gap: 4px; }
+.cr > span { font-size: 12px; color: #5b514a; }
+.cr-sw { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.cr-sw input[type="color"] {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+.sc-toggles { display: grid; gap: 6px; font-size: 13px; }
+
+/* ตัวสติกเกอร์บนบอร์ด */
+.stk { position: relative; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .28)); }
+.stk.flat { filter: none; }
+.stk-svg { display: block; overflow: visible; }
+.stk-text {
+  position: absolute;                 /* ตำแหน่งและขนาดกรอบกำหนดจาก JS ตามรูปร่างแต่ละแบบ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Fraunces", "Anuphan", serif;
+  font-weight: 700;
+  line-height: 1.06;
+  white-space: nowrap;                /* ห้ามตัดคำ ขึ้นบรรทัดใหม่เฉพาะที่ JS คำนวณไว้ (ตรงช่องว่าง) */
+  pointer-events: none;
+}
+.stk-text > span { display: block; }
+.doodle { display: block; overflow: visible; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .2)); }
+.item .body.v-shape,
+.item .body.v-doodle { overflow: visible; } /* ไม่ตัดเงาของสติกเกอร์ */
+
+/* ===== การ์ด Polaroid + รูปหนังในแท็บ Photos ===== */
+
+/* การ์ด Polaroid (บนบอร์ดและตัวอย่างในแถบข้าง) ขนาดตัวอักษรกำหนดจากความกว้างของการ์ด */
+.b-photo.v-polaroid { padding: 0; }
+.polaroid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: .9em .9em .8em;
+}
+.polaroid img {
+  display: block;
+  flex: 1 1 0;
+  height: auto;
+  min-height: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.pol-text {
+  margin: .7em 0 0;
+  font-family: "Fraunces", "Anuphan", serif;
+  font-size: 1em;
+  line-height: 1.3;
+  text-align: left;
+}
+.pol-meta {
+  align-self: flex-end;               /* ชื่อหนัง · ปี ตัวเล็กอยู่มุมขวาล่าง */
+  margin-top: .5em;
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-size: .62em;
+  opacity: .7;
+}
+
+/* ตัวอย่าง Polaroid ในแถบด้านข้าง */
+.pol-prev .polaroid {
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .18);
+}
+.pol-prev .polaroid img {
+  flex: none;
+  aspect-ratio: 4 / 3;
+}
+
+/* รูปหนังในแท็บ Photos */
+.mtile { display: grid; gap: 6px; font-size: 13px; }
+.mtile img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .18);
+}
+
+/* ===== รูปภาพบนบอร์ด: ชื่อหนังบนรูป + เปิด/ปิดกรอบ Polaroid ===== */
+.b-photo { position: relative; }
+.ph { position: relative; width: 100%; height: 100%; }
+.ph img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ph-meta {
+  position: absolute;                 /* ชื่อหนัง · ปี ตัวเล็กที่มุมขวาล่างของรูป */
+  right: .9em;
+  bottom: .7em;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .7);
+  pointer-events: none;
+}
+
+/* ไม่เอากรอบ Polaroid: เหลือแต่รูปเต็ม ๆ (ยังมีเงาบาง ๆ) */
+.b-photo.nofr {
+  padding: 0;
+  background: transparent;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .22);
+}
+
+/* ช่องติ๊กในแถบด้านบนของบอร์ด */
+.sb-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ===== เส้นคั่นในแท็บ Edit (แยกส่วนแก้ไขชิ้นที่เลือกออกจากส่วน Board) ===== */
+.sep {
+  width: 100%;
+  margin: 4px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 819px) {
+  .vb-main {
+    grid-template-columns: 1fr;
+  }
+
+  /* ย้ายบอร์ดขึ้นมาไว้บนสุด (ใต้แถบ Back / My Vision Board / Save as image) */
+  .stage-wrap {
+    top: 0;
+    z-index: 5;
+    order: -1;
+    padding: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tools {
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 1px solid var(--line);
+  }
+}
+
+/* ===== Photo library (Unsplash) และบอร์ดแนวตั้ง ===== */
+.scaler { margin: 0 auto; }           /* บอร์ดแนวตั้งอยู่กึ่งกลางพื้นที่ */
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.pthumb { margin: 0; }
+.pthumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: grab;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+.pcap { margin-top: 4px; font-size: 11px; color: #6b5f55; }
+.pcap a { color: inherit; }
+.qchip.on { background: #2f2a27; color: #fff; border-color: #2f2a27; }
+
+/* ===== ตัวแปรร่วม (เดิม --soft ประกาศเฉพาะใน .card) ===== */
+:root {
+  --soft: #5b514a;
+  --shadow: #a67b6a; /* เงาทึบเยื้องของการ์ด */
+}
+
+/* ===== หน้า My Days: ใช้ภาษาเดียวกับ .card (เหลี่ยม เงาทึบ) และใช้ PhraseCard ตัวเดิมเป็นแผงรายละเอียด ===== */
+.page.md {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 28px;
+  text-align: left;
+}
+.md-head { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+/* แถวปุ่มบนสุด: Back (ซ้าย) + ไป Vision Board (ขวา) */
+.md-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; }.md-head h1 { margin: 0; font-size: clamp(36px, 5vw, 56px); }
+.md-head .muted { margin: 0; }
+.md-main { display: flex; flex-wrap: wrap; gap: 36px; align-items: flex-start; justify-content: center; }
+
+/* ปฏิทิน */
+.md-cal {
+  flex: 0 0 400px;
+  max-width: 100%;
+  position: sticky;
+  top: 24px;
+  padding: 24px;
+  background: var(--card);
+  box-shadow: 10px 10px 0 var(--shadow);
+}
+
+.md-cal-head { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 16px; 
+}
+
+.md-cal-head h2 { 
+  margin: 0; 
+  font-weight: 600; 
+  font-size: 24px; 
+}
+
+.md-nav {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.md-nav:hover:not(:disabled) { background: color-mix(in srgb, var(--red) 10%, transparent); color: var(--red); }
+.md-nav:disabled { opacity: .35; cursor: default; }
+
+.md-week, .md-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.md-week { margin-bottom: 6px; }
+.md-week span { text-align: center; font-size: 13px; color: var(--soft); }
+.md-day {
+  height: 52px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: none;
+  font-size: 15px;
+  color: var(--soft);
+}
+.md-day.has { border-color: var(--line); color: var(--ink); font-weight: 600; cursor: pointer; transition: background .2s ease; }
+.md-day.has:hover { background: color-mix(in srgb, var(--red) 10%, transparent); }
+.md-day.on { background: color-mix(in srgb, var(--red) 14%, var(--card)); border-color: var(--red); color: var(--red); }
+.md-day.today:not(.has) { border-style: dashed; border-color: var(--line); }
+.md-dot { display: block; width: 10px; height: 10px; border-radius: 50%; }
+.md-cal .hint { margin-top: 16px; }
+
+/* แผงรายละเอียด = PhraseCard แบบแนวตั้ง (ไม่ใช้เลย์เอาต์แนวนอนของหน้า /card) */
+.md-detail { flex: 1 1 460px; max-width: 580px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.md-detail .muted { margin: 0; }
+.md-date { margin: 0; }
+.md-detail .card { width: 100%; display: block; padding: 16px; }
+.md-detail .photo { aspect-ratio: 4 / 3; min-height: 0; }
+.md-detail .card .body { padding: 22px 6px 8px; justify-content: flex-start; }
+
+@media (max-width: 760px) {
+  .md-cal { position: static; flex-basis: 100%; }
+  .md-detail { flex-basis: 100%; max-width: none; }
+}
+
+/* ===== หน้าแนะนำ (Intro): โน้ตโผล่ทีละใบ ลากไปแปะบนหน้าจอ แปะครบแล้วขึ้นปุ่ม START ===== */
+.page.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* ชิดบน ให้โลโก้อยู่สูง */
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(24px, 7vh, 72px) 20px 56px;
+  text-align: center;
+}
+
+/* ส่วนหัว: โลโก้ตรง + หัวข้อบรรทัดเดียว */
+.intro-hero { display: flex; flex-direction: column; align-items: center; width: 100%; }
+.intro .intro-logo {
+  margin: 0 0 6px;
+  animation: introPop .7s cubic-bezier(.34, 1.56, .64, 1) backwards;
+}
+.intro h1 {
+  margin: 8px 0 0;
+  font-size: clamp(22px, calc((100vw - 40px) / 23), 56px); /* ย่อตามความกว้างจอ ให้ท่อนแรกที่ยาวสุดพอดีหน้าจอ */
+  line-height: 1.15;
+}
+.intro h1 .h1-line { display: block; white-space: nowrap; } /* แต่ละท่อน = 1 บรรทัด */
+
+@media (max-width: 760px) {
+  /* มือถือ: ยังแยกสองท่อน แต่แต่ละท่อนตัดบรรทัดเองได้ ตัวอักษรจะได้ไม่เล็กเกินอ่าน */
+  .intro h1 { font-size: clamp(26px, 7.4vw, 38px); }
+  .intro h1 .h1-line { white-space: normal; text-wrap: balance; }
+}
+
+.intro-squiggle { display: block; width: 150px; height: 16px; margin: 14px auto 20px; overflow: visible; }
+.intro-squiggle path {
+  fill: none; stroke: var(--red); stroke-width: 3; stroke-linecap: round;
+  stroke-dasharray: 1; stroke-dashoffset: 1;
+  animation: introDraw .8s ease .4s forwards;
+}
+.intro-tagline { margin: 0 0 8px; max-width: 36em; font-size: 20px; font-weight: 600; line-height: 1.5; text-wrap: balance; }
+.intro-lead { margin: 0; max-width: 36em; color: var(--soft); line-height: 1.6; text-wrap: balance; }
+
+/* ที่เว้นไว้ให้โน้ตที่รอแปะ + ข้อความแนะนำ */
+.intro-tray { position: relative; width: 100%; height: 300px; margin-top: 8px; }
+.intro-tray.done { height: 0; }
+.intro-hint { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; font-size: 14px; color: var(--soft); }
+
+/* โน้ต: วางตำแหน่งด้วย left/top (กำหนดจาก JS) ไม่มีเส้นขอบ */
+.intro-notes { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.intro-note {
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  padding: 36px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 var(--shadow);
+  rotate: var(--r);
+  transform-origin: 50% 0;    /* แกว่งจากเทปด้านบน */
+  cursor: grab;
+  touch-action: none;         /* ให้นิ้วลากโน้ตได้โดยหน้าไม่เลื่อน */
+  user-select: none;
+  -webkit-user-select: none;
+  transition: box-shadow .25s ease, scale .25s cubic-bezier(.34, 1.56, .64, 1);
+}
+.intro-note.waiting {
+  animation:
+    moodIn .7s cubic-bezier(.22, 1, .36, 1) .2s backwards,
+    introSwing 6s ease-in-out calc(var(--i) * -1.7s) infinite;
+}
+.intro-note.placed {
+  animation:
+    introStick .4s cubic-bezier(.34, 1.56, .64, 1),
+    introSwing 6s ease-in-out calc(var(--i) * -1.7s) infinite;
+}
+.intro-note.dragging { animation: none; cursor: grabbing; scale: 1.06; box-shadow: 12px 14px 0 var(--shadow); }
+.intro-note:hover:not(.dragging) { scale: 1.03; }
+.intro-note:focus-visible { outline: none; scale: 1.04; } /* ไม่มีกรอบ: ใช้คีย์บอร์ดแล้วโน้ตจะขยายเล็กน้อยแทน */
+/* เทปติดด้านบน */
+.intro-note::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 72px;
+  height: 22px;
+  translate: -50% 0;
+  rotate: -3deg;
+  background: rgba(244, 185, 196, .85);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+}
+.intro-note:nth-child(even)::before { rotate: 3deg; }
+
+.intro-note b { font-size: 18px; font-weight: 600; line-height: 1.4; }
+.intro-note p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--soft); }
+.intro-note p .accent { font-weight: 600; }
+
+/* ป้ายเลข: วงกลมแดงสีเดียว เลขขาว แปะที่มุมซ้ายบน */
+.intro-badge {
+  position: absolute;
+  top: calc(var(--b) / -2.4);
+  left: calc(var(--b) / -2.4);
+  width: var(--b);
+  height: var(--b);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--red);
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: calc(var(--b) * .45);
+}
+
+/* ปุ่ม START: โผล่เมื่อแปะครบ และอยู่เหนือโน้ตเสมอ */
+/* ปุ่ม START: โผล่เมื่อแปะครบ อยู่กึ่งกลางล่างของจอ และอยู่เหนือโน้ตเสมอ */
+.intro-start {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: clamp(72px, 16vh, 150px);
+  z-index: 45;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;   /* พื้นที่ว่างรอบปุ่มไม่บังการลากโน้ต */
+}
+.intro-start .cta {
+  pointer-events: auto;
+  margin: 0;
+  padding: 14px 56px;
+  font-size: 17px;
+  transition: transform .25s cubic-bezier(.34, 1.56, .64, 1);
+  animation:
+    introPop .5s cubic-bezier(.34, 1.56, .64, 1) backwards,
+    float 3.2s ease-in-out .6s infinite;
+}
+.intro-start .cta:hover { transform: rotate(-2deg) scale(1.05); }
+
+@keyframes introDraw { to { stroke-dashoffset: 0; } }
+@keyframes introPop { from { opacity: 0; transform: scale(.6) rotate(-12deg); } }
+@keyframes introSwing {
+  0%, 100% { rotate: calc(var(--r) - 1.2deg); }
+  50% { rotate: calc(var(--r) + 1.2deg); }
+}
+@keyframes introStick { from { scale: 1.12; } 55% { scale: .96; } to { scale: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-note, .intro .intro-logo, .intro-start .cta { animation: none; }
+  .intro-squiggle path { animation: none; stroke-dashoffset: 0; }
+}
+/* ===== แผงควบคุมโหมดเดโม่ (เห็นเฉพาะ ?demo=1) ===== */
+.demo-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #2f2a27;
+  color: #fcf8f0;
+  font-size: 13px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+}
+.demo-day { opacity: .85; }
+.demo-panel button {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid rgba(252, 248, 240, .5);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.demo-panel .demo-next { background: #fcf8f0; color: #2f2a27; }
+
+/* ส่วนหัวของแผงเดโม่ (ข้อความวัน + ปุ่มซ่อน) */
+.demo-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.demo-panel .demo-close { min-height: 44px; padding: 0 12px; }
+
+/* ปุ่มเล็กตอนพับแผง */
+.demo-toggle {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(47, 42, 39, .8);
+  color: #fcf8f0;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.demo-toggle:hover { background: #2f2a27; }
+
+/* ===== ปุ่มใต้การ์ด: ปุ่มหลัก (แดงทึบ) + ปุ่มรอง (ขอบแดง) เรียงแถวเดียว ขนาดเท่ากัน ===== */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 36px; /* เว้นพ้นเงาทึบของการ์ด */
+}
+.actions .cta {
+  margin-top: 0;
+  min-width: 220px;
+  min-height: 48px;
+  transition: background .2s ease;
+}
+.cta.ghost {
+  background: transparent;
+  color: var(--red);
+  box-shadow: inset 0 0 0 2px var(--red); /* ใช้เงาด้านในแทนขอบ ปุ่มจะได้ขนาดเท่าปุ่มหลักพอดี */
+}
+.cta.ghost:hover { background: color-mix(in srgb, var(--red) 10%, transparent); }
+
+@media (max-width: 520px) {
+  .actions { flex-direction: column; width: 100%; max-width: 360px; }
+}
+
+/* ===== แท็บ Phrase card: หัวข้อ + Polaroid ของวันนี้ + ที่เคยได้ ===== */
+.sec { margin: 0; font-size: 16px; font-weight: 600; }
+
+/* คำแปลไทยใน Polaroid */
+.pol-th {
+  margin: .35em 0 0;
+  font-family: "Anuphan", sans-serif;
+  font-size: .85em;
+  line-height: 1.5;
+  text-align: left;
+  opacity: .8;
+}
+
+/* รายการ Polaroid ที่เคยได้: 2 คอลัมน์ ใบเล็ก มีวันที่ใต้การ์ด */
+.pol-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 10px; }
+.pol-cell { margin: 0; }
+.pol-mini .polaroid { box-shadow: 0 3px 8px rgba(0, 0, 0, .16); }
+.pol-mini .pol-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pol-date { margin-top: 6px; font-size: 12px; color: var(--muted); text-align: center; }
+
+/* ===== มือถือ: ขยายพื้นที่ให้แปะโน้ต (หน้าสูงขึ้น) และโน้ตเล็กลง ===== */
+@media (max-width: 760px) {
+  .page.intro { min-height: max(100svh, 1500px); }
+  .intro-tray { height: 220px; }
+}
+@media (max-width: 560px) {
+  .intro-note { padding: 32px 16px 20px; }
+  .intro-note b { font-size: 16px; }
+  .intro-note p { font-size: 13.5px; }
+}
+
+@media (max-width: 560px) {
+  .intro-tray .intro-hint {
+    top: 0;
+    bottom: auto;
+    padding: 0 8px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+
+:root { --nav-h: 52px; }
+body { padding-top: var(--nav-h); }
+
+.navbar {
+  position: fixed; inset: 0 0 auto 0; z-index: 60; height: var(--nav-h);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 0 18px;
+  background: rgba(253, 248, 241);
+}
+/* ขอบล่างเป็นลอนเล็ก ๆ */
+.navbar::after {
+  content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 8px; pointer-events: none;
+  background: radial-gradient(circle at 8px 0, var(--card) 7px, transparent 7.5px) 0 0 / 16px 8px repeat-x;
+  filter: drop-shadow(0 1px 0 var(--line));
+}
+
+.nav-logo { background: none; border: 0; padding: 0; cursor: pointer; display: flex; transform-origin: 50% 100%; }
+.nav-logo:hover { animation: nav-wiggle .5s ease; }
+@keyframes nav-wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-4deg); }
+  75% { transform: rotate(4deg); }
+}
+
+.nav-links { display: flex; gap: 6px; }
+.nav-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 7px 14px; border: 1.5px solid transparent; border-radius: 999px; background: none;
+  font-size: 14px; font-weight: 600; color: var(--ink); cursor: pointer; white-space: nowrap;
+  transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.nav-ico { font-size: 12px; color: var(--red); transition: transform .3s ease; }
+
+.nav-link:hover { 
+  background: #f6e6dc; 
+  transform: translateY(-2px); 
+}
+
+.nav-link:hover .nav-ico { transform: rotate(90deg) scale(1.2); }
+.nav-link.on {
+  background: var(--red); color: #fff; border-color: var(--red);
+  box-shadow: 2px 2px 0 #a67b6a;
+  transform: none;
+}
+.nav-link.on .nav-ico { color: #fff; }
+.nav-link.locked { color: var(--muted); opacity: .6; }
+.nav-link.locked .nav-ico { color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-logo:hover { animation: none; }
+  .nav-link, .nav-ico { transition: none; }
+  .nav-link:hover, .nav-link.on { transform: none; }
+}
+
+/* มือถือ: ซ่อนโลโก้ เมนู 3 ช่องกว้างเท่ากัน ตัวหนังสือกึ่งกลางทุกช่อง */
+@media (max-width: 520px) {
+  .navbar { padding: 0 10px; }
+  .nav-logo { display: none; }
+  .nav-links { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .nav-link { padding: 7px 4px; font-size: 13px; gap: 4px; }
+}
+
+
+.nav-modal {
+  position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 20px;
+  background: rgba(47, 42, 39, .45);
+}
+.nav-modal-box {
+  position: relative; width: min(380px, 100%); padding: 28px 24px 24px; text-align: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+  box-shadow: 8px 8px 0 #a67b6a;
+}
+.nav-modal-box h2 { margin: 0 0 8px; font-size: 20px; }
+.nav-modal-box p { margin: 0 0 18px; color: var(--muted); line-height: 1.5; }
+.nav-modal-x {
+  position: absolute; top: 8px; right: 10px; width: 32px; height: 32px;
+  border: 0; border-radius: 50%; background: none; font-size: 24px; line-height: 1; cursor: pointer;
+}
+
+/* ===== Vision Board: เพิ่มสี ===== */
+
+.tools h3 { display: flex; align-items: center; gap: 8px; }
+
+
+/* หัวข้อย่อยมีแถบสี */
+.tools h4.sec {
+  display: flex; align-items: center; gap: 8px;
+}
+.tools h4.sec::before {
+  content: ''; width: 4px; height: 18px; background: #e8d083;
+}
+.tools h4.sec ~ hr.sep ~ h4.sec::before { background: #5e7b6c; } /* หัวข้อที่สองเป็นสีเขียว */
+
+/* เส้นคั่นเป็นเส้นประสีชมพู */
+.tools .sep { border: 0; border-top: 2px dashed #e7bfb3; }
+
+/* ข้อความคำอธิบาย / hint */
+.tools .hint { color: #8a6a5f; }
+
+/* ปุ่มและสติกเกอร์ในแถบ ให้เด่นบนพื้นสี */
+.tools .btn.ghost { background: #fffaf5; }
+.tools .qchip, .tools .chip, .tools .cell { background: #fffaf5; }
+
+/* ปุ่มหมวดรูปที่ถูกเลือก: ตัวอักษรสีเข้มชัด พื้นชมพูอ่อน ขอบเข้ม */
+.tools .qchip.on {
+  color: var(--ink);
+  border-color: var(--ink);
+  font-weight: 600;
+}
+
+/* ลิงก์ในแถบ Assets (Unsplash และชื่อช่างภาพ) ใช้สีแดงของเว็บ */
+.tools a { color: var(--red); text-underline-offset: 2px; }
+.tools a:hover { color: var(--ink); }
+.tools .pcap a { color: var(--muted); }
+.tools .pcap a:hover { color: var(--red); }
+
+/* ===== แก้การ์ด ===== */
+
+/* หน้าเลือกอารมณ์บนมือถือ: แถวละ 2 การ์ด ความกว้างเท่ากัน */
+@media (max-width: 560px) {
+  .moods {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+  }
+  .mood {
+    min-width: 0;
+    padding: 18px 8px;
+  }
+  .mood .dot { width: 72px; height: 72px; }
+  .mood b {
+    font-size: 18px;            /* "Overwhelmed" ไม่ล้นการ์ด */
+    overflow-wrap: anywhere;
+  }
+  .mood small {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
+
+/* หัวหน้า Vision Board บนมือถือ: ปุ่มเล็กลง หัวข้ออยู่กึ่งกลางจอ */
+@media (max-width: 520px) {
+  .vb-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;   /* สองข้างกว้างเท่ากัน หัวข้ออยู่กลางพอดี */
+    align-items: center;
+    gap: 6px;
+    padding: 16px 14px;
+  }
+  .vb-top .btn {
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.2;
+    white-space: nowrap;                    /* ไม่ตัดบรรทัดในปุ่ม */
+    min-height: 0;
+  }
+  .vb-top > :first-child { justify-self: start; }
+  .vb-top > :last-child  { justify-self: end; }
+  .vb-title { text-align: center; }
+  .vb-title h2 { font-size: 17px; line-height: 1.15; margin: 0; white-space: nowrap; }
+  .vb-title small { font-size: 11px; }
+}

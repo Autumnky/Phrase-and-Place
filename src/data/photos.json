@@ -1,0 +1,50 @@
+{
+  "categories": [
+    {
+      "id": "health",
+      "label": "Health",
+      "photos": [
+        { "id": "nlY-pr6Fr1w", "cdn": "photo-1779525822749-151a21364350", "ixid": "M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "alt": "Older person in yellow jacket rides red bicycle on street", "name": "Alexander Lunyov", "user": "sunify" },
+        { "id": "QI8FZ9y8A7c", "cdn": "photo-1700223172740-a573a60259cb", "ixid": "NHwxMjA3fDA%3D", "alt": "A bowl of fruit and granola on a table", "name": "Imad 786", "user": "imad8321" },
+        { "id": "mNGaaLeWEp0", "cdn": "photo-1477332552946-cfb384aeaf1c", "ixid": "NHwxMjA3fDA%3D", "alt": "Woman walking on pathway during daytime", "name": "Emma Simpson", "user": "esdesignisms" }
+      ]
+    },
+    {
+      "id": "home",
+      "label": "Home",
+      "photos": [
+        { "id": "0DcJc1RexJk", "cdn": "photo-1641232458416-feace752b346", "ixid": "NHwxMjA3fDA%3D", "alt": "A living room filled with furniture and a flat screen tv", "name": "Joao Macedo", "user": "joaoqmacedo" },
+        { "id": "f8tOIicRXKU", "cdn": "photo-1698870157085-11632d2ddef8", "ixid": "M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "alt": "A living room filled with furniture and a fire place", "name": "Evan Wise", "user": "evanthewise" },
+        { "id": "-ro3OAQ3g70", "cdn": "photo-1630829074868-3ff34a62c6c7", "ixid": "NHwxMjA3fDA%3D", "alt": "Yellow flowers in clear glass vase on brown wooden table", "name": "BBiDDac", "user": "bbiddac" }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "photos": [
+        { "id": "rknrvCrfS1k", "cdn": "photo-1516483638261-f4dbaf036963", "ixid": "NHwxMjA3fDA%3D", "alt": "Manarola, Italy", "name": "Jack Ward", "user": "jackward" },
+        { "id": "M0AWNxnLaMw", "cdn": "photo-1500835556837-99ac94a94552", "ixid": "NHwxMjA3fDA%3D", "alt": "Airplane on sky during golden hour", "name": "Tom Barrett", "user": "wistomsin" },
+        { "id": "va_nrBLonf8", "cdn": "photo-1529963183134-61a90db47eaf", "ixid": "M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "alt": "Landscape photo of aurora lights", "name": "Nicolas J Leclercq", "user": "nicolasjleclercq" }
+      ]
+    },
+    {
+      "id": "hobbies",
+      "label": "Hobbies",
+      "photos": [
+        { "id": "CwSiAVlXOWQ", "cdn": "photo-1593037515490-c4d56a9ff5ff", "ixid": "M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "alt": "White pink and green floral painting", "name": "Sarah Brown", "user": "sweetpagesco" },
+        { "id": "zf8yjaSHMis", "cdn": "photo-1610558128766-64f6b95ba135", "ixid": "NHwxMjA3fDA%3D", "alt": "Brown wooden heart shaped ornament", "name": "Dari lli", "user": "dari_lli" },
+        { "id": "PuZgWp_a0Cs", "cdn": "photo-1725582204163-46d1f246ecd6", "ixid": "NHwxMjA3fDA%3D", "alt": "A person sitting on the floor with a book and a cup of coffee", "name": "Priscilla Du Preez 🇨🇦", "user": "priscilladupreez" },
+        { "id": "3BcNKoySAq0", "cdn": "photo-1603910234616-3b5f4a6be2b4", "ixid": "M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "alt": "A crowd at a concert with purple confetti", "name": "Samuel Regan-Asante", "user": "reganography" }
+      ]
+    },
+    {
+      "id": "finance",
+      "label": "Finance",
+      "photos": [
+        { "id": "nES9RaP8ROM", "cdn": "photo-1621290181122-f23227645392", "ixid": "NHwxMjA3fDA%3D", "alt": "Clear wine glass with red liquid", "name": "Laura Chouette", "user": "laurachouette" },
+        { "id": "EFC5HtOYGVo", "cdn": "photo-1701456158326-8715924f85b3", "ixid": "NHwxMjA3fDA%3D", "alt": "A dining car with a table set for four", "name": "Balázs", "user": "svbalazs" },
+        { "id": "bN3KYPiAd8k", "cdn": "photo-1624365169364-0640dd10e180", "ixid": "M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "alt": "A collection of gold bars and coins", "name": "Zlaťáky.cz", "user": "zlataky" }
+      ]
+    }
+  ]
+}
