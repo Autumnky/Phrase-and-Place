@@ -72,6 +72,11 @@ function AppRoutes() {
           phrase ? (
             <main className="page">
               <PhraseCard phrase={phrase} />
+              <p className="tmdb-credit">
+                Movie images and details from{' '}
+                <a href="https://www.themoviedb.org" target="_blank" rel="noreferrer">TMDB</a>.
+                {' '}This product uses the TMDB API but is not endorsed or certified by TMDB.
+              </p>
               <div className="actions">
                 <button className="cta" onClick={() => navigate('/visionboard')}>Make my vision board</button>
                 <button className="cta ghost" onClick={() => navigate('/my-days')}>Look back at My Days</button>
