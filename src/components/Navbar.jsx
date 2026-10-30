@@ -66,8 +66,8 @@ export default function Navbar() {
         <div className="nav-modal" role="presentation" onClick={() => setWarn(false)}>
           <div className="nav-modal-box" role="dialog" aria-modal="true" aria-labelledby="nm-t" onClick={(e) => e.stopPropagation()}>
             <button className="nav-modal-x" onClick={() => setWarn(false)} aria-label="Close">×</button>
-            <h2 id="nm-t">ยังไม่พบข้อมูลของคุณ</h2>
-            <p>กรุณาเริ่มต้นใช้งานกับเราก่อน เลือกความรู้สึกของวันนี้ แล้วหน้านี้จะพร้อมให้เปิดดู</p>
+            <h2 id="nm-t">คุณยังไม่สามารถใช้หน้านี้ได้</h2>
+            <p>โปรดเลือกความรู้สึกของวันนี้ก่อน แล้วคุณจะสามารถใช้หน้านี้ได้</p>
             <button
               className="cta"
               onClick={() => { setWarn(false); navigate(hasToday ? '/card' : '/mood-check-in') }}
